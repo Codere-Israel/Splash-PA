@@ -1,0 +1,50 @@
+{
+  "desktop_slide_list": [
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/lanza_desktop.jpg",
+      "img_alt": "",
+      "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/metodos_desktop.jpg",
+      "img_alt": "",
+      "tycLink": "",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/casino-retail-desktop.jpg",
+      "img_alt": "",
+      "tycLink": "",
+      "startDate": "",
+      "endDate": "",
+      "regText": "Encuentanos"
+    }
+  ],
+  "mobile_slide_list": [
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/Splash/lanza_mobile.jpg",
+      "img_alt": "",
+      "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/Splash/metodos_mobile.jpg",
+      "img_alt": "",
+      "tycLink": "",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/Splash/casino-retail-mobile.jpg",
+      "img_alt": "",
+      "tycLink": "",
+      "startDate": "",
+      "endDate": "",
+      "regText": "Encuentanos"
+    }
+  ]
+}

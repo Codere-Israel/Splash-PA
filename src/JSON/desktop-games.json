@@ -1,0 +1,14 @@
+{
+  "top_games": [
+    {
+      "name": "Crea tu cuenta",
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/react-splash/assets/ShopLocator.jpg",
+      "link": "https://m.codere.pa/deportespanama/#/NearestLocalPage"
+    },
+    {
+      "name": "Metodos de Pago",
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/react-splash/assets/PaymentMethods.jpg",
+      "link": "https://www.codere.pa/dep%C3%B3sitos/dep%C3%B3sito-online"
+    }
+  ]
+}
