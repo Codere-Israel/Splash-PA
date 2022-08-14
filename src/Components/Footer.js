@@ -76,6 +76,7 @@ function Footer() {
                     <a
                       href="https://condiciones.apuestas.codere.es/Panama/juego_responsable.html"
                       title=""
+                      rel="nofollow"
                     >
                       Juego Responsable
                     </a>
@@ -84,6 +85,7 @@ function Footer() {
                     <a
                       href="https://m.codere.pa/csbgonline/condicionesgenerales/ContratoPanama.pdf"
                       title=""
+                      rel="nofollow"
                     >
                       Contrato
                     </a>
@@ -92,6 +94,7 @@ function Footer() {
                     <a
                       href="https://m.codere.pa/deportespanama/#/InformationPage?type=reglas"
                       title=""
+                      rel="nofollow"
                     >
                       Reglas
                     </a>
@@ -101,6 +104,7 @@ function Footer() {
                       href="https://m.codere.pa/csbgonline/condicionesgenerales/politicaprivacidadPanama.pdf"
                       title=""
                       target={"_blank"}
+                      rel="nofollow"
                     >
                       Política de Privacidad
                     </a>
@@ -109,6 +113,7 @@ function Footer() {
                     <a
                       href="https://www.codere.pa/Paginas/Pol%C3%ADtica-de-cookies.aspx"
                       title=""
+                      rel="nofollow"
                     >
                       Política de Cookies
                     </a>
@@ -125,12 +130,17 @@ function Footer() {
                     <a
                       href="https://www.codere.pa/resultados-y-estadisticas"
                       title=""
+                      rel="nofollow"
                     >
                       Resultados y Estadísticas
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.codere.pa/cuotas-deportivas" title="">
+                    <a
+                      href="https://www.codere.pa/cuotas-deportivas"
+                      title=""
+                      rel="nofollow"
+                    >
                       Cuotas Deportivas
                     </a>
                     <ul style={{ color: "#fff", listStyle: "initial" }}>
@@ -179,6 +189,7 @@ function Footer() {
                     <a
                       href="https://m.codere.pa/deportespanama/#/CuotaTypePage"
                       title=""
+                      rel="nofollow"
                     >
                       Opciones de apuesta
                     </a>
@@ -187,6 +198,7 @@ function Footer() {
                     <a
                       href="https://m.codere.pa/deportespanama/#/CheckTicketPage"
                       title=""
+                      rel="nofollow"
                     >
                       Consulta tu ticket
                     </a>
@@ -208,6 +220,7 @@ function Footer() {
                     <a
                       href="https://m.codere.pa/deportespanama/#/LanguagePage"
                       title=""
+                      rel="nofollow"
                     >
                       Idioma
                     </a>
@@ -221,6 +234,7 @@ function Footer() {
                     <a
                       href="https://wa.me/50769314912"
                       title=""
+                      rel="nofollow"
                       target="_blank"
                       className="whatsapp"
                     >
@@ -249,7 +263,7 @@ function Footer() {
           <div className="col">
             <img
               src="https://www.codere.pa/_catalogs/masterpage/codere/react-splash/assets/repPan.png"
-              alt="Republica De Panama"
+              alt="Gobierno República de Panamá"
             />
 
             <a href="mailto:jcj-quejas@mef.gob.pa">
@@ -261,7 +275,7 @@ function Footer() {
 
             <img
               src="https://www.codere.pa/_catalogs/masterpage/codere/react-splash/assets/jugarRes.png"
-              alt=""
+              alt="Juega Responsablemente"
             />
           </div>
         </div>
@@ -270,9 +284,12 @@ function Footer() {
           S.A., con domicilio en Panamá, Ciudad de Panamá, Vía Israel y Calle 76
         </div>
         <div id="legals" style={{ marginBottom: "2vw" }}>
-          <a href="https://m.apuestas.codere.es/csbgonline/condicionesgenerales/politicaseguridadinformacion.pdf">
+          <a
+            href="https://m.codere.pa/csbgonline/condicionesgenerales/politicaseguridadinformacion.pdf"
+            rel="nofollow"
+          >
             <img
-              src="http://www.codere.es/_catalogs/masterpage/codere/newSplashTest/assets/aenor.png"
+              src="https://m.apuestas.codere.es/deportes/assets/img/logoaenoriso27001.png"
               alt="AENOR Seguridad Información"
             />
           </a>

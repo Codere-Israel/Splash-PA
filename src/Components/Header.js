@@ -17,10 +17,11 @@ import {
   faAngleDown,
   faAngleRight,
   faFutbol,
-  faCoins,
-  faDice,
+  faCirclePlay,
   faBullhorn,
-  faLocationDot,
+  faCrosshairs,
+  faBaseball,
+  faFootball,
 } from "@fortawesome/free-solid-svg-icons";
 
 class PostUser {
@@ -38,7 +39,7 @@ function Header(props) {
   const acceder =
     "https://m.codere.pa/deportespanama/#/HomePage?openlogin=true";
 
-  const URL = "https://dm.apuestas.codere.es/LoginServicesESApi/login/web";
+  // const URL = "https://dm.apuestas.codere.es/LoginServicesESApi/login/web";
   const LOGO =
     "https://www.codere.pa/_catalogs/masterpage/codere/img/SponsorsLogoCodere.png";
 
@@ -117,23 +118,23 @@ function Header(props) {
                 Acceder <FontAwesomeIcon icon={faAngleRight} />
               </a> */}
               <a
-                href="https://m.apuestas.codere.es/deportes/#/HomePage"
+                href="https://m.codere.pa/deportespanama/#/HomePage"
                 rel="nofollow"
               >
-                <FontAwesomeIcon icon={faFutbol} />
+                <FontAwesomeIcon icon={faCrosshairs} />
                 Deportes
                 <FontAwesomeIcon icon={faAngleRight} />
               </a>
               <a
-                href="https://m.apuestas.codere.es/deportes/#/CasinoPage"
+                href="https://m.codere.pa/deportespanama/#/DirectosPage"
                 rel="nofollow"
               >
-                <FontAwesomeIcon icon={faDice} />
+                <FontAwesomeIcon icon={faCirclePlay} />
                 En Vivo
                 <FontAwesomeIcon icon={faAngleRight} />
               </a>
               <a
-                href="https://m.apuestas.codere.es/csbgonline/home/link?gotopromotions"
+                href="https://m.codere.pa/deportespanama/#/PromotionsPage"
                 rel="nofollow"
               >
                 <FontAwesomeIcon icon={faBullhorn} />
@@ -147,18 +148,21 @@ function Header(props) {
                     <ul>
                       <li>
                         <a href="https://www.codere.pa/cuotas-deportivas/apuestas-futbol">
-                          Futbol
+                          <FontAwesomeIcon icon={faFutbol} />
+                          Fútbol
                           <FontAwesomeIcon icon={faAngleRight} />
                         </a>
                       </li>
                       <li>
                         <a href="https://www.codere.pa/cuotas-deportivas/apuestas-beisbol-grandes-ligas">
-                          Beisbol
+                          <FontAwesomeIcon icon={faBaseball} />
+                          Béisbol
                           <FontAwesomeIcon icon={faAngleRight} />
                         </a>
                       </li>
                       <li>
                         <a href="https://www.codere.pa/cuotas-deportivas/apuestas-nfl-futbol-americano">
+                          <FontAwesomeIcon icon={faFootball} />
                           NFL
                           <FontAwesomeIcon icon={faAngleRight} />
                         </a>
@@ -169,7 +173,16 @@ function Header(props) {
               </Accordion>
             </Menu>
             <main id="page-wrap"></main>
-            <img style={{ maxWidth: 134, maxHeight: 32 }} src={LOGO} />
+            <a
+              href="https://m.codere.pa/deportespanama/#/HomePage"
+              rel="nofollow"
+            >
+              <img
+                style={{ maxWidth: 134, maxHeight: 32 }}
+                src={LOGO}
+                alt="Logo Casa de Apuestas Codere - Real Madrid "
+              />
+            </a>
           </div>
 
           <div id="header_buttons">
@@ -192,7 +205,12 @@ function Header(props) {
         </div>
       ) : (
         <Container>
-          <img src={LOGO} />
+          <a
+            href="https://m.codere.pa/deportespanama/#/HomePage"
+            rel="nofollow"
+          >
+            <img src={LOGO} alt="Logo Casa de Apuestas Codere - Real Madrid " />
+          </a>
 
           <Nav className="me-auto">
             <Nav.Link
@@ -223,10 +241,10 @@ function Header(props) {
                 NFL
               </Dropdown.Item>
               <Dropdown.Item href="https://www.codere.pa/cuotas-deportivas/apuestas-beisbol-grandes-ligas">
-                BEISBOL
+                Béisbol
               </Dropdown.Item>
               <Dropdown.Item href="https://www.codere.pa/cuotas-deportivas/apuestas-futbol">
-                FUTBALL
+                Fútbol
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>

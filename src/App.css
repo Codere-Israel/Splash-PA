@@ -95,8 +95,8 @@ body {
 
 .header_nav img {
   position: relative;
-  width: 15%;
-  margin-right: 2%;
+  width: 12rem;
+  margin-right: 1rem;
   left: 0;
   cursor: pointer;
 }
@@ -256,11 +256,16 @@ body {
   text-align: center;
 }
 
-[data-swiper-slide-index="2"] .central-regis::before {
-  content: "Encuentranos";
+.Participa::before {
+  content: "Participa";
 }
-.central-regis::before {
+
+.Registrate::before {
   content: "Regístrate";
+}
+
+.Encuentranos::before {
+  content: "Encuentranos";
 }
 
 .terms {
@@ -396,7 +401,7 @@ body {
 
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 4rem !important;
+  bottom: 4vw !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -1076,10 +1081,11 @@ footer.nb-footer .footer-info-single p {
   /* End Buttons Mobile */
 
   .header_nav img {
-    width: 67%;
-    left: 12vw;
-    top: 0.8vw;
-    margin-right: 17vw;
+    width: 36vw;
+    left: 2.65rem;
+    margin-top: 0.4rem;
+    top: 0;
+    margin-right: 14vw;
   }
 
   .header_nav {
@@ -1271,6 +1277,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
     /* margin-bottom: 14vw; */
   }
 
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 15vw !important;
+  }
+
   /* Games */
 
   .top_games_conatiner {
@@ -1360,7 +1371,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .sticky-item {
     display: inline-block;
-    font-size: 3.1vw;
+    font-size: 0.75rem;
     padding: 2vw 0.5vw 2vw 1.5vw;
     box-shadow: 0 0 1px 1vw #79c000;
     text-decoration: none;

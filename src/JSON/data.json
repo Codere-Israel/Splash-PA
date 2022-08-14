@@ -1,50 +1,88 @@
 {
   "desktop_slide_list": [
     {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/lanza_desktop.jpg",
-      "img_alt": "",
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/red-sox-yankees-desktop.jpg",
+      "img_alt": "Red-Sox VS Yankees",
+      "tycLink": "https://www.codere.pa/PromocionesTYC/PA-08.08.22-BEISBOL-CB25.html",
+      "startDate": "08/10/2022 09:00",
+      "endDate": "08/12/2022 23:59",
+      "regText": "Registrate"
+    },
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/bienvenida-desktop.jpg",
+      "img_alt": "Bienvenida",
       "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
       "startDate": "",
-      "endDate": ""
+      "endDate": "",
+      "regText": "Registrate"
+    },
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/recibe100Desktop.jpg",
+      "img_alt": "Bono de Bienvenida",
+      "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
+      "startDate": "",
+      "endDate": "",
+      "regText": "Registrate"
     },
     {
       "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/metodos_desktop.jpg",
-      "img_alt": "",
-      "tycLink": "",
-      "startDate": "",
-      "endDate": ""
-    },
-    {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/casino-retail-desktop.jpg",
-      "img_alt": "",
+      "img_alt": "Métodos de Pago",
       "tycLink": "",
       "startDate": "",
       "endDate": "",
-      "regText": "Encuentanos"
+      "regText": "Registrate"
+    },
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/casino-retail-desktop.jpg",
+      "img_alt": "Recarga Crow Casinos",
+      "tycLink": "",
+      "startDate": "",
+      "endDate": "",
+      "referLink": "https://m.codere.pa/deportespanama/#/NearestLocalPage",
+      "regText": "Encuentranos"
     }
   ],
   "mobile_slide_list": [
     {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/Splash/lanza_mobile.jpg",
-      "img_alt": "",
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/red-sox-yankees-mobile.jpg",
+      "img_alt": "Red-Sox VS Yankees",
+      "tycLink": "https://www.codere.pa/PromocionesTYC/PA-08.08.22-MADRID-EINTRACHT-20X10.html",
+      "startDate": "08/10/2022 09:00",
+      "endDate": "08/12/2022 23:59",
+      "regText": "Registrate"
+    },
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/bienvenida-mobile.jpg",
+      "img_alt": "bienvenida",
       "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
       "startDate": "",
-      "endDate": ""
+      "endDate": "",
+      "regText": "Registrate"
+    },
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/Splash/lanza_mobile.jpg",
+      "img_alt": "Bono de Bienvenida",
+      "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
+      "startDate": "",
+      "endDate": "",
+      "regText": "Registrate"
     },
     {
       "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/Splash/metodos_mobile.jpg",
-      "img_alt": "",
-      "tycLink": "",
-      "startDate": "",
-      "endDate": ""
-    },
-    {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/Splash/casino-retail-mobile.jpg",
-      "img_alt": "",
+      "img_alt": "Métodos de Pago",
       "tycLink": "",
       "startDate": "",
       "endDate": "",
-      "regText": "Encuentanos"
+      "regText": "Registrate"
+    },
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/Splash/casino-retail-mobile.jpg",
+      "img_alt": "Recarga Crown Casinos",
+      "tycLink": "",
+      "startDate": "",
+      "endDate": "",
+      "referLink": "https://m.codere.pa/deportespanama/#/NearestLocalPage",
+      "regText": "Encuentranos"
     }
   ]
 }

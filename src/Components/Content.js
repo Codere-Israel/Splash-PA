@@ -21,9 +21,9 @@ function Content(props) {
       <div className="row">
         <div className="col-12 col-sm-4 left-col">
           <Zoom triggerOnce>
-            <h2 className="bottomContentSubTitle">
+            <h1 className="bottomContentSubTitle">
               Bienvenido a la mejor casa de apuestas deportivas en Panamá
-            </h2>
+            </h1>
             <p className="bottomContentText">
               Gracias por aceptar el reto y ser parte de la mejor casa de
               apuestas en Panamá. Con nosotros podrás probar todos tus
@@ -43,11 +43,23 @@ function Content(props) {
               deportivas hoy:
             </p>
             <ul>
+              <li>
+                <a href="https://www.codere.pa/cuotas-deportivas/apuestas-futbol">
+                  Apuestas fútbol
+                </a>
+              </li>
+              <li>
+                <a href="https://www.codere.pa/cuotas-deportivas/apuestas-nfl-futbol-americano">
+                  Apuestas NFL
+                </a>
+              </li>
+              <li>
+                <a href="https://www.codere.pa/cuotas-deportivas/apuestas-beisbol-grandes-ligas">
+                  Apuestas MLB
+                </a>
+              </li>
               <li>Apuestas deportivas en vivo</li>
-              <li>Apuestas futbol</li>
               <li>Apuestas NBA</li>
-              <li>Apuestas NFL</li>
-              <li>Apuestas MLB</li>
               <li>Apuestas Champions</li>
             </ul>
             <p>Y mucha más variedad de apuestas deportivas para ti</p>
@@ -56,9 +68,9 @@ function Content(props) {
               tus apuestas deportivas en línea para que puedas ganar mucho
               dinero. Las mejores apuestas deportivas online está en Codere.
             </p>
-            <h3 className="bottomContentSubTitle">
+            <h2 className="bottomContentSubTitle">
               Guía rápida de apuestas deportivas en Codere
-            </h3>
+            </h2>
             <div className="bottomContentText">
               <p>
                 El mundo de las apuestas deportivas es emocionante y divertido,
@@ -111,7 +123,7 @@ function Content(props) {
                 encontrar un balance para poder disfrutar el juego.
               </p>
             </div>
-            <h2 className="bottomContentSubTitle">Aprender las Estrategias</h2>
+            <h3 className="bottomContentSubTitle">Aprender las Estrategias</h3>
             <div className="bottomContentText">
               <p>
                 Así como los equipos y jugadores arman sus estrategias para

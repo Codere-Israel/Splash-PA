@@ -128,13 +128,14 @@
   font-size: 13px;
 }
 
-[data-swiper-slide-index="2"] .rsbcText::before {
+/* [data-swiper-slide-index="2"] .rsbcText::before {
   content: "Encuentranos" !important;
 }
 .rsbcText::before {
   content: "Regístrate";
-}
+} */
 
+.regis-arrow,
 #game-svg {
   animation-name: sideToSide2;
   animation-duration: 1s;

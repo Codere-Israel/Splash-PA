@@ -15,6 +15,7 @@ import "swiper/css/autoplay";
 import { useState } from "react";
 
 var imgs = [];
+
 function MySwiper(props) {
   var regis = "https://m.codere.pa/deportespanama/#/RegistroPAPage";
 
@@ -34,9 +35,12 @@ function MySwiper(props) {
         loop={true}
       >
         {imgs.map((item, index) => {
+          let referlink = "";
           let d1,
             d2,
             cur = new Date();
+
+          item.referLink ? (referlink = item.referLink) : (referlink = regis);
 
           if (item.startDate != "" && item.endDate != "") {
             // Schedule both Start-Date and End Date
@@ -59,26 +63,31 @@ function MySwiper(props) {
           if (cur >= d1 && cur <= d2)
             return (
               <SwiperSlide key={index}>
-                <a href={regis}>
-                  <img src={item.image} style={{}} />
+                <a href={referlink}>
+                  <img src={item.image} alt={item.img_alt} />
                 </a>
                 {!props.isMobile ? (
                   <div className="slidebtn">
-                    <Button className="central-regis gl-effect" href={regis}>
+                    <Button
+                      className={item.regText + " central-regis gl-effect"}
+                      href={referlink}
+                    >
                       <FontAwesomeIcon icon={faAngleRight} />
                     </Button>
                     {item.tycLink ? (
-                      <a className="terms" href={item.tycLink}>
+                      <a className="terms" rel="nofollow" href={item.tycLink}>
                         Términos y condiciones
                       </a>
                     ) : null}
                   </div>
                 ) : (
                   <div className="slidebtn-mobile">
-                    <SlideButton regis={regis} regText="Regístrate" />
+                    <SlideButton regis={referlink} regText={item.regText} />
                     {item.tycLink ? (
                       <div id="tyc-mobile">
-                        <a href={item.tycLink}>Términos y condiciones</a>
+                        <a href={item.tycLink} rel="nofollow">
+                          Términos y condiciones
+                        </a>
                       </div>
                     ) : null}
                   </div>
