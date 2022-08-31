@@ -1,11 +1,19 @@
 {
   "desktop_slide_list": [
     {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/red-sox-yankees-desktop.jpg",
-      "img_alt": "Red-Sox VS Yankees",
-      "tycLink": "https://www.codere.pa/PromocionesTYC/PA-08.08.22-BEISBOL-CB25.html",
-      "startDate": "08/10/2022 09:00",
-      "endDate": "08/12/2022 23:59",
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/man-vs-liv-desktop.jpg",
+      "img_alt": "Man United vs Liverpool",
+      "tycLink": "https://www.codere.pa/PromocionesTYC/PA-20.08.22-MANUNITED-LIVERPOOL-10X5.html",
+      "startDate": "08/20/2022 09:00",
+      "endDate": "08/22/2022 14:00",
+      "regText": "Registrate"
+    },
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/mlb-cashback-desktop.jpg",
+      "img_alt": "Man United vs Liverpool",
+      "tycLink": "https://www.codere.pa/PromocionesTYC/PA-15.08.22-MULTI-CB25.html",
+      "startDate": "08/18/2022 09:00",
+      "endDate": "08/21/2022 23:59",
       "regText": "Registrate"
     },
     {
@@ -44,11 +52,19 @@
   ],
   "mobile_slide_list": [
     {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/red-sox-yankees-mobile.jpg",
-      "img_alt": "Red-Sox VS Yankees",
-      "tycLink": "https://www.codere.pa/PromocionesTYC/PA-08.08.22-MADRID-EINTRACHT-20X10.html",
-      "startDate": "08/10/2022 09:00",
-      "endDate": "08/12/2022 23:59",
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/man-vs-liv-mobile.jpg",
+      "img_alt": "Man United vs Liverpool",
+      "tycLink": "https://www.codere.pa/PromocionesTYC/PA-20.08.22-MANUNITED-LIVERPOOL-10X5.html",
+      "startDate": "08/20/2022 09:00",
+      "endDate": "08/22/2022 14:00",
+      "regText": "Registrate"
+    },
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/mlb-cashback-mobile.jpg",
+      "img_alt": "MLB",
+      "tycLink": "https://www.codere.pa/PromocionesTYC/PA-15.08.22-MULTI-CB25.html",
+      "startDate": "08/18/2022 09:00",
+      "endDate": "08/21/2022 23:59",
       "regText": "Registrate"
     },
     {
