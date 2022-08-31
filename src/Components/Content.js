@@ -12,7 +12,7 @@ var answers = [
   "Las apuestas deportivas consisten en apostar una cantidad monetaria a un determinado resultado o resultado de un evento deportivo. El propósito de una apuesta deportiva es beneficiarse de un pronóstico o predicción hecha para que el apostante, y este tenga una ganancia alta por el dinero apostado (el presupuesto multiplicador dividido por la cuota)",
   "Las Casas de apuesta deportiva Codere están alrededor de toda la ciudad de Panamá, en 6 diferentes Casinos Crown ( El Panamá, el Hipódromo, Continental, Riande, Sheraton, Soloy), , y muchos más que puedes ver al hacer clic en nuestra página web en la sección de Locales, donde podrás ver por google maps todas sucursales y direcciones.",
   "Los mejores Tips los puedes conseguir en nuestras redes sociales, en instagram @coderepan, donde tenemos nuestros videos semanales con nuestros influencers Rony Vargas y Nicolle Ferguson, los cuales dan su análisis en los diferentes partidos, para ayudar a nuestros clientes a hacer las mejores selecciones posibles para garantizar sus victorias en sus apuestas.",
-  "En Codere, al hacer una apuesta deportiva con varias selecciones de juegos, a esto se le llama un parley, el cual entre más juegos tengas, la cantidad de ganancia aumenta exponencialmente, para ganar una apuesta de parley todos los juegos seleccionados deben cumplir con el pronóstico escogido, dentro de Codere tenemos para los parleys una mejora del porcentaje de ganancia al poner más juegos, es decir además de aumentar la cantidad de ganancia por las líneas, damos un porcentaje extra por selecciones adicionales.",
+  "En Codere, al hacer una apuesta deportiva con varias selecciones de juegos, a esto se le llama un parlay, el cual entre más juegos tengas, la cantidad de ganancia aumenta exponencialmente, para ganar una apuesta de tipo parlay, todos los juegos seleccionados deben cumplir con el pronóstico escogido, dentro de Codere tenemos una mejora del porcentaje de ganancia al poner más juegos, es decir además de aumentar la cantidad de ganancia por las líneas, damos un porcentaje extra por selecciones adicionales.",
 ];
 
 function Content(props) {
@@ -64,12 +64,10 @@ function Content(props) {
             </ul>
             <p>Y mucha más variedad de apuestas deportivas para ti</p>
             <p>
-              Somos sin duda alguna el mejor lugar en Panamá para realizar todas
-              tus apuestas deportivas en línea para que puedas ganar mucho
-              dinero. Las mejores apuestas deportivas online está en Codere.
+            Somos sin duda alguna el mejor lugar en Panamá para realizar todas tus apuestas online, juega diviértete y genera ganancias. Las mejores apuestas en línea están en Codere.
             </p>
             <h2 className="bottomContentSubTitle">
-              Guía rápida de apuestas deportivas en Codere
+            Guía rápida de Apuestas Deportivas en Codere
             </h2>
             <div className="bottomContentText">
               <p>
@@ -79,10 +77,7 @@ function Content(props) {
                 tus apuestas deportivas.
               </p>
               <p>
-                Contamos con varios tipos de apuestas deportivas, tanto directas
-                como parlay. ¿Qué es un parlay? Es un tipo de apuesta donde
-                combinas varios resultados de ganadores o empates y que te
-                ayudan a maximizar tus ganancias.
+              Contamos con varios tipos de apuestas, tanto directas como parlay. ¿Qué es un parlay? Es un tipo de apuesta donde combinas varios resultados de ganadores o empates que te ayudan a maximizar tus ganancias.
               </p>
               <p>
                 Además de contar con una plataforma online amigable y fácil de
