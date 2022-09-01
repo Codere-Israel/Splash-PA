@@ -1,11 +1,11 @@
 {
   "desktop_slide_list": [
     {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/man-vs-liv-desktop.jpg",
-      "img_alt": "Man United vs Liverpool",
-      "tycLink": "https://www.codere.pa/PromocionesTYC/PA-20.08.22-MANUNITED-LIVERPOOL-10X5.html",
-      "startDate": "08/20/2022 09:00",
-      "endDate": "08/22/2022 14:00",
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/nfl-desktop.jpg",
+      "img_alt": "NFL",
+      "tycLink": "",
+      "startDate": "",
+      "endDate": "",
       "regText": "Registrate"
     },
     {
@@ -52,11 +52,11 @@
   ],
   "mobile_slide_list": [
     {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/man-vs-liv-mobile.jpg",
-      "img_alt": "Man United vs Liverpool",
-      "tycLink": "https://www.codere.pa/PromocionesTYC/PA-20.08.22-MANUNITED-LIVERPOOL-10X5.html",
-      "startDate": "08/20/2022 09:00",
-      "endDate": "08/22/2022 14:00",
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/nfl-mobile.jpg",
+      "img_alt": "NFL",
+      "tycLink": "",
+      "startDate": "",
+      "endDate": "",
       "regText": "Registrate"
     },
     {
