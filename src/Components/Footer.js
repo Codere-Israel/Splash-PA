@@ -6,7 +6,7 @@ import {
   faYoutube,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import { faComments, faHeadset } from "@fortawesome/free-solid-svg-icons";
+import { faComments, faHeadset, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 // Codere Footer \\
 function Footer() {
@@ -240,6 +240,17 @@ function Footer() {
                     >
                       <FontAwesomeIcon icon={faWhatsapp} />
                       {"  "} +507 6931 4912
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="tel:+5073772602"
+                      title=""
+                      rel="nofollow"
+                      className="whatsapp"
+                    >
+                      <FontAwesomeIcon icon={faPhone} />
+                      {"  "} + 507 377 2602
                     </a>
                   </li>
                   <li>
