@@ -1,27 +1,19 @@
 {
   "desktop_slide_list": [
     {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/nfl-desktop.jpg",
-      "img_alt": "NFL",
-      "tycLink": "",
-      "startDate": "",
-      "endDate": "",
-      "regText": "Registrate"
-    },
-    {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/mlb-cashback-desktop.jpg",
-      "img_alt": "Man United vs Liverpool",
-      "tycLink": "https://www.codere.pa/PromocionesTYC/PA-15.08.22-MULTI-CB25.html",
-      "startDate": "08/18/2022 09:00",
-      "endDate": "08/21/2022 23:59",
-      "regText": "Registrate"
-    },
-    {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/bienvenida-desktop.jpg",
-      "img_alt": "Bienvenida",
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/city-united-desktop.jpg",
+      "img_alt": "city-united",
       "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "09/30/2022 09:00",
+      "endDate": "10/02/2022 10:00",
+      "regText": "Registrate"
+    },
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/real-madrid-shakhtar-desktop.jpg",
+      "img_alt": "real-madrid-shakhtar",
+      "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
+      "startDate": "10/03/2022 09:00",
+      "endDate": "10/05/2022 14:00",
       "regText": "Registrate"
     },
     {
@@ -52,19 +44,19 @@
   ],
   "mobile_slide_list": [
     {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/nfl-mobile.jpg",
-      "img_alt": "NFL",
-      "tycLink": "",
-      "startDate": "",
-      "endDate": "",
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/city-united-mobile.jpg",
+      "img_alt": "city-united",
+      "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
+      "startDate": "09/30/2022 09:00",
+      "endDate": "10/02/2022 10:00",
       "regText": "Registrate"
     },
     {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/mlb-cashback-mobile.jpg",
-      "img_alt": "MLB",
-      "tycLink": "https://www.codere.pa/PromocionesTYC/PA-15.08.22-MULTI-CB25.html",
-      "startDate": "08/18/2022 09:00",
-      "endDate": "08/21/2022 23:59",
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/real-madrid-shakhtar-mobile.jpg",
+      "img_alt": "real-madrid-shakhtar",
+      "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
+      "startDate": "10/03/2022 09:00",
+      "endDate": "10/05/2022 14:00",
       "regText": "Registrate"
     },
     {
