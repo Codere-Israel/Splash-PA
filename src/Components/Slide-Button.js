@@ -7,7 +7,7 @@ import React, { Component } from "react";
 const slider = React.createRef();
 const container = React.createRef();
 const isTouchDevice = "ontouchstart" in document.documentElement;
-
+const regis = "https://m.codere.pa/deportespanama/#/RegistroPAPage";
 export default class SlideButton extends Component {
   state = {};
 
@@ -23,7 +23,7 @@ export default class SlideButton extends Component {
   }
 
   onDrag = (e) => {
-    console.log(this.sliderLeft);
+    // console.log(this.sliderLeft);
     if (this.unmounted || this.state.unlocked) return;
     if (this.isDragging) {
       if (isTouchDevice) {
@@ -41,8 +41,6 @@ export default class SlideButton extends Component {
     }
   };
 
-  // .swiper-slide .swiper-slide-duplicate.swiper-slide-visible.swiper-slide-active .swiper-no-swiping .rsbcSlider
-
   updateSliderStyle = () => {
     if (this.unmounted || this.state.unlocked) return;
     slider.current.style.left = this.sliderLeft + 50 + "px";
@@ -52,8 +50,8 @@ export default class SlideButton extends Component {
     if (this.unmounted || this.state.unlocked) return;
     if (this.isDragging) {
       this.isDragging = false;
-      if (this.sliderLeft > this.containerWidth * 0.65) {
-        window.location.href = this.props.regis;
+      if (this.sliderLeft > this.containerWidth * 0.55) {
+        window.location.href = regis;
 
         this.sliderLeft = this.containerWidth;
         if (this.props.onSuccess) {
@@ -108,8 +106,8 @@ export default class SlideButton extends Component {
 
   render() {
     return (
-      <div className="ReactSwipeButton mobile_regis swiper-no-swiping">
-        <a href={this.props.regis}>
+      <div className="ReactSwipeButton mobile_regis">
+        <a href={regis} rel={"nofollow"}>
           <div
             className={
               "rsbContainer " +
@@ -117,20 +115,18 @@ export default class SlideButton extends Component {
             }
             ref={container}
           >
-            {/* <div
+            <div
               className="rsbcSlider"
               ref={slider}
               onMouseDown={this.startDrag}
               onTouchStart={this.startDrag}
             >
+              {/* <span className="rsbcSliderArrow"></span> */}
               <span className="rsbcSliderCircle">
                 <FontAwesomeIcon icon={faChevronRight} />
               </span>
-            </div> */}
-            <div className={this.props.regText + " rsbcText shine"}>
-              {" "}
-              <FontAwesomeIcon className="regis-arrow" icon={faChevronRight} />
             </div>
+            <div className="rsbcText shine">{"Regístrate"}</div>
           </div>
         </a>
       </div>

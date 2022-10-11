@@ -10,11 +10,11 @@ function StickyFooter() {
         DEPORTES
       </a>
       <a
-        href="https://m.codere.pa/deportespanama/#/PromotionsPage"
+        href="https://m.codere.pa/deportespanama/#/CasinoPage"
         className="sticky-item"
         rel="nofollow"
       >
-        PROMOCIONES
+        ★ CASINO ★
       </a>
       <a
         href="https://m.codere.pa/deportespanama/#/DirectosPage"

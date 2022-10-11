@@ -1,21 +1,4 @@
 /* CSS */
-.swiper-slide.swiper-slide-duplicate.swiper-slide-visible.swiper-slide-active
-  .rsbcSliderCircle {
-  background-color: red;
-  z-index: 99999999999999999999999999999;
-}
-#tyc-mobile {
-  position: relative;
-  top: -23vw;
-}
-
-#tyc-mobile a {
-  color: #fff;
-}
-
-.slidebtn-mobile {
-  text-align: center;
-}
 
 .mobile_regis:active {
   box-shadow: 0 0.3em 1em -0.5em #14a73e98;
@@ -39,7 +22,7 @@
   width: 85%;
   height: 50px;
   position: absolute;
-  bottom: 24vw;
+  bottom: 29.5vw;
   z-index: 1;
 }
 
@@ -128,16 +111,7 @@
   font-size: 13px;
 }
 
-/* [data-swiper-slide-index="2"] .rsbcText::before {
-  content: "Encuentranos" !important;
-}
-.rsbcText::before {
-  content: "Regístrate";
-} */
-
-.regis-arrow,
 #game-svg {
-  animation-name: sideToSide2;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
@@ -148,47 +122,31 @@
   top: 2.2vw;
   width: 5vw;
   height: auto;
-  animation-name: sideToSide;
-  animation-duration: 1s;
+  animation-name: sds2;
+  animation-duration: 750ms;
   position: relative;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
 }
+@keyframes sds2 {
+  0% {
+    transform: translateX(0.6rem);
+  }
 
-.bottom-content .svg-inline--fa,
+  50% {
+    transform: translateX(-0.3rem);
+  }
+
+  100% {
+    transform: translateX(0.6rem);
+  }
+}
+
 .jugar-div .svg-inline--fa {
-  animation-name: sideToSide2;
-  animation-duration: 0.8s;
-  margin-left: 0.2vw;
-}
-
-@keyframes sideToSide {
-  0% {
-    transform: translateX(0.4vw);
-  }
-
-  50% {
-    transform: translateX(-0.5rem);
-  }
-
-  100% {
-    transform: translateX(0.4rem);
-  }
-}
-
-@keyframes sideToSide2 {
-  0% {
-    transform: translateX(0.2rem);
-  }
-
-  50% {
-    transform: translateX(-0.1rem);
-  }
-
-  100% {
-    transform: translateX(0.2rem);
-  }
+  animation-name: sts2;
+  animation-duration: 0.4s;
+  margin-left: 0.3vw;
 }
 
 .rsbcSliderCircle {
@@ -210,7 +168,7 @@
   float: left;
   position: absolute;
   top: 0.4vw;
-  left: 0;
+  left: 9vw;
   right: 0;
   line-height: 16vw;
   font-family: "Roboto", sans-serif;

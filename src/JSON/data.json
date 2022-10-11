@@ -1,96 +1,62 @@
 {
   "desktop_slide_list": [
     {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/city-united-desktop.jpg",
-      "img_alt": "city-united",
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/real-madrid-shakhtar-desktop.jpg",
+      "img_alt": "Bienvenida",
       "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
-      "startDate": "09/30/2022 09:00",
-      "endDate": "10/02/2022 10:00",
-      "regText": "Registrate"
+      "startDate": "",
+      "endDate": "10/05/2022 14:00"
     },
     {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/real-madrid-shakhtar-desktop.jpg",
-      "img_alt": "real-madrid-shakhtar",
-      "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
-      "startDate": "10/03/2022 09:00",
-      "endDate": "10/05/2022 14:00",
-      "regText": "Registrate"
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/casino-pa-desktop.jpg",
+      "img_alt": "Bienvenida",
+      "tycLink": "",
+      "startDate": "",
+      "endDate": ""
     },
     {
       "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/recibe100Desktop.jpg",
       "img_alt": "Bono de Bienvenida",
       "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
       "startDate": "",
-      "endDate": "",
-      "regText": "Registrate"
+      "endDate": ""
     },
     {
       "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/metodos_desktop.jpg",
       "img_alt": "Métodos de Pago",
       "tycLink": "",
       "startDate": "",
-      "endDate": "",
-      "regText": "Registrate"
-    },
-    {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/casino-retail-desktop.jpg",
-      "img_alt": "Recarga Crow Casinos",
-      "tycLink": "",
-      "startDate": "",
-      "endDate": "",
-      "referLink": "https://m.codere.pa/deportespanama/#/NearestLocalPage",
-      "regText": "Encuentranos"
+      "endDate": ""
     }
   ],
   "mobile_slide_list": [
     {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/city-united-mobile.jpg",
-      "img_alt": "city-united",
-      "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
-      "startDate": "09/30/2022 09:00",
-      "endDate": "10/02/2022 10:00",
-      "regText": "Registrate"
-    },
-    {
       "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/real-madrid-shakhtar-mobile.jpg",
-      "img_alt": "real-madrid-shakhtar",
-      "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
-      "startDate": "10/03/2022 09:00",
-      "endDate": "10/05/2022 14:00",
-      "regText": "Registrate"
-    },
-    {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/bienvenida-mobile.jpg",
       "img_alt": "bienvenida",
       "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
       "startDate": "",
-      "endDate": "",
-      "regText": "Registrate"
+      "endDate": "10/05/2022 14:00"
     },
     {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/Splash/lanza_mobile.jpg",
-      "img_alt": "Bono de Bienvenida",
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/casino-pa-mobile.jpg",
+      "img_alt": "Bienvenida",
+      "tycLink": "",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/recibe100Mobile.jpg",
+      "img_alt": "Bienvenida",
       "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
       "startDate": "",
-      "endDate": "",
-      "regText": "Registrate"
+      "endDate": ""
     },
     {
       "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/Splash/metodos_mobile.jpg",
       "img_alt": "Métodos de Pago",
       "tycLink": "",
       "startDate": "",
-      "endDate": "",
-      "regText": "Registrate"
-    },
-    {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/Splash/casino-retail-mobile.jpg",
-      "img_alt": "Recarga Crown Casinos",
-      "tycLink": "",
-      "startDate": "",
-      "endDate": "",
-      "referLink": "https://m.codere.pa/deportespanama/#/NearestLocalPage",
-      "regText": "Encuentranos"
+      "endDate": ""
     }
   ]
 }

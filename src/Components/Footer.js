@@ -6,7 +6,11 @@ import {
   faYoutube,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import { faComments, faHeadset, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faComments,
+  faHeadset,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 // Codere Footer \\
 function Footer() {
@@ -251,15 +255,6 @@ function Footer() {
                     >
                       <FontAwesomeIcon icon={faPhone} />
                       {"  "} + 507 377 2602
-                    </a>
-                  </li>
-                  <li>
-                    <p style={{ color: "#fff", marginBottom: 0 }}>
-                      Ave. Perú, Calle N° 35 Este, Edificio de Finanzas, Piso 8
-                      (507) 507-7864
-                    </p>
-                    <a href="mailto: jcj-quejas@mef.gob.pa" title="">
-                      jcj-quejas@mef.gob.pa
                     </a>
                   </li>
                 </ul>

@@ -38,9 +38,7 @@ function Content(props) {
             </p>
             <p>
               Con Codere podrás realizar tus apuestas deportivas online con las
-              ligas más importantes, los mejores equipos y los mejore jugadores.
-              Te traemos la mejor opción para que realices tus apuestas
-              deportivas hoy:
+              ligas más importantes, los mejores equipos y los mejore jugadores:
             </p>
             <ul>
               <li>
@@ -64,20 +62,24 @@ function Content(props) {
             </ul>
             <p>Y mucha más variedad de apuestas deportivas para ti</p>
             <p>
-            Somos sin duda alguna el mejor lugar en Panamá para realizar todas tus apuestas online, juega diviértete y genera ganancias. Las mejores apuestas en línea están en Codere.
+              Somos sin duda alguna el mejor lugar en Panamá para realizar todas
+              tus apuestas online, juega diviértete y genera ganancias. Las
+              mejores apuestas en línea están en Codere.
             </p>
             <h2 className="bottomContentSubTitle">
-            Guía rápida de Apuestas Deportivas en Codere
+              Guía rápida de Apuestas Deportivas en Codere
             </h2>
             <div className="bottomContentText">
               <p>
                 El mundo de las apuestas deportivas es emocionante y divertido,
                 donde con algo de información, conocimiento y estudio de
-                estadísticas, podrás armar las mejores estrategias para ganar
-                tus apuestas deportivas.
+                estadísticas, podrás armar las mejores estrategias para ganar.
               </p>
               <p>
-              Contamos con varios tipos de apuestas, tanto directas como parlay. ¿Qué es un parlay? Es un tipo de apuesta donde combinas varios resultados de ganadores o empates que te ayudan a maximizar tus ganancias.
+                Contamos con varios tipos de apuestas, tanto directas como
+                parlay. ¿Qué es un parlay? Es un tipo de apuesta donde combinas
+                varios resultados de ganadores o empates que te ayudan a
+                maximizar tus ganancias.
               </p>
               <p>
                 Además de contar con una plataforma online amigable y fácil de

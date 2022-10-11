@@ -19,8 +19,14 @@ function GameSwiper(props) {
         {props.games.map((item, index) => {
           return (
             <SwiperSlide key={index}>
-              <a href={item.gamelink}>
-                <img src={item.image} />
+              <a
+                href={
+                  "https://m.codere.pa/deportespanama/#/CasinoPage?playgame=PRP " +
+                  item.name
+                }
+                rel={"nofollow"}
+              >
+                <img src={item.image} alt={item.alt} />
               </a>
             </SwiperSlide>
           );
