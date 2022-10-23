@@ -46,7 +46,7 @@ function Header() {
   var LOGO = "";
   var curDate = new Date();
   var ScheduledLogoStartDate = new Date('10/24/2022 00:00');
-  var ScheduledLogoEndDate = new Date('11/01/2022 23:59');
+  var ScheduledLogoEndDate = new Date('10/31/2022 23:59');
   if (inBetween(ScheduledLogoStartDate, ScheduledLogoEndDate)) {
     LOGO = "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/halloweenLogo.png";
   } else {
