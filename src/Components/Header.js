@@ -41,9 +41,22 @@ function Header() {
     "https://m.codere.pa/deportespanama/#/HomePage?openlogin=true";
 
   // const URL = "https://dm.apuestas.codere.es/LoginServicesESApi/login/web";
-  const LOGO =
-    "https://www.codere.pa/_catalogs/masterpage/codere/img/SponsorsLogoCodere.png";
-
+  // const LOGO =
+  //   "https://www.codere.pa/_catalogs/masterpage/codere/img/SponsorsLogoCodere.png";
+  var LOGO = "";
+  var curDate = new Date();
+  var ScheduledLogoStartDate = new Date('10/24/2022 00:00');
+  var ScheduledLogoEndDate = new Date('11/01/2022 23:59');
+  if (inBetween(ScheduledLogoStartDate, ScheduledLogoEndDate)) {
+    LOGO = "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/halloweenLogo.png";
+  } else {
+    LOGO = "https://www.codere.pa/_catalogs/masterpage/codere/img/SponsorsLogoCodere.png";
+  }
+  function inBetween(date1, date2) {
+    if (curDate >= date1 && curDate <= date2)
+      return true;
+    return false;
+  }
   // Hooks
   const [show, setShow] = useState(false);
   const [email, setEmail] = useState("");
