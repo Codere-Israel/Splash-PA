@@ -1,0 +1,62 @@
+{
+  "desktop_slide_list": [
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/casino-pa-desktop.jpg",
+      "img_alt": "Bienvenida",
+      "tycLink": "",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/world-cup-desktop.jpg",
+      "img_alt": "world-cup",
+      "tycLink": "",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/recibe100Desktop.jpg",
+      "img_alt": "Bono de Bienvenida",
+      "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/metodos_desktop.jpg",
+      "img_alt": "Métodos de Pago",
+      "tycLink": "",
+      "startDate": "",
+      "endDate": ""
+    }
+  ],
+  "mobile_slide_list": [
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/casino-pa-mobile.jpg",
+      "img_alt": "Bienvenida",
+      "tycLink": "",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/world-cup-mobile.jpg",
+      "img_alt": "world-cup",
+      "tycLink": "",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/recibe100Mobile.jpg",
+      "img_alt": "Bienvenida",
+      "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/Splash/metodos_mobile.jpg",
+      "img_alt": "Métodos de Pago",
+      "tycLink": "",
+      "startDate": "",
+      "endDate": ""
+    }
+  ]
+}
