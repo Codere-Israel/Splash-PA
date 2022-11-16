@@ -1,0 +1,143 @@
+/* FOR STG */
+
+/* @font-face {
+  font-family: Codere;
+  src: url(../fonts/HighSchool-V3.1.ttf);
+} */
+
+/* For PRD */
+@font-face {
+  font-family: Codere;
+  src: url(https://www.codere.pa/static/media/HighSchool-V3.1.ttf);
+}
+@font-face {
+  font-family: Codere-Roboto;
+  src: url(https://www.codere.pa/static/media/roboto-all-400-normal.woff);
+}
+
+.banner_info:hover,
+.banner_info span,
+.banner_info span:visited,
+.banner_info p,
+.banner_info p:visited {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.test {
+  background-color: rgba(51, 63, 72, 0.8);
+}
+.banner_info {
+  text-decoration: none !important;
+  position: absolute;
+  width: 23vw;
+  height: 16.5vw;
+  top: 4vw;
+  left: 14vw;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 5;
+  border-radius: 8px;
+}
+
+.banner_title {
+  font-family: Codere;
+  font-size: 3.7vw;
+  font-weight: 400;
+  line-height: 3.85vw;
+}
+
+.banner_title:nth-child(1) {
+  /* margin-top: 0.5vw; */
+}
+
+.show_counter {
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 4vw;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.show_counter .countdown {
+  line-height: 3.5rem;
+  padding: 0 0.15rem 0 0.15rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.count_styling {
+  background-color: #dd2153;
+  border-radius: 5px;
+  font-size: 3.5vw;
+  margin-right: 1px;
+  margin-left: 1px;
+  width: 2.2vw;
+  height: 3.2vw;
+  line-height: 3.2vw;
+  text-align: center;
+  /* font-family: "Roboto Condensed"; */
+  font-family: Codere-Roboto;
+}
+
+.semicol {
+  font-size: 1.75vw;
+  margin-top: -0.5vw;
+}
+
+.show_counter .countdown > p {
+  margin: 0;
+}
+
+.show_counter .countdown > span {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+/* End Counter */
+
+@media only screen and (max-width: 767px) {
+  .banner_info {
+    width: 75vw;
+    height: 65vw;
+    top: 26vw;
+    left: 12vw;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .count_styling {
+    font-size: 10vw;
+    width: 6vw;
+    height: 2.3rem;
+    line-height: 2.4rem;
+    margin-top: 3vw;
+  }
+  .time_unit {
+    font-size: 0.55rem !important;
+  }
+
+  .banner_title {
+    font-family: Codere;
+    font-size: 11.5vw;
+    font-weight: 400;
+    line-height: 10vw;
+  }
+
+  .banner_title:nth-child(1) {
+    margin-top: 4vw;
+  }
+  .semicol {
+    font-size: 1.5rem;
+  }
+}

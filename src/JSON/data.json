@@ -1,11 +1,11 @@
 {
   "desktop_slide_list": [
     {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/real-madrid-shakhtar-desktop.jpg",
-      "img_alt": "Bienvenida",
-      "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/world-cup-desktop.jpg",
+      "img_alt": "world-cup",
+      "tycLink": "",
       "startDate": "",
-      "endDate": "10/05/2022 14:00"
+      "endDate": ""
     },
     {
       "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/casino-pa-desktop.jpg",
@@ -13,6 +13,13 @@
       "tycLink": "",
       "startDate": "",
       "endDate": ""
+    },
+    {
+      "image": "https://www.codere.pa/assets/inicio-banners/ger-vs-jap-desktop.jpg",
+      "img_alt": "ger-vs-jap",
+      "tycLink": "https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
+      "startDate": "Nov 05 2022 09:00",
+      "endDate": "Nov 23 2022 08:00"
     },
     {
       "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/recibe100Desktop.jpg",
@@ -31,11 +38,11 @@
   ],
   "mobile_slide_list": [
     {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/real-madrid-shakhtar-mobile.jpg",
-      "img_alt": "bienvenida",
-      "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
+      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/world-cup-mobile.jpg",
+      "img_alt": "world-cup",
+      "tycLink": "",
       "startDate": "",
-      "endDate": "10/05/2022 14:00"
+      "endDate": ""
     },
     {
       "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/casino-pa-mobile.jpg",
@@ -43,6 +50,13 @@
       "tycLink": "",
       "startDate": "",
       "endDate": ""
+    },
+    {
+      "image": "https://www.codere.pa/assets/inicio-banners/ger-vs-jap-mobile.jpg",
+      "img_alt": "ger-vs-jap",
+      "tycLink": "https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
+      "startDate": "Nov 05 2022 09:00",
+      "endDate": "Nov 23 2022 08:00"
     },
     {
       "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/recibe100Mobile.jpg",

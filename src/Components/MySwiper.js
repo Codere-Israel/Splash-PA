@@ -1,10 +1,12 @@
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiperSlide, useSwiper } from "swiper/react";
 import { Autoplay, Pagination, EffectFade, Lazy } from "swiper";
 import SlideButton from "./Slide-Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "react-bootstrap";
+import Timer from "./Timer";
 import banners from "../JSON/data.json";
+import { useState } from "react";
 
 import "swiper/css";
 import "swiper/css/lazy";
@@ -12,10 +14,22 @@ import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import "swiper/css/autoplay";
 import { isMobileContext } from "../App";
-var imgs = [];
 
-function MySwiper(props) {
-  var regis = "https://m.codere.pa/deportespanama/#/RegistroPAPage";
+var imgs = [];
+const regis = "https://m.codere.pa/deportespanama/#/RegistroPAPage";
+
+function MySwiper() {
+  const [showTimer, setShowTimer] = useState(false);
+  const [delay, setDelay] = useState(400);
+
+  const indexHandler = (swiper) => {
+    // console.log(swiper);
+    if (swiper.realIndex === 0) setShowTimer(true);
+    else {
+      setShowTimer(false);
+      setDelay(100);
+    }
+  };
 
   return (
     <isMobileContext.Consumer>
@@ -26,6 +40,8 @@ function MySwiper(props) {
         return (
           <div id="carousel-section">
             <Swiper
+              onSlideChange={(swiper) => indexHandler(swiper)}
+              // onChange={console.log("changed")}
               modules={[Pagination, EffectFade, Autoplay, Lazy]}
               pagination={{ clickable: true }}
               effect={"fade"}
@@ -97,6 +113,11 @@ function MySwiper(props) {
               })}
             </Swiper>
             {isMobile ? <SlideButton regis={regis} /> : null}
+            {showTimer && new Date() <= new Date("2022-11-20T16:00:00Z") ? (
+              <Timer delay={delay} />
+            ) : (
+              <></>
+            )}
           </div>
         );
       }}

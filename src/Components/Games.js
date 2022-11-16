@@ -15,9 +15,9 @@ function Games() {
       {(isMobile) => {
         return isMobile ? (
           <section id="mobile-games-section">
-            <h2 className="gamesTitle"> JUEGOS DESTACADOS </h2>
+            <h2 className="gamesTitle"> Juegos Destacados </h2>
             <GameSwiper games={gameCarousel.first_slide_list} />
-            <h2 className="gamesTitle mt-3"> NUEVOS JUEGOS </h2>
+            <h2 className="gamesTitle mt-3"> Nuevos Juegos </h2>
             <GameSwiper games={gameCarousel.second_slide_list} />
           </section>
         ) : (
@@ -46,6 +46,7 @@ function Games() {
                 return (
                   <BottomGame
                     key={key}
+                    index={key}
                     img={item.image}
                     logo={item.logo}
                     gameLink={item.gamelink}

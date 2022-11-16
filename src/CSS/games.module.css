@@ -224,7 +224,7 @@ img.game_logo:hover {
 
 .bottom_box .logo {
   position: absolute;
-  z-index: 9999;
+  z-index: 1;
 }
 
 .bottom_conatiner .bottom_card .bottom_box .bottom_content p {
@@ -296,4 +296,47 @@ img.game_logo:hover {
 
 .row {
   justify-content: center;
+}
+
+/* TEST */
+
+.shiny {
+  overflow: hidden;
+}
+
+.shiny::before {
+  animation-name: slide;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 6vw;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: skewX(155deg);
+  /* transform: scale(1.2); */
+  /* animation-name: slide; */
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  /* animation-delay: 2.2s; */
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.03) 20%,
+    rgba(176, 209, 240, 0.445) 100%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(61, 86, 201, 0.1) 30%
+  );
+  z-index: 1;
+}
+@keyframes slide {
+  0% {
+    left: -20vw;
+    top: 0;
+  }
+  100% {
+    left: 30vw;
+    top: 0;
+  }
 }

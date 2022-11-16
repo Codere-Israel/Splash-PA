@@ -154,28 +154,29 @@ function Content(props) {
                 deportiva con bases y con la que puedes estar tranquilo con su
                 resultado.
               </p>
+              <p>
+                Este es un mundo apasionante y en Codere queremos que te lo
+                goces desde el primer día que decidas jugar en nuestra casa.
+                Sigue estos tips, así como tu estrategia, y seguro la pasarás
+                muy bien.
+              </p>
+              <p>
+                Apuesta lo que puedas, nunca más. Sabemos que los deportes
+                levantan muchas emociones, pero es importante saber controlarlas
+                y poner un límite de cuanto puedes y quieres gastar.
+              </p>
             </div>
           </Zoom>
         </div>
         <div className="col-12 col-sm-4 right-col">
           <Zoom triggerOnce>
             <p>
-              Apuesta lo que puedes, nunca más. Sabemos que los deportes
-              levantan muchas emociones, pero es importante saber controlarlas y
-              poner un límite de cuanto puedes y quieres gastar.
-            </p>
-            <p>
               Distribuye el presupuesto. La manera más recomendable luego de
               elegir un monto para tus apuestas deportivas, es saberlo
-              distribuir. Ya sea por día, por semana, por equipo, por liga o
-              como prefieras. De esa manera podrás divertirte y jugar de manera
+              distribuir y tomar el dinero destinado al juego como dinero que ya
+              se fue. Ya sea por día, por semana, por equipo, por liga o como
+              prefieras. De esa manera podrás divertirte y jugar de manera
               inteligente.
-            </p>
-            <p>
-              Los profesionales recomiendan tomar el dinero destinado al juego
-              como dinero que ya se fue. Si ganas una apuesta deportiva,
-              celebras y cobras. Y si no ganas, no pasa nada, era el dinero que
-              tenías destinado para ese fin.
             </p>
             <p>
               No apuestes para recuperar. El dinero perdido, perdido está y
@@ -183,29 +184,49 @@ function Content(props) {
               futuras oportunidades para ganar.
             </p>
             <p>
-              Mantén tu zona de confort. A todos nos gustan varios deportes,
-              pero siempre nos destacamos en uno y del que más información
-              tenemos. Apostar a deportes que no dominas o no conoces,
-              generalmente no trae buenos resultados. Si te gusta el fútbol,
-              realiza apuestas deportivas de fútbol.
-            </p>
-            <p>
               Este es un mundo apasionante y en Codere queremos que te lo goces
               desde el primer día que decidas jugar en nuestra casa. Sigue estos
               tips, así como tu estrategia, y seguro la pasarás muy bien.
             </p>
             <h2 className="bottomContentSubTitle">
-              ¿Por qué Codere es el sitio más seguro para hacer tus apuestas
-              deportivas?
+              EL Mejor Casino online de Panamá está en Codere.pa
             </h2>
             <div className="bottomContentText">
               <p>
-                En el país contamos con un equipo humano de la más alta calidad,
-                dedicados a crear experiencias únicas en todas nuestras
-                plataformas y salas de juego. Todos nuestros procesos están
-                diseñados, operados y vigilados por personas y tecnologías
-                especializadas en la industria.
+                Ahora también ofrecemos la mejor plataforma de casino online en
+                Panamá, con una variedad de juegos de Casino como las
+                tradicionales ruletas virtuales, tragamonedas, blackjack y
+                muchos más.
               </p>
+              <p>
+                Jugar con nosotros, es una experiencia novedosa e intuitiva, que
+                hará que te sientas como en un casino físico, pero desde la
+                comodidad de tu casa porque nosotros cambiamos el juego.
+              </p>
+              <p>
+                Es hora de que conozcas nuestros juegos en línea y sigas
+                disfrutando de lo mejor del casino online desde tu dispositivo
+                móvil o computadora, a un solo click de distancia..
+              </p>
+              <p>
+                Aquí encontrarás todas las mesas y máquinas de slots que te
+                puedas imaginar. Puedes recorrer nuestras salas y escoger el
+                juego que más te divierta, siempre con la seguridad de que
+                trabajamos con integridad y transparencia..
+              </p>
+              <p>
+                Ningún otro casino online en Panamá te va a consentir tanto como
+                Codere. Buscando siempre la mejor experiencia para el usuario,
+                tendremos sorpresas, promociones, bonos y mucho más para ti.
+                Todos nuestros esfuerzos buscan asegurarte una experiencia
+                inigualable, y estamos seguros, que así será..
+              </p>
+            </div>
+            <h2 className="bottomContentSubTitle">
+              ¿Por qué Codere es el sitio más seguro para hacer tus apuestas
+              deportivas y juegos de casino?
+            </h2>
+            <div className="bottomContentText">
               <p>
                 40 años de presencia en el mundo, creciendo consistentemente
                 como multinacional, respaldan todas nuestras operaciones y esto
@@ -225,32 +246,39 @@ function Content(props) {
       <Table striped bordered hover variant="dark">
         <tbody>
           <tr>
-            <td>Inicio de operaciones </td>
+            <td>🏆 Establecido</td>
             <td>2005</td>
           </tr>
           <tr>
-            <td>Apuestas Deportivas</td>
+            <td>⚽ Apuestas Deportivas</td>
             <td>Apuestas NFL, Apuestas MLB, Apuestas LaLiga Santander y más</td>
           </tr>
           <tr>
-            <td>Licencia</td>
-            <td>Contrato No. 2021-006 de 26 de mayo de 2021</td>
+            <td>🎰 Juegos de Casino</td>
+            <td>Máquinas tragamonedas (slots), ruleta y blackjack</td>
           </tr>
           <tr>
-            <td>Moneda</td>
+            <td>🎲 Licencia</td>
+            <td>
+              Contratos Nº 38 de 22/01/2003 y Nº 193 de 4/10/2005, y Resolución
+              Nº. 921 de 21/09/2017.
+            </td>
+          </tr>
+          <tr>
+            <td>✔️ Moneda</td>
             <td>Dólares</td>
           </tr>
           <tr>
-            <td>Depósito mínimo</td>
-            <td>$20 Dolares</td>
+            <td>💰 Depósito mínimo</td>
+            <td>Minimo $10 Dolares</td>
           </tr>
           <tr>
-            <td>Limites de Retiros</td>
+            <td>💸 Limites de Retiros</td>
             <td>Retiro mínimo es de $50.</td>
           </tr>
           <tr>
-            <td>Formas de Pago </td>
-            <td>Visa, Mastercard, Transferencia bancaria, Punto Pago</td>
+            <td>💳 Formas de Pago </td>
+            <td>Visa, Mastercard, Tranferecnia Bancaria, Punto Pago</td>
           </tr>
         </tbody>
       </Table>

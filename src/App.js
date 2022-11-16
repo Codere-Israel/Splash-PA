@@ -1,13 +1,18 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import "@fontsource/roboto-condensed";
 import Header from "./Components/Header";
 import MySwiper from "./Components/MySwiper";
+import Timer from "./Components/Timer";
+import SportGames from "./Components/SportGames";
 import Games from "./Components/Games";
 import Content from "./Components/Content";
 import Footer from "./Components/Footer";
 import StickyFooter from "./Components/StickyFooter";
 import { isMobile } from "react-device-detect";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
+import { Zoom, Slide, Fade } from "react-awesome-reveal";
+
 // import Axios from "axios";
 
 export const isMobileContext = React.createContext();
@@ -37,13 +42,19 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const memoSwiper = useMemo(() => {
+    return <MySwiper />;
+  }, []);
+
   return (
     <div className="App">
       <isMobileContext.Provider value={flag}>
         <div id="first-section">
           <Header />
           {flag ? <StickyFooter /> : null}
-          <MySwiper />
+          {memoSwiper}
+
+          <SportGames />
         </div>
         <Games />
         <Content />

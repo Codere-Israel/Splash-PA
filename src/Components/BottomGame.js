@@ -11,9 +11,13 @@ function BottomGame(props) {
       <div className={gameCSS.bottom_card}>
         <div className={gameCSS.bottom_box}>
           <div className={gameCSS.game}>
-            <div className="avner">
+            {props.index == 1 ? (
+              <div className={gameCSS.shiny}>
+                <img src={props.img} alt={props.alt} />
+              </div>
+            ) : (
               <img src={props.img} alt={props.alt} />
-            </div>
+            )}
           </div>
 
           <div className={gameCSS.logo}>
