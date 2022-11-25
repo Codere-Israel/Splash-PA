@@ -411,8 +411,33 @@ body {
 
 /* Swiper */
 
-.swiper-slide img {
+#mobile-games-section .swiper-slide-next img {
+  position: unset;
+  transform: scale(1.1) !important;
+  filter: grayscale(0) !important;
+  /* transition: transform 1000ms; */
+  transition: all 750ms;
+}
+
+#mobile-games-section .swiper-slide img {
+  /* width: 100%; */
+  overflow: visible;
+  transform: scale(0.9);
+  filter: grayscale(60%) blur(1px);
+
+  transition: all 1000ms;
+}
+
+.swiper-slide a img {
   width: 100%;
+}
+
+.game-carousel img {
+  width: 80%;
+  /* height: 95%; */
+  border-radius: 15px;
+  box-shadow: rgba(0255, 255, 255, 0.66) 0px 0px 3px,
+    rgb(0, 0, 0) 0px 0px 1px 2px;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets,
