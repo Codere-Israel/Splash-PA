@@ -1,11 +1,11 @@
 {
   "desktop_slide_list": [
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/cr-vs-alem-desktop.jpg",
+      "image": "https://www.codere.pa/assets/inicio-banners/PaísesBajosVsEstadosUnidosDesktop.jpg",
       "img_alt": "cr-vs-alemenia",
-      "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
-      "startDate": "Nov 29 2022 09:00",
-      "endDate": "Nov 30 2022 09:00"
+      "tycLink": "https://www.codere.pa/PromocionesTYC/PA-21.11.22-BRASIL-SERBIA-10X5.htmll",
+      "startDate": "Dec 02 2022 10:01",
+      "endDate": "Dec 03 2022 20:00"
     },
     {
       "image": "https://www.codere.pa/assets/inicio-banners/corea-vs-port-desktop.jpg",
@@ -45,11 +45,11 @@
   ],
   "mobile_slide_list": [
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/cr-vs-alem-mobile.jpg",
+      "image": "https://www.codere.pa/assets/inicio-banners/PaísesBajosVsEstadosUnidosMobile.jpg",
       "img_alt": "cr-vs-alemenia",
-      "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
-      "startDate": "Nov 29 2022 09:00",
-      "endDate": "Nov 30 2022 09:00"
+      "tycLink": "https://www.codere.pa/PromocionesTYC/PA-21.11.22-BRASIL-SERBIA-10X5.htmll",
+      "startDate": "Dec 02 2022 10:01",
+      "endDate": "Dec 03 2022 20:00"
     },
     {
       "image": "https://www.codere.pa/assets/inicio-banners/corea-vs-port-mobile.jpg",
