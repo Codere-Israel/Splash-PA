@@ -19,16 +19,17 @@ var imgs = [];
 const regis = "https://m.codere.pa/deportespanama/#/RegistroPAPage";
 
 function MySwiper() {
+  const dateToCount = "";
   const [showTimer, setShowTimer] = useState(false);
   const [delay, setDelay] = useState(400);
 
   const indexHandler = (swiper) => {
     // console.log(swiper);
-    if (swiper.realIndex === 0) setShowTimer(true);
-    else {
-      setShowTimer(false);
-      setDelay(100);
-    }
+    // if (swiper.realIndex === 0) setShowTimer(true);
+    // else {
+    //   setShowTimer(false);
+    //   setDelay(100);
+    // }
   };
 
   return (
@@ -46,7 +47,7 @@ function MySwiper() {
               pagination={{ clickable: true }}
               effect={"fade"}
               lazy={{ loadPrevNext: true, loadPrevNextAmount: 1 }}
-              autoplay={{ delay: 3250 }}
+              autoplay={{ delay: 3250, disableOnInteraction: false }}
               spaceBetween={0}
               slidesPerView={1}
               loop={true}
@@ -112,12 +113,8 @@ function MySwiper() {
                   );
               })}
             </Swiper>
+            {/* Timer for live Text */}
             {isMobile ? <SlideButton regis={regis} /> : null}
-            {showTimer && new Date() <= new Date("2022-11-20T16:00:00Z") ? (
-              <Timer delay={delay} />
-            ) : (
-              <></>
-            )}
           </div>
         );
       }}

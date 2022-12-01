@@ -5,20 +5,21 @@ import GameSwiper from "./GameSwiper";
 import gameCarousel from "../JSON/mob-games.json";
 import deskGames from "../JSON/desktop-games.json";
 import { isMobileContext } from "../App";
+import { useState } from "react";
+
 // import { isMobile } from "react-device-detect";
 // Top Games \\
 
 function Games() {
-  // console.log(gameCarousel);
   return (
     <isMobileContext.Consumer>
       {(isMobile) => {
         return isMobile ? (
           <section id="mobile-games-section">
             <h2 className="gamesTitle"> Juegos Destacados </h2>
-            <GameSwiper games={gameCarousel.first_slide_list} />
+            <GameSwiper games={gameCarousel.first_slide_list} order={0} />
             <h2 className="gamesTitle mt-3"> Nuevos Juegos </h2>
-            <GameSwiper games={gameCarousel.second_slide_list} />
+            <GameSwiper games={gameCarousel.second_slide_list} order={1} />
           </section>
         ) : (
           <div id={gameCSS.desktop_games}>

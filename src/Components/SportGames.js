@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 
 import sportCSS from "../CSS/sportgames.module.css";
 import { isMobileContext } from "../App";
-// import { sortByDate } from "../App";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Lazy, Navigation } from "swiper";
 import { Card } from "react-bootstrap";
+
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -42,6 +42,7 @@ function SportGames() {
       setData(
         res.data
           .sort((a, b) => new Date(a.StartDate) - new Date(b.StartDate))
+          .filter((item) => item.Games.length > 0)
           .slice(0, 6)
       );
       setShowSpinner(false);
@@ -94,7 +95,7 @@ function SportGames() {
           <isMobileContext.Consumer>
             {(isMobile) => {
               return (
-                <>
+                <div className={sportCSS.wrapper}>
                   <h2
                     style={{
                       color: "#79c000",
@@ -236,11 +237,10 @@ function SportGames() {
                       </SwiperSlide>
                     ))}
                   </Swiper>
-                </>
+                </div>
               );
             }}
           </isMobileContext.Consumer>
-
           <div className={sportCSS.arrows}>
             <div className={sportCSS.prev + " prev"}>
               <FontAwesomeIcon icon={faChevronLeft} />

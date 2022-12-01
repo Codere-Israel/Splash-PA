@@ -1,15 +1,14 @@
 /* FOR STG */
-
 /* @font-face {
   font-family: Codere;
   src: url(../fonts/HighSchool-V3.1.ttf);
 } */
 
 /* For PRD */
-@font-face {
+/* @font-face {
   font-family: Codere;
   src: url(https://www.codere.pa/static/media/HighSchool-V3.1.ttf);
-}
+} */
 @font-face {
   font-family: Codere-Roboto;
   src: url(https://www.codere.pa/static/media/roboto-all-400-normal.woff);
@@ -43,13 +42,10 @@
 
 .banner_title {
   font-family: Codere;
+  /* font-family: "Roboto Condensed"; */
   font-size: 3.7vw;
   font-weight: 400;
   line-height: 3.85vw;
-}
-
-.banner_title:nth-child(1) {
-  /* margin-top: 0.5vw; */
 }
 
 .show_counter {
@@ -110,7 +106,7 @@
   .banner_info {
     width: 75vw;
     height: 65vw;
-    top: 26vw;
+    top: 16vw;
     left: 12vw;
     color: #fff;
     text-align: center;
@@ -129,9 +125,9 @@
 
   .banner_title {
     font-family: Codere;
-    font-size: 11.5vw;
+    font-size: 12.5vw;
     font-weight: 400;
-    line-height: 10vw;
+    line-height: 14vw;
   }
 
   .banner_title:nth-child(1) {

@@ -11,8 +11,8 @@ function GameSwiper(props) {
       <Swiper
         modules={[Autoplay, Lazy]}
         lazy={{ loadPrevNext: true, loadPrevNextAmount: 1 }}
-        autoplay={{ delay: 1000 }}
-        spaceBetween={15}
+        autoplay={{ delay: 1200 }}
+        spaceBetween={5}
         slidesPerView={3}
         loop={true}
       >

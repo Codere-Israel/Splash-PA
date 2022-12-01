@@ -1,11 +1,25 @@
 {
   "desktop_slide_list": [
     {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/world-cup-desktop.jpg",
-      "img_alt": "world-cup",
-      "tycLink": "",
+      "image": "https://www.codere.pa/assets/inicio-banners/cr-vs-alem-desktop.jpg",
+      "img_alt": "cr-vs-alemenia",
+      "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
+      "startDate": "Nov 29 2022 09:00",
+      "endDate": "Nov 30 2022 09:00"
+    },
+    {
+      "image": "https://www.codere.pa/assets/inicio-banners/corea-vs-port-desktop.jpg",
+      "img_alt": "corea-vs-portugal",
+      "tycLink": "https://www.codere.pa/PromocionesTYC/PA-21.11.22-BRASIL-SERBIA-10X5.html",
+      "startDate": "Nov 30 2022 09:00",
+      "endDate": "Dec 02 2022 10:00"
+    },
+    {
+      "image": "https://www.codere.pa/assets/inicio-banners/copa-main-desktop.jpg",
+      "img_alt": "copa-main",
+      "tycLink": "https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
       "startDate": "",
-      "endDate": ""
+      "endDate": "Dec 19 2022 08:00"
     },
     {
       "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/casino-pa-desktop.jpg",
@@ -15,18 +29,11 @@
       "endDate": ""
     },
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/ger-vs-jap-desktop.jpg",
-      "img_alt": "ger-vs-jap",
-      "tycLink": "https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "Nov 05 2022 09:00",
-      "endDate": "Nov 23 2022 08:00"
-    },
-    {
       "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/recibe100Desktop.jpg",
       "img_alt": "Bono de Bienvenida",
       "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
       "startDate": "",
-      "endDate": ""
+      "endDate": "Nov 06 1992 03:00"
     },
     {
       "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/metodos_desktop.jpg",
@@ -38,11 +45,25 @@
   ],
   "mobile_slide_list": [
     {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/world-cup-mobile.jpg",
-      "img_alt": "world-cup",
-      "tycLink": "",
+      "image": "https://www.codere.pa/assets/inicio-banners/cr-vs-alem-mobile.jpg",
+      "img_alt": "cr-vs-alemenia",
+      "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
+      "startDate": "Nov 29 2022 09:00",
+      "endDate": "Nov 30 2022 09:00"
+    },
+    {
+      "image": "https://www.codere.pa/assets/inicio-banners/corea-vs-port-mobile.jpg",
+      "img_alt": "corea-vs-portugal",
+      "tycLink": "https://www.codere.pa/PromocionesTYC/PA-21.11.22-BRASIL-SERBIA-10X5.html",
+      "startDate": "Nov 30 2022 09:00",
+      "endDate": "Dec 02 2022 10:00"
+    },
+    {
+      "image": "https://www.codere.pa/assets/inicio-banners/copa-main-mobile.jpg",
+      "img_alt": "copa-main",
+      "tycLink": "https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
       "startDate": "",
-      "endDate": ""
+      "endDate": "Dec 19 2022 08:00"
     },
     {
       "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/casino-pa-mobile.jpg",
@@ -52,18 +73,11 @@
       "endDate": ""
     },
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/ger-vs-jap-mobile.jpg",
-      "img_alt": "ger-vs-jap",
-      "tycLink": "https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "Nov 05 2022 09:00",
-      "endDate": "Nov 23 2022 08:00"
-    },
-    {
       "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/recibe100Mobile.jpg",
       "img_alt": "Bienvenida",
       "tycLink": "https://www.codere.pa/PromocionesTYC/Bono_Bienvenida_100.html",
       "startDate": "",
-      "endDate": ""
+      "endDate": "Nov 10 1992 05:00"
     },
     {
       "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/Splash/metodos_mobile.jpg",
