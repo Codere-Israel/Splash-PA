@@ -5,10 +5,10 @@
 } */
 
 /* For PRD */
-/* @font-face {
+@font-face {
   font-family: Codere;
   src: url(https://www.codere.pa/static/media/HighSchool-V3.1.ttf);
-} */
+}
 @font-face {
   font-family: Codere-Roboto;
   src: url(https://www.codere.pa/static/media/roboto-all-400-normal.woff);

@@ -4,7 +4,7 @@ import SlideButton from "./Slide-Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "react-bootstrap";
-import Timer from "./Timer";
+import Timer2 from "./Timer2.0";
 import banners from "../JSON/data.json";
 import { useState } from "react";
 
@@ -19,25 +19,37 @@ var imgs = [];
 const regis = "https://m.codere.pa/deportespanama/#/RegistroPAPage";
 
 function MySwiper() {
-  const dateToCount = "";
+  const DATE_TO_COUNT = "2022-12-18T15:00:00Z";
   const [showTimer, setShowTimer] = useState(false);
   const [delay, setDelay] = useState(400);
 
   const indexHandler = (swiper) => {
-    // console.log(swiper);
-    // if (swiper.realIndex === 0) setShowTimer(true);
-    // else {
-    //   setShowTimer(false);
-    //   setDelay(100);
-    // }
+    if (swiper.realIndex === 0) setShowTimer(true);
+    else {
+      setShowTimer(false);
+      setDelay(100);
+    }
   };
+
+  function dateInBetween(banner) {
+    return (
+      new Date() >= new Date(banner.startDate) &&
+      new Date() <= new Date(banner.endDate)
+    );
+  }
+
+  function BannerFilter(banner) {
+    if (!banner.scheduled) return banner;
+    else {
+      if (dateInBetween(banner)) return banner;
+    }
+  }
 
   return (
     <isMobileContext.Consumer>
       {(isMobile) => {
-        if (!isMobile) imgs = banners.desktop_slide_list;
-        else imgs = banners.mobile_slide_list;
-
+        if (!isMobile) imgs = banners.desktop_slide_list.filter(BannerFilter);
+        else imgs = banners.mobile_slide_list.filter(BannerFilter);
         return (
           <div id="carousel-section">
             <Swiper
@@ -48,70 +60,49 @@ function MySwiper() {
               effect={"fade"}
               lazy={{ loadPrevNext: true, loadPrevNextAmount: 1 }}
               autoplay={{ delay: 3250, disableOnInteraction: false }}
+              // autoplay={{ delay: 3250, disableOnInteraction: true }}
               spaceBetween={0}
               slidesPerView={1}
               loop={true}
             >
-              {imgs.map((item, index) => {
-                let d1,
-                  d2,
-                  cur = new Date();
+              {imgs.map((item, index) => (
+                <SwiperSlide key={index}>
+                  <a href={regis}>
+                    <img src={item.image} alt={item.img_alt} />
+                  </a>
 
-                if (item.startDate != "" && item.endDate != "") {
-                  // Schedule both Start-Date and End Date
-                  d1 = new Date(item.startDate);
-                  d2 = new Date(item.endDate);
-                } else if (item.startDate == "" && item.endDate != "") {
-                  // Schedule End-Date Without Starting
-                  d1 = new Date("01/01/1970");
-                  d2 = new Date(item.endDate);
-                } else if (item.startDate != "" && item.endDate == "") {
-                  // Schedule Start-Date Without ending
-                  d1 = new Date(item.startDate);
-                  d2 = new Date("01/01/2500");
-                } else {
-                  // No Scheduling
-                  d1 = new Date("01/01/1970");
-                  d2 = new Date("01/01/2500");
-                }
-
-                if (cur >= d1 && cur <= d2)
-                  return (
-                    <SwiperSlide key={index}>
-                      <a href={regis}>
-                        <img src={item.image} alt={item.img_alt} />
-                      </a>
-
-                      {!isMobile ? (
-                        <div id="des-reg">
-                          <Button
-                            className="central-regis gl-effect"
-                            href={regis}
-                            rel={"nofollow"}
-                          >
-                            Regístrate
-                            <FontAwesomeIcon icon={faAngleRight} />
-                          </Button>
-                          {item.tycLink ? (
-                            <a className="tyc" href={item.tycLink}>
-                              Términos y condiciones
-                            </a>
-                          ) : null}
+                  {!isMobile ? (
+                    <div id="des-reg">
+                      <Button
+                        className="central-regis gl-effect"
+                        href={regis}
+                        rel={"nofollow"}
+                      >
+                        Regístrate
+                        <FontAwesomeIcon icon={faAngleRight} />
+                      </Button>
+                      {item.tycLink ? (
+                        <a className="tyc" href={item.tycLink}>
+                          Términos y condiciones
+                        </a>
+                      ) : null}
+                    </div>
+                  ) : (
+                    <>
+                      {item.tycLink ? (
+                        <div className="mob-tyc">
+                          <a className="tyc" href={item.tycLink}>
+                            Términos y condiciones
+                          </a>
                         </div>
-                      ) : (
-                        <>
-                          {item.tycLink ? (
-                            <div className="mob-tyc">
-                              <a className="tyc" href={item.tycLink}>
-                                Términos y condiciones
-                              </a>
-                            </div>
-                          ) : null}
-                        </>
-                      )}
-                    </SwiperSlide>
-                  );
-              })}
+                      ) : null}
+                    </>
+                  )}
+                  {/* {showTimer && new Date() < new Date(DATE_TO_COUNT) && (
+                      <Timer2 DATE_TO_COUNT={DATE_TO_COUNT} delay={delay} />
+                    )} */}
+                </SwiperSlide>
+              ))}
             </Swiper>
             {/* Timer for live Text */}
             {isMobile ? <SlideButton regis={regis} /> : null}

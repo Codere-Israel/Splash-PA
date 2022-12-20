@@ -1,0 +1,274 @@
+:root {
+  --codere_green: #79c000;
+  --grey: #333f48cc;
+}
+
+/* For STG env */
+@font-face {
+  font-family: Codere;
+  src: url(../fonts/HighSchool-V3.1.ttf);
+}
+
+/* For PRD */
+@font-face {
+  font-family: Codere;
+  src: url(https://www.codere.pa/static/media/HighSchool-V3.1.ttf);
+}
+@font-face {
+  font-family: Codere-Roboto;
+  src: url(https://www.codere.pa/static/media/roboto-all-400-normal.woff);
+}
+
+.banner_info:hover,
+.banner_info span,
+.banner_info span:visited,
+.banner_info p,
+.banner_info p:visited {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.banner_info {
+  text-decoration: none !important;
+  background-color: var(--grey);
+  position: absolute;
+  width: 23vw;
+  /* height: 20vw; */
+  top: 2.5vw;
+  left: 14vw;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 5;
+  border-radius: 8px;
+}
+
+.banner_title {
+  font-family: Codere;
+  font-size: 3vw;
+  font-weight: 400;
+  line-height: 3.85vw;
+}
+
+.league {
+  font-size: 2vw;
+  line-height: 1.25vw;
+  margin-top: 0.75vw;
+}
+
+.teams {
+  font-size: 2.5vw;
+  line-height: 3.5vw;
+  color: var(--codere_green);
+}
+
+.offer1 {
+  font-size: 2.5vw;
+  line-height: 0.7;
+}
+
+.offer2 {
+  /* margin-top: -0.5vw; */
+  /* line-height: 4.4vw; */
+  line-height: 1.35;
+}
+
+.tyc {
+  font-size: 1.75vw;
+  line-height: 1.5vw;
+}
+
+.timing {
+  /* margin-top: 0.5vw; */
+  font-size: 0.75vw;
+}
+
+/* 
+ */
+
+.bord {
+  height: 0;
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+  padding: 0.75vw;
+}
+.bord:before {
+  position: absolute;
+  top: 0.25vw;
+  left: 2vw;
+  content: "";
+  background: var(--codere_green);
+  height: 5px;
+  width: 5px;
+  box-shadow: 1vw 0px 0px var(--codere_green), 2vw 0px 0px var(--codere_green),
+    3vw 0px 0px var(--codere_green), 4vw 0px 0px var(--codere_green),
+    5vw 0px 0px var(--codere_green), 5vw 0px 0px var(--codere_green),
+    6vw 0px 0px var(--codere_green), 7vw 0px 0px var(--codere_green),
+    8vw 0px 0px var(--codere_green), 9vw 0px 0px var(--codere_green),
+    10vw 0px 0px var(--codere_green), 11vw 0px 0px var(--codere_green),
+    12vw 0px 0px var(--codere_green), 13vw 0px 0px var(--codere_green),
+    14vw 0px 0px var(--codere_green), 15vw 0px 0px var(--codere_green),
+    16vw 0px 0px var(--codere_green), 17vw 0px 0px var(--codere_green),
+    18vw 0px 0px var(--codere_green), 19vw 0px 0px var(--codere_green);
+}
+
+/* 
+ */
+
+.show_counter {
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 4vw;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.show_counter .countdown {
+  line-height: 3.5rem;
+  padding: 0 0.15rem 0 0.15rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.count_styling {
+  background-color: #dd2153;
+  border-radius: 5px;
+  font-size: 3.5vw;
+  margin-right: 1px;
+  margin-left: 1px;
+  width: 2.2vw;
+  height: 3.2vw;
+  line-height: 3.2vw;
+  text-align: center;
+  font-family: Codere-Roboto;
+  font-family: "Roboto Condensed";
+}
+
+.semicol {
+  font-size: 1.75vw;
+  margin-top: -0.5vw;
+}
+
+.show_counter .countdown > p {
+  margin: 0;
+}
+
+.show_counter .countdown > span {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+/* End Counter */
+
+@media only screen and (max-width: 767px) {
+  .banner_info {
+    width: 75vw;
+    height: 60vw;
+    top: 4vw;
+    left: 12vw;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  /* marginTop: "40vw", marginBottom: 0, lineHeight: 0 */
+  .counter_wrapper {
+    /* background-color: var(--grey); */
+    border-radius: 8px;
+    /* width: 68vw; */
+    /* height: 20vw; */
+    margin: auto;
+  }
+
+  .count_styling {
+    font-size: 10vw;
+    width: 6vw;
+    height: 9vw;
+    line-height: 9.5vw;
+    margin-top: 3vw;
+  }
+  .time_unit {
+    font-size: 0.55rem !important;
+  }
+
+  .banner_title {
+    font-family: Codere;
+    font-size: 10vw;
+    font-weight: 400;
+    line-height: 0.5;
+    /* line-height: 10vw; */
+  }
+
+  .counter_wrapper > .timing {
+    font-family: Codere-Roboto;
+    font-family: "Roboto Condensed";
+    font-size: 3vw;
+    font-weight: 400;
+    line-height: 0;
+    letter-spacing: 0.5px;
+    margin-top: 1vw;
+    padding-top: 5vw;
+    margin-bottom: -2vw;
+  }
+
+  .league {
+    font-size: 6vw;
+    line-height: 2.5vw;
+    /* margin-top: 3vw !important; */
+  }
+
+  .teams {
+    font-size: 8.5vw;
+    line-height: 5vw;
+    color: var(--codere_green);
+  }
+
+  .offer1 {
+    font-size: 8.5vw;
+    line-height: 4vw;
+  }
+
+  .tyc {
+    font-size: 5.25vw;
+    line-height: 0vw;
+  }
+
+  /* 
+   */
+
+  .bord {
+    padding: 1.75vw;
+  }
+  .bord:before {
+    top: 3vw;
+    left: 9vw;
+    height: 4px;
+    width: 4px;
+    box-shadow: 0 0px 0px var(--codere_green), 3vw 0px 0px var(--codere_green),
+      6vw 0px 0px var(--codere_green), 9vw 0px 0px var(--codere_green),
+      12vw 0px 0px var(--codere_green), 15vw 0px 0px var(--codere_green),
+      18vw 0px 0px var(--codere_green), 21vw 0px 0px var(--codere_green),
+      24vw 0px 0px var(--codere_green), 27vw 0px 0px var(--codere_green),
+      30vw 0px 0px var(--codere_green), 33vw 0px 0px var(--codere_green),
+      36vw 0px 0px var(--codere_green), 39vw 0px 0px var(--codere_green),
+      42vw 0px 0px var(--codere_green), 45vw 0px 0px var(--codere_green),
+      48vw 0px 0px var(--codere_green), 51vw 0px 0px var(--codere_green),
+      54vw 0px 0px var(--codere_green);
+  }
+
+  .banner_title:nth-child(1) {
+    margin-top: 4vw;
+  }
+  .semicol {
+    font-size: 1.5rem;
+  }
+}
