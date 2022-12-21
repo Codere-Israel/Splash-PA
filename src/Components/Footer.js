@@ -141,6 +141,15 @@ function Footer() {
                   </li>
                   <li>
                     <a
+                      href="https://www.codere.pa/casino"
+                      title=""
+                      rel="nofollow"
+                    >
+                      Casino
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       href="https://www.codere.pa/cuotas-deportivas"
                       title=""
                       rel="nofollow"
