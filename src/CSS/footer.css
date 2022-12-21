@@ -1,0 +1,25 @@
+.footerLinkData43 {
+  color: #fff;
+  text-decoration: none;
+}
+.footerTextData43 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .footerData43mobile {
+    flex-direction: column-reverse;
+  }
+
+  .footerData43ImageMobileF {
+    align-items: center;
+    text-align: center;
+  }
+  .footerData43ImageMobile {
+    max-width: 90%;
+  }
+
+  .footerTextData43 {
+    font-size: 0.9rem;
+  }
+}
