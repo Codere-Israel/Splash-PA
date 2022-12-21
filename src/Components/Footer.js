@@ -298,24 +298,23 @@ function Footer() {
           </Row>
 
           <Row>
-            <Col className='footerLinkData43 text-center'>
+            <Col lg="3" xs={12} className='footerLinkData43 codere-text-footer7852TR mb-2'>
               {" "}
-              <FontAwesomeIcon icon={faPhone} className="footerLinkData43" />
+              <FontAwesomeIcon icon={faPhone} className="footerLinkData43 " />
               {"  "} + 507 377 2602
             </Col>
-            <Col className='footerLinkData43'>
+            <Col lg="3" xs={12} className='footerLinkData43 mb-2'>
               <FontAwesomeIcon icon={faMailBulk} />{" "}
               jcjjuegoresponsable@mef.gob.pa
-            </Col >
-            <Col className='footerLinkData43'>
+            </Col>
+            <Col lg="3" xs={12} className='footerLinkData43 mb-2'>
               <FontAwesomeIcon icon={faMapPin} /> Ave.Perú, Calle 35, Edificio
               de Finanzas, Piso 7
             </Col>
-            <Col className='footerLinkData43'>
+            <Col lg="3" xs={12} className='footerLinkData43'>
               <FontAwesomeIcon icon={faInstagram} style={{ color: "#fff" }} />{" "}
               jcjpma
             </Col >
-
           </Row>
         </Container>
         <hr style={{ marginBottom: "2vw" }} />
