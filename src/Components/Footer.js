@@ -5,13 +5,26 @@ import {
   faTwitter,
   faYoutube,
   faWhatsapp,
+  faInstagramSquare,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faComments,
   faHeadset,
   faPhone,
+  faMapLocation,
+  faVoicemail,
+  faMap,
+  faMapLocationDot,
+  faMapPin,
+  faMailBulk,
 } from "@fortawesome/free-solid-svg-icons";
 
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+
+import "../CSS/footer.css";
 // Codere Footer \\
 function Footer() {
   return (
@@ -265,26 +278,46 @@ function Footer() {
 
         <hr style={{ marginBottom: "2vw" }} />
 
-        <div className="row juegas-banners">
-          <div className="col">
-            <img
-              src="https://www.codere.pa/_catalogs/masterpage/codere/react-splash/assets/repPan.png"
-              alt="Gobierno República de Panamá"
-            />
-
-            <a href="mailto:jcj-quejas@mef.gob.pa">
-              <img
-                src="https://www.codere.pa/_catalogs/masterpage/codere/react-splash/assets/junta.png"
-                alt="JugarSeguro"
+        <Container>
+          <Row className='footerData43mobile'>
+            <div className="col footerTextData43 " style={{ color: "#fff" }}>
+              <p>JUGAR COMPULSIVAMENTE ES PERJUDICIAL PARA TI Y TU FAMILIA</p>
+            </div>
+            <div className="col footerTextData43 " style={{ color: "#fff" }}>
+              <p>
+                En la Sección de Juego Responsable de la Junta de Control de
+                Juegos, Te Brindamos Orientación Gratuita y Confidencial
+              </p>
+            </div>
+            <div className="col footerData43ImageMobileF" style={{ color: "#fff" }}>
+              <img className='footerData43ImageMobile'
+                src="https://www.codere.pa/_catalogs/masterpage/codere/images/footerIconsTrs23.webp"
+                alt="Gobierno República de Panamá"
               />
-            </a>
+            </div>
+          </Row>
 
-            <img
-              src="https://www.codere.pa/_catalogs/masterpage/codere/react-splash/assets/jugarRes.png"
-              alt="Juega Responsablemente"
-            />
-          </div>
-        </div>
+          <Row>
+            <Col lg="3" xs={12} className='footerLinkData43 codere-text-footer7852TR mb-2'>
+              {" "}
+              <FontAwesomeIcon icon={faPhone} className="footerLinkData43 " />
+              {"  "} + 507 377 2602
+            </Col>
+            <Col lg="3" xs={12} className='footerLinkData43 mb-2'>
+              <FontAwesomeIcon icon={faMailBulk} />{" "}
+              jcjjuegoresponsable@mef.gob.pa
+            </Col>
+            <Col lg="3" xs={12} className='footerLinkData43 mb-2'>
+              <FontAwesomeIcon icon={faMapPin} /> Ave.Perú, Calle 35, Edificio
+              de Finanzas, Piso 7
+            </Col>
+            <Col lg="3" xs={12} className='footerLinkData43'>
+              <FontAwesomeIcon icon={faInstagram} style={{ color: "#fff" }} />{" "}
+              jcjpma
+            </Col >
+          </Row>
+        </Container>
+        <hr style={{ marginBottom: "2vw" }} />
 
         <div id="legals" style={{ float: "right", marginBottom: ".2vw" }}>
           S.A., con domicilio en Panamá, Ciudad de Panamá, Vía Israel y Calle 76
