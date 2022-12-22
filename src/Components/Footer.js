@@ -276,9 +276,8 @@ function Footer() {
           </div>
         </div>
 
-        <hr style={{ marginBottom: "2vw" }} />
 
-        <Container>
+        <Container className='mt-4 mb-4'>
           <Row className='footerData43mobile'>
             <div className="col footerTextData43 " style={{ color: "#fff" }}>
               <p>JUGAR COMPULSIVAMENTE ES PERJUDICIAL PARA TI Y TU FAMILIA</p>
@@ -317,7 +316,6 @@ function Footer() {
             </Col >
           </Row>
         </Container>
-        <hr style={{ marginBottom: "2vw" }} />
 
         <div id="legals" style={{ float: "right", marginBottom: ".2vw" }}>
           S.A., con domicilio en Panamá, Ciudad de Panamá, Vía Israel y Calle 76
