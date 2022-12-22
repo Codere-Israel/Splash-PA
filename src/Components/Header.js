@@ -115,6 +115,13 @@ function Header() {
                       <Accordion.Body>
                         <ul>
                           <li>
+                            <a href="https://www.codere.pa/casino">
+                              <FontAwesomeIcon icon={faCoins} />
+                              Casino
+                              <FontAwesomeIcon icon={faAngleRight} />
+                            </a>
+                          </li>
+                          <li>
                             <a href="https://www.codere.pa/cuotas-deportivas/apuestas-futbol">
                               <FontAwesomeIcon icon={faFutbol} />
                               Fútbol
@@ -135,6 +142,7 @@ function Header() {
                               <FontAwesomeIcon icon={faAngleRight} />
                             </a>
                           </li>
+
                         </ul>
                       </Accordion.Body>
                     </Accordion.Item>
@@ -213,6 +221,9 @@ function Header() {
                   <FontAwesomeIcon icon={faAngleDown} />
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
+                  <Dropdown.Item href="https://www.codere.pa/casino">
+                    Casino
+                  </Dropdown.Item>
                   <Dropdown.Item href="https://www.codere.pa/cuotas-deportivas/apuestas-nfl-futbol-americano">
                     NFL
                   </Dropdown.Item>
