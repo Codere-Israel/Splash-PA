@@ -193,7 +193,7 @@ function Content(props) {
             </h2>
             <div className="bottomContentText">
               <p>
-                Ahora también ofrecemos la mejor plataforma de casino online en
+                Ahora también ofrecemos la mejor plataforma de <a href="https://www.codere.pa/casino">casino online</a> en
                 Panamá, con una variedad de juegos de Casino como las
                 tradicionales ruletas virtuales, tragamonedas, blackjack y
                 muchos más.
