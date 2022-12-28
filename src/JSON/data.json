@@ -1,11 +1,19 @@
 {
   "desktop_slide_list": [
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/christmass-desktop.jpg",
-      "img_alt": "Xmas",
+      "image": "https://www.codere.pa/assets/inicio-banners/valladolid-vs-real-madrid-desktop.jpg",
+      "img_alt": "valladolid-vs-real-madrid",
       "tycLink": "https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2022-12-19T07:00:00Z",
-      "endDate": "2022-12-25T15:00:00Z",
+      "startDate": "2022-12-28T14:00:00Z",
+      "endDate": "2022-12-30T20:30:00Z",
+      "scheduled": true
+    },
+    {
+      "image": "https://www.codere.pa/assets/inicio-banners/new-year-desktop.jpg",
+      "img_alt": "new-year",
+      "tycLink": "https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
+      "startDate": "2022-12-30T07:00:00Z",
+      "endDate": "2023-01-03T21:59:00Z",
       "scheduled": true
     },
     {
@@ -27,11 +35,19 @@
   ],
   "mobile_slide_list": [
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/christmass-mobile.jpg",
-      "img_alt": "Xmas",
+      "image": "https://www.codere.pa/assets/inicio-banners/valladolid-vs-real-madrid-desktop.jpg",
+      "img_alt": "valladolid-vs-real-madrid",
       "tycLink": "https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2022-12-19T07:00:00Z",
-      "endDate": "2022-12-25T15:00:00Z",
+      "startDate": "2022-12-28T14:00:00Z",
+      "endDate": "2022-12-30T20:30:00Z",
+      "scheduled": true
+    },
+    {
+      "image": "https://www.codere.pa/assets/inicio-banners/new-year-mobile.jpg",
+      "img_alt": "new-year",
+      "tycLink": "https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
+      "startDate": "2022-12-30T07:00:00Z",
+      "endDate": "2023-01-03T21:59:00Z",
       "scheduled": true
     },
     {
