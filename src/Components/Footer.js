@@ -163,6 +163,33 @@ function Footer() {
                   </li>
                   <li>
                     <a
+                      href="https://www.codere.pa/casino/ruleta"
+                      title=""
+                      rel="nofollow"
+                    >
+                      Ruleta
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.codere.pa/casino/blackjack"
+                      title=""
+                      rel="nofollow"
+                    >
+                      Blackjack
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.codere.pa/casino/slots"
+                      title=""
+                      rel="nofollow"
+                    >
+                      Slots
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       href="https://www.codere.pa/cuotas-deportivas"
                       title=""
                       rel="nofollow"

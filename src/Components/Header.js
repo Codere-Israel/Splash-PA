@@ -122,6 +122,27 @@ function Header() {
                             </a>
                           </li>
                           <li>
+                              <a href="https://www.codere.pa/casino/ruleta">
+                                <FontAwesomeIcon icon={faCoins} />
+                                Ruleta
+                                <FontAwesomeIcon icon={faAngleRight} />
+                              </a>
+                            </li>
+                            <li>
+                              < a href = "https://www.codere.pa/casino/blackjack" >
+                                <FontAwesomeIcon icon={faCoins} />
+                                Blackjack
+                                <FontAwesomeIcon icon={faAngleRight} />
+                              </a>
+                            </li>
+                            <li>
+                              < a href = "https://www.codere.pa/casino/slots" >
+                                <FontAwesomeIcon icon={faCoins} />
+                                Slots
+                                <FontAwesomeIcon icon={faAngleRight} />
+                              </a>
+                            </li>
+                          <li>
                             <a href="https://www.codere.pa/cuotas-deportivas/apuestas-futbol">
                               <FontAwesomeIcon icon={faFutbol} />
                               Fútbol
@@ -223,6 +244,15 @@ function Header() {
                 <Dropdown.Menu>
                   <Dropdown.Item href="https://www.codere.pa/casino">
                     Casino
+                  </Dropdown.Item>
+                  <Dropdown.Item href="https://www.codere.pa/casino/ruleta">
+                    Ruleta
+                  </Dropdown.Item>
+                  <Dropdown.Item href="https://www.codere.pa/casino/blackjack">
+                    Blackjack
+                  </Dropdown.Item>
+                  <Dropdown.Item href="https://www.codere.pa/casino/slots">
+                    Slots
                   </Dropdown.Item>
                   <Dropdown.Item href="https://www.codere.pa/cuotas-deportivas/apuestas-nfl-futbol-americano">
                     NFL
