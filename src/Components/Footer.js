@@ -147,7 +147,7 @@ function Footer() {
                     <a
                       href="https://www.codere.pa/resultados-y-estadisticas"
                       title=""
-                      rel="nofollow"
+                      
                     >
                       Resultados y Estadísticas
                     </a>
@@ -156,7 +156,7 @@ function Footer() {
                     <a
                       href="https://www.codere.pa/casino"
                       title=""
-                      rel="nofollow"
+                      
                     >
                       Casino
                     </a>
@@ -165,7 +165,7 @@ function Footer() {
                     <a
                       href="https://www.codere.pa/casino/ruleta"
                       title=""
-                      rel="nofollow"
+                      
                     >
                       Ruleta
                     </a>
@@ -174,7 +174,7 @@ function Footer() {
                     <a
                       href="https://www.codere.pa/casino/blackjack"
                       title=""
-                      rel="nofollow"
+                      
                     >
                       Blackjack
                     </a>
@@ -183,7 +183,7 @@ function Footer() {
                     <a
                       href="https://www.codere.pa/casino/slots"
                       title=""
-                      rel="nofollow"
+                      
                     >
                       Slots
                     </a>
@@ -192,7 +192,6 @@ function Footer() {
                     <a
                       href="https://www.codere.pa/cuotas-deportivas"
                       title=""
-                      rel="nofollow"
                     >
                       Cuotas Deportivas
                     </a>
