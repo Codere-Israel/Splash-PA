@@ -195,7 +195,7 @@ function Header() {
                   className="registrate-button header_btn"
                   rel="nofollow"
                 >
-                  Registrate
+                  Regístrate
                 </Button>
               </div>
             </div>
@@ -279,7 +279,7 @@ function Header() {
                 className="registrate-button header_btn"
                 rel="nofollow"
               >
-                Registrate
+                Regístrate
               </Button>
             </Container>
           )}
