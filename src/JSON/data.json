@@ -1,11 +1,11 @@
 {
   "desktop_slide_list": [
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/real-madrid-valencia-desktop.jpg",
-      "img_alt": "real-madrid-valencia",
+      "image": "https://www.codere.pa/assets/inicio-banners/abierto-de-australia-desktop.jpg",
+      "img_alt": "abierto-de-australia",
       "tycLink": "https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2023-01-09T14:00:00Z",
-      "endDate": "2023-01-11T19:00:00Z",
+      "startDate": "2023-01-16T14:00:00Z",
+      "endDate": "2023-01-29T04:59:00Z",
       "scheduled": true
     },
     {
@@ -35,11 +35,11 @@
   ],
   "mobile_slide_list": [
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/real-madrid-valencia-desktop.jpg",
-      "img_alt": "real-madrid-valencia",
+      "image": "https://www.codere.pa/assets/inicio-banners/abierto-de-australia-mobile.jpg",
+      "img_alt": "abierto-de-australia",
       "tycLink": "https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2023-01-09T14:00:00Z",
-      "endDate": "2023-01-11T19:00:00Z",
+      "startDate": "2023-01-16T14:00:00Z",
+      "endDate": "2023-01-29T04:59:00Z",
       "scheduled": true
     },
     {

@@ -4,14 +4,14 @@ import React from "react";
 
 var questions = [
   "¿Cómo funcionan las apuestas deportivas en línea?",
-  "¿Dónde están ubicadas las casas de apuestas deportivas de Codere?",
-  "¿Qué tips de apuestas deportivas puedo usar para ganar?",
+  "¿Dónde están ubicados los locales físicos de Codere?",
+  "¿Dónde puedo ver tips de apuestas para ganar?",
   "¿Qué es un parley?",
 ];
 var answers = [
   "Las apuestas deportivas consisten en apostar una cantidad monetaria a un determinado resultado o resultado de un evento deportivo. El propósito de una apuesta deportiva es beneficiarse de un pronóstico o predicción hecha para que el apostante, y este tenga una ganancia alta por el dinero apostado (el presupuesto multiplicador dividido por la cuota)",
-  "Las Casas de apuesta deportiva Codere están alrededor de toda la ciudad de Panamá, en 6 diferentes Casinos Crown ( El Panamá, el Hipódromo, Continental, Riande, Sheraton, Soloy), , y muchos más que puedes ver al hacer clic en nuestra página web en la sección de Locales, donde podrás ver por google maps todas sucursales y direcciones.",
-  "Los mejores Tips los puedes conseguir en nuestras redes sociales, en instagram @coderepan, donde tenemos nuestros videos semanales con nuestros influencers Rony Vargas y Nicolle Ferguson, los cuales dan su análisis en los diferentes partidos, para ayudar a nuestros clientes a hacer las mejores selecciones posibles para garantizar sus victorias en sus apuestas.",
+  "Las casas de apuestas deportivas Codere están alrededor de toda la ciudad de Panamá, en 9 diferentes Casinos Crown ( El Panamá, el Hipódromo, Continental, Riande, Sheraton, Soloy, Guayacanes (Chitre), Mirage (Chiriqui) y Hotel Nacional (Chiriqui)) y que puedes ver al hacer clic en nuestra página web en la sección de Locales, donde podrás ver por google maps todas sucursales y sus direcciones.",
+  "Los mejores tips los puedes conseguir en nuestras redes sociales, en Instagram @coderepan, Twitter @Coderepan y Facebook @Coderepanama donde tenemos cuotas, promociones, y comunicaciones sobre los diferentes partidos, para ayudar a nuestros clientes a hacer las mejores selecciones posibles y garantizar sus victorias en sus apuestas.",
   "En Codere, al hacer una apuesta deportiva con varias selecciones de juegos, a esto se le llama un parlay, el cual entre más juegos tengas, la cantidad de ganancia aumenta exponencialmente, para ganar una apuesta de tipo parlay, todos los juegos seleccionados deben cumplir con el pronóstico escogido, dentro de Codere tenemos una mejora del porcentaje de ganancia al poner más juegos, es decir además de aumentar la cantidad de ganancia por las líneas, damos un porcentaje extra por selecciones adicionales.",
 ];
 
@@ -247,21 +247,20 @@ function Content(props) {
         <tbody>
           <tr>
             <td>🏆 Establecido</td>
-            <td>2005</td>
+            <td>2021</td>
           </tr>
           <tr>
             <td>⚽ Apuestas Deportivas</td>
-            <td>Apuestas NFL, Apuestas MLB, Apuestas LaLiga Santander y más</td>
+            <td>Apuestas de fútbol (La Liga, UEFA Champions League, Nations League, Premier entre otros), MLB, NFL, y mucho mas!</td>
           </tr>
           <tr>
             <td>🎰 Juegos de Casino</td>
-            <td>Máquinas tragamonedas (slots), ruleta y blackjack</td>
+            <td>Máquinas tragamonedas (slots), Ruleta y Blackjack en vivo.</td>
           </tr>
           <tr>
             <td>🎲 Licencia</td>
             <td>
-              Contratos Nº 38 de 22/01/2003 y Nº 193 de 4/10/2005, y Resolución
-              Nº. 921 de 21/09/2017.
+              Contratos Contrato No. 2021-006 de 26 de mayo de 2021.
             </td>
           </tr>
           <tr>
@@ -270,15 +269,15 @@ function Content(props) {
           </tr>
           <tr>
             <td>💰 Depósito mínimo</td>
-            <td>Minimo $10 Dolares</td>
+            <td>Minimo $20 Dolares</td>
           </tr>
           <tr>
             <td>💸 Limites de Retiros</td>
-            <td>Retiro mínimo es de $50.</td>
+            <td>Retiro mínimo es de $50 (Por Transferencia Bancaria). En nuestros Crown Casinos no hay limite de retiro.</td>
           </tr>
           <tr>
             <td>💳 Formas de Pago </td>
-            <td>Visa, Mastercard, Tranferecnia Bancaria, Punto Pago</td>
+            <td>Tarjeta Codere, Tranferecnia Bancaria, Punto Pago, Punto Pago App (Visa, MasterCard y Clave) y Páguelo fácil(Nequi/ Tarjeta Clave)</td>
           </tr>
         </tbody>
       </Table>
