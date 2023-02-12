@@ -3,33 +3,28 @@
     {
       "image": "https://www.codere.pa/assets/inicio-banners/superbowl-desktop.jpg",
       "img_alt": "superbowl",
-      "tycLink": "https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
+      "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
       "startDate": "2023-02-06T14:00:00Z",
       "endDate": "2023-02-12T23:30:00Z",
       "scheduled": true
     },
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/new-year-desktop.jpg",
-      "img_alt": "new-year",
-      "tycLink": "https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2022-12-30T07:00:00Z",
-      "endDate": "2023-01-03T21:59:00Z",
+      "image": "https://www.codere.pa/assets/inicio-banners/psg-bayern-desktop.jpg",
+      "img_alt": "psg-bayern",
+      "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
+      "startDate": "2023-02-12T08:00:00Z",
+      "endDate": "2023-02-14T20:00:00Z",
       "scheduled": true
     },
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/reg-offer-desktop.jpg",
-      "img_alt": "reg-offer",
-      "tycLink": "https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "scheduled": false
-    },
-    {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/casino-pa-desktop.jpg",
+      "image": "https://www.codere.pa/assets/inicio-banners/casino-pa-desktop.jpg",
       "img_alt": "Bienvenida",
+      "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
       "scheduled": false
     },
     {
       "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/metodos_desktop.jpg",
-      "img_alt": "Métodos de Pago",
+      "img_alt": "Metodos",
       "scheduled": false
     }
   ],
@@ -37,33 +32,28 @@
     {
       "image": "https://www.codere.pa/assets/inicio-banners/superbowl-mobile.jpg",
       "img_alt": "superbowl",
-      "tycLink": "https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
+      "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
       "startDate": "2023-02-06T14:00:00Z",
       "endDate": "2023-02-12T23:30:00Z",
       "scheduled": true
     },
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/new-year-mobile.jpg",
-      "img_alt": "new-year",
-      "tycLink": "https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2022-12-30T07:00:00Z",
-      "endDate": "2023-01-03T21:59:00Z",
+      "image": "https://www.codere.pa/assets/inicio-banners/psg-bayern-mobile.jpg",
+      "img_alt": "psg-bayern",
+      "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
+      "startDate": "22023-02-12T08:00:00Z",
+      "endDate": "2023-02-14T20:00:00Z",
       "scheduled": true
     },
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/reg-offer-mobile.jpg",
-      "img_alt": "reg-offer",
-      "tycLink": "https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "scheduled": false
-    },
-    {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/casino-pa-mobile.jpg",
+      "image": "https://www.codere.pa/assets/inicio-banners/casino-pa-mobile.jpg",
       "img_alt": "Bienvenida",
+      "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
       "scheduled": false
     },
     {
       "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/Splash/metodos_mobile.jpg",
-      "img_alt": "Métodos de Pago",
+      "img_alt": "Metodos",
       "scheduled": false
     }
   ]
