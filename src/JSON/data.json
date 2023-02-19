@@ -1,11 +1,11 @@
 {
   "desktop_slide_list": [
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/superbowl-desktop.jpg",
-      "img_alt": "superbowl",
+      "image": "https://www.codere.pa/assets/inicio-banners/liverpool-real-madrid-desktop.jpg",
+      "img_alt": "liverpool-real-madrid",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2023-02-06T14:00:00Z",
-      "endDate": "2023-02-12T23:30:00Z",
+      "startDate": "2023-02-19T14:00:00Z",
+      "endDate": "2023-02-21T20:00:00Z",
       "scheduled": true
     },
     {
@@ -15,6 +15,12 @@
       "startDate": "2023-02-12T08:00:00Z",
       "endDate": "2023-02-14T20:00:00Z",
       "scheduled": true
+    },
+        {
+      "image": "https://www.codere.pa/assets/inicio-banners/reg-offer-desktop.jpg",
+      "img_alt": "reg-offer",
+      "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
+      "scheduled": false
     },
     {
       "image": "https://www.codere.pa/assets/inicio-banners/casino-pa-desktop.jpg",
@@ -30,11 +36,11 @@
   ],
   "mobile_slide_list": [
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/superbowl-mobile.jpg",
-      "img_alt": "superbowl",
+      "image": "https://www.codere.pa/assets/inicio-banners/liverpool-real-madrid-mobile.jpg",
+      "img_alt": "liverpool-real-madrid",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2023-02-06T14:00:00Z",
-      "endDate": "2023-02-12T23:30:00Z",
+      "startDate": "2023-02-19T14:00:00Z",
+      "endDate": "2023-02-21T20:00:00Z",
       "scheduled": true
     },
     {
@@ -44,6 +50,12 @@
       "startDate": "22023-02-12T08:00:00Z",
       "endDate": "2023-02-14T20:00:00Z",
       "scheduled": true
+    },
+        {
+      "image": "https://www.codere.pa/assets/inicio-banners/reg-offer-mobile.jpg",
+      "img_alt": "reg-offer",
+      "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
+      "scheduled": false
     },
     {
       "image": "https://www.codere.pa/assets/inicio-banners/casino-pa-mobile.jpg",
