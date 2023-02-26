@@ -8,12 +8,6 @@
       "endDate": "2023-02-25T17:30:00Z",
       "scheduled": true
     },
-    {
-      "image": "https://www.codere.pa/assets/inicio-banners/live-casino-desktop.jpg",
-      "img_alt": "live-casino",
-      "tycLink": "",
-      "scheduled": false
-    },
         {
       "image": "https://www.codere.pa/assets/inicio-banners/reg-offer-desktop.jpg",
       "img_alt": "reg-offer",
@@ -24,6 +18,12 @@
       "image": "https://www.codere.pa/assets/inicio-banners/casino-pa-desktop.jpg",
       "img_alt": "Bienvenida",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
+      "scheduled": false
+    },
+        {
+      "image": "https://www.codere.pa/assets/inicio-banners/live-casino-desktop.jpg",
+      "img_alt": "live-casino",
+      "tycLink": "",
       "scheduled": false
     },
     {
@@ -41,12 +41,7 @@
       "endDate": "2023-02-25T17:30:00Z",
       "scheduled": true
     },
-    {
-      "image": "https://www.codere.pa/assets/inicio-banners/live-casino-mobile.jpg",
-      "img_alt": "live-casino",
-      "tycLink": "",
-      "scheduled": false
-    },
+
         {
       "image": "https://www.codere.pa/assets/inicio-banners/reg-offer-mobile.jpg",
       "img_alt": "reg-offer",
@@ -57,6 +52,12 @@
       "image": "https://www.codere.pa/assets/inicio-banners/casino-pa-mobile.jpg",
       "img_alt": "Bienvenida",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
+      "scheduled": false
+    },
+        {
+      "image": "https://www.codere.pa/assets/inicio-banners/live-casino-mobile.jpg",
+      "img_alt": "live-casino",
+      "tycLink": "",
       "scheduled": false
     },
     {
