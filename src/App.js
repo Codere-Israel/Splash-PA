@@ -69,7 +69,7 @@ function App() {
             mostrar anuncios basados en tus intereses. Si sigues navegando,
             consideramos que aceptas su uso. Puedes obtener más información en
             nuestra{" "}
-            <a href="https://www.codere.pa/Paginas/Pol%C3%ADtica-de-cookies.aspx">
+            <a href="/ayuda/politica-de-cookies">
               política de cookies
             </a>
             .
