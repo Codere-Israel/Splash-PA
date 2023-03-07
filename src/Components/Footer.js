@@ -109,7 +109,7 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      href="https://m.codere.pa/deportespanama/#/InformationPage?type=reglas"
+                      href="/ayuda/reglas"
                       title=""
                       rel="nofollow"
                     >
@@ -128,7 +128,7 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      href="https://www.codere.pa/Paginas/Pol%C3%ADtica-de-cookies.aspx"
+                      href="/ayuda/politica-de-cookies"
                       title=""
                       rel="nofollow"
                     >
@@ -145,7 +145,7 @@ function Footer() {
                 <ul className="list-unstyled">
                   <li>
                     <a
-                      href="https://www.codere.pa/resultados-y-estadisticas"
+                      href="/ayuda/resultados-y-estadisticas"
                       title=""
                       
                     >
@@ -223,7 +223,7 @@ function Footer() {
                 <ul className="list-unstyled">
                   <li>
                     <a
-                      href="https://www.codere.pa/dep%C3%B3sitos/dep%C3%B3sito-online"
+                      href="/ayuda/deposito-online"
                       title=""
                     >
                       Info Depósitos y Cobros
@@ -231,7 +231,7 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      href="https://www.codere.pa/apuestas/c%C3%B3mo-y-d%C3%B3nde-apostar"
+                      href="/ayuda/como-y-donde-apostar"
                       title=""
                     >
                       Cómo Apostar
