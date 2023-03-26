@@ -1,11 +1,11 @@
 {
   "desktop_slide_list": [    
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/barcelona-real-madrid-desktop.jpg",
-      "img_alt": "barcelona-real-madrid",
+      "image": "https://www.codere.pa/assets/inicio-banners/costa-rica-panama-desktop.jpg",
+      "img_alt": "costa-rica-panama",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2023-03-17T14:00:00Z",
-      "endDate": "2023-03-19T20:00:00Z",
+      "startDate": "2023-03-27T14:00:00Z",
+      "endDate": "2023-03-29T15:00:00Z",
       "scheduled": true
     },
     {
@@ -42,11 +42,11 @@
   ],
   "mobile_slide_list": [
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/barcelona-real-madrid-mobile.jpg",
-      "img_alt": "barcelona-real-madrid",
+      "image": "https://www.codere.pa/assets/inicio-banners/costa-rica-panama-mobile.jpg",
+      "img_alt": "costa-rica-panama",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2023-03-17T14:00:00Z",
-      "endDate": "2023-03-19T20:00:00Z",
+      "startDate": "2023-03-27T14:00:00Z",
+      "endDate": "2023-03-29T15:00:00Z",
       "scheduled": true
     },
     {
