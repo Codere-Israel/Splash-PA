@@ -1,0 +1,265 @@
+body {
+  /* background-color: #334049; */
+}
+
+.header {
+  color: #79c000;
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  z-index: 99;
+  line-height: 1;
+}
+
+.subtitle {
+  border-left: 5px solid #79c000;
+  border-radius: 3px;
+  padding-left: 1.75rem;
+}
+
+.colored {
+  color: #79c000;
+  filter: invert(55%) sepia(103%) saturate(1266%) hue-rotate(62deg)
+    brightness(94%) contrast(77%);
+}
+
+.e-nav {
+  padding: 3.8rem 0 0.3rem 0;
+}
+
+.e-nav a:hover,
+.e-nav a:hover h5 {
+  filter: invert(55%) sepia(103%) saturate(1266%) hue-rotate(62deg)
+    brightness(94%) contrast(77%);
+}
+
+#eventos ul,
+.event ul {
+  color: #fff;
+}
+
+#eventos ul li,
+.event ul li {
+  list-style-type: none;
+}
+
+#eventos p,
+.event p {
+  color: #fff;
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+.ver_btn {
+  /* background-color: #79c000; */
+  background-color: unset;
+  border: 1px solid #79c000;
+  font-weight: 400;
+  border-radius: 15px;
+  font-size: 1.4rem;
+  padding: 0.75rem 4rem 0.75rem 4rem;
+  float: left;
+  transition-duration: 0.35s;
+}
+
+#eventos a h2 {
+  font-size: 1.1vw;
+  font-weight: 700;
+  color: #79c000;
+  position: relative;
+  text-align: center;
+}
+
+.ver_btn:hover,
+.ver_btn:focus {
+  background-color: unset;
+  border: none;
+  /* box-shadow: inset 13em 0 0 0 #79c000; */
+  box-shadow: inset 13em 0 0 0 #548801;
+}
+
+/* Card */
+
+.eventos-container {
+  max-width: 80%;
+  display: flex;
+  text-align: center;
+}
+
+.eventos-container .row > * {
+  padding: 0;
+}
+
+.eventos_card {
+  /* background-color: #252a30; */
+  background-color: #323f47;
+  margin: 5px;
+  /* width: 50%; */
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+}
+
+.card-header {
+  padding: 0;
+  background-color: unset !important;
+  border-bottom: unset !important;
+  text-transform: uppercase;
+}
+
+.eventos-container img {
+  max-width: 100%;
+  transition: all 0.5s;
+}
+
+.eventos-container img {
+  filter: grayscale(55%);
+  transition: all 0.5s;
+}
+
+.eventos-container :hover img {
+  filter: grayscale(0);
+}
+
+.card-footer {
+  border-top: none;
+}
+
+.event .accordion {
+  margin: 2rem 0 3rem 0;
+}
+
+.event .accordion-button {
+  color: #79c000;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.event .accordion-item {
+  color: #fff;
+}
+
+.scroll .fa-chevron-up {
+  padding: 0.7rem 0.3rem 0.7rem 0.3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .e-nav {
+    padding: 17vw 0 0.3rem 0;
+    gap: 1rem !important;
+  }
+
+  .e-nav img {
+    width: 8vw;
+  }
+
+  .header {
+    text-align: left;
+    font-size: 1.55rem;
+  }
+
+  #eventos h1 {
+    padding: 0 0.25rem 0 0.25rem;
+    /* margin-bottom: 1.75rem; */
+  }
+
+  #eventos a h2 {
+    font-size: 1rem;
+  }
+
+  /* Card */
+  .eventos-container {
+    max-width: 100%;
+    display: block;
+  }
+  .eventos-container h2,
+  .eventos-container p,
+  .ver_btn {
+    text-align: center;
+    float: none;
+  }
+  .eventos_card {
+    width: 100%;
+    margin: auto;
+    padding: 0.35rem 0;
+  }
+  .eventos-container .row > * {
+    padding: 0.25rem;
+  }
+
+  .eventos_card .btn {
+    padding: 0.475rem 0.1rem;
+    font-size: 0.6rem;
+  }
+
+  .card-body {
+    padding: 0.25rem;
+  }
+
+  .event .accordion {
+    width: 100%;
+  }
+}
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+}
+@media (max-width: 320px) {
+  .e-nav a svg {
+    font-size: 1.75rem !important;
+  }
+  .e-nav h5 {
+    font-size: 1rem;
+  }
+  .header {
+    font-size: 1.15rem !important;
+  }
+}

@@ -5,12 +5,13 @@ import {
   Navbar,
   Dropdown,
   Accordion,
+  NavLink,
 } from "react-bootstrap";
 import { isMobileContext } from "../App";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { elastic as Menu } from "react-burger-menu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import DialogModal from "./DialogModal";
+
 import {
   faAngleDown,
   faAngleRight,
@@ -21,11 +22,12 @@ import {
   faBaseball,
   faFootball,
   faCoins,
+  faTrophy,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function Header() {
   var regis = "https://m.codere.pa/deportespanama/#/RegistroPAPage";
-
   const acceder =
     "https://m.codere.pa/deportespanama/#/HomePage?openlogin=true";
 
@@ -37,26 +39,51 @@ function Header() {
 
   // Hooks
   const [hamburger, setHamburger] = useState(false);
+  const [onShow, setOnShow] = useState("");
 
-  const hamburgerHandler = (evt) => {
-    let flag = false;
-    // console.log(evt.target.className);
-    if (!hamburger && evt.target.id.includes("react-burger-menu-btn")) {
-      evt.target.parentNode.classList.add("open");
-      flag = true;
-    } else if (evt.target.id.includes("react-burger-menu-btn")) {
-      evt.target.parentNode.classList.remove("open");
-      flag = true;
-    } else if (
-      evt.target.className.includes("bm-overlay") ||
-      evt.target.id.includes("react-burger-cross-btn")
-    ) {
-      document
-        .getElementById("react-burger-menu-btn")
-        .parentNode.classList.remove("open");
-      flag = true;
-    }
-    if (flag) setHamburger(!hamburger);
+  const menu = [
+    {
+      name: "Deportes",
+      url: "https://m.codere.pa/deportespanama/#/HomePage",
+      icon: faCrosshairs,
+    },
+    {
+      name: "En Vivo",
+      url: "https://m.codere.pa/deportespanama/#/DirectosPage",
+      icon: faCirclePlay,
+    },
+    {
+      name: "Casino",
+      url: "https://m.codere.pa/deportespanama/#/CasinoPage",
+      icon: faCoins,
+    },
+    {
+      name: "Casino En Vivo",
+      url: "https://m.codere.pa/deportespanama/#/CasinoPage?filter=En%20Vivo",
+      icon: faCoins,
+    },
+    {
+      name: "Promociones",
+      url: "https://m.codere.pa/deportespanama/#/PromotionsPage",
+      icon: faBullhorn,
+    },
+  ];
+
+  const seo_menu = [
+    { name: "Casino", url: "https://www.codere.pa/casino" },
+    { name: "Ruleta", url: "https://www.codere.pa/casino/ruleta" },
+    { name: "BlackJack", url: "https://www.codere.pa/casino/blackjack" },
+    { name: "Slots", url: "https://www.codere.pa/casino/slots" },
+    { name: "Eventos Deportivos", url: "/eventos-deportivos", spa: true },
+    {
+      name: "Cuotas Deportivas",
+      url: "https://www.codere.pa/cuotas-deportivas",
+    },
+  ];
+
+  const hamburgerHandler = () => {
+    hamburger ? setOnShow("") : setOnShow("open");
+    setHamburger(!hamburger);
   };
 
   return (
@@ -65,105 +92,44 @@ function Header() {
         <Navbar className="header_nav stroke" variant="dark">
           {isMobile ? (
             <div id="father">
-              <div id="outer-container" onClick={hamburgerHandler}>
+              <div id="outer-container">
                 <Menu
                   id="elastic"
                   left
                   customCrossIcon={false}
                   pageWrapId={"page-wrap"}
                   outerContainerId={"outer-container"}
+                  burgerButtonClassName={onShow}
+                  isOpen={hamburger}
+                  onOpen={hamburgerHandler}
+                  onClose={hamburgerHandler}
                 >
-                  {/* <a href="#">
-              <FontAwesomeIcon icon={faRightToBracket} />
-              Acceder <FontAwesomeIcon icon={faAngleRight} />
-            </a> */}
-                  <a
-                    href="https://m.codere.pa/deportespanama/#/HomePage"
-                    rel="nofollow"
-                  >
-                    <FontAwesomeIcon icon={faCrosshairs} />
-                    Deportes
-                    <FontAwesomeIcon icon={faAngleRight} />
-                  </a>
-                  <a
-                    href="https://m.codere.pa/deportespanama/#/DirectosPage"
-                    rel="nofollow"
-                  >
-                    <FontAwesomeIcon icon={faCirclePlay} />
-                    En Vivo
-                    <FontAwesomeIcon icon={faAngleRight} />
-                  </a>
-                  <a
-                    href="https://m.codere.pa/deportespanama/#/CasinoPage"
-                    rel="nofollow"
-                  >
-                    <FontAwesomeIcon icon={faCoins} />
-                    Casino
-                    <FontAwesomeIcon icon={faAngleRight} />
-                  </a>
-                  <a
-                    href="https://m.codere.pa/deportespanama/#/PromotionsPage"
-                    rel="nofollow"
-                  >
-                    <FontAwesomeIcon icon={faBullhorn} />
-                    Promociones
-                    <FontAwesomeIcon icon={faAngleRight} />
-                  </a>
+                  {menu.map((m, k) => (
+                    <Nav.Link key={k} rel="nofollow" href={m.url}>
+                      <FontAwesomeIcon icon={m.icon} />
+                      {m.name}
+                      <FontAwesomeIcon icon={faAngleRight} />
+                    </Nav.Link>
+                  ))}
+
                   <Accordion className="hamb-accordion">
                     <Accordion.Item eventKey="0">
                       <Accordion.Header>Links Destacados</Accordion.Header>
                       <Accordion.Body>
                         <ul>
-                          <li>
-                            <a href="https://www.codere.pa/casino">
-                              <FontAwesomeIcon icon={faCoins} />
-                              Casino
-                              <FontAwesomeIcon icon={faAngleRight} />
-                            </a>
-                          </li>
-                          <li>
-                              <a href="https://www.codere.pa/casino/ruleta">
-                                <FontAwesomeIcon icon={faCoins} />
-                                Ruleta
+                          {seo_menu.map((s, k) => (
+                            <li key={k}>
+                              <Nav.Link
+                                onClick={s.spa ? hamburgerHandler : null}
+                                as={s.spa ? Link : "a"}
+                                to={s.url}
+                                href={s.url}
+                              >
+                                {s.name}
                                 <FontAwesomeIcon icon={faAngleRight} />
-                              </a>
+                              </Nav.Link>
                             </li>
-                            <li>
-                              < a href = "https://www.codere.pa/casino/blackjack" >
-                                <FontAwesomeIcon icon={faCoins} />
-                                Blackjack
-                                <FontAwesomeIcon icon={faAngleRight} />
-                              </a>
-                            </li>
-                            <li>
-                              < a href = "https://www.codere.pa/casino/slots" >
-                                <FontAwesomeIcon icon={faCoins} />
-                                Slots
-                                <FontAwesomeIcon icon={faAngleRight} />
-                              </a>
-                            </li>
-                          <li>
-                            <a href="https://www.codere.pa/cuotas-deportivas/apuestas-futbol">
-                              <FontAwesomeIcon icon={faFutbol} />
-                              Fútbol
-                              <FontAwesomeIcon icon={faAngleRight} />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://www.codere.pa/cuotas-deportivas/apuestas-beisbol-grandes-ligas">
-                              <FontAwesomeIcon icon={faBaseball} />
-                              Béisbol
-                              <FontAwesomeIcon icon={faAngleRight} />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://www.codere.pa/cuotas-deportivas/apuestas-nfl-futbol-americano">
-                              <FontAwesomeIcon icon={faFootball} />
-                              NFL
-                              <FontAwesomeIcon icon={faAngleRight} />
-                            </a>
-                          </li>
-
+                          ))}
                         </ul>
                       </Accordion.Body>
                     </Accordion.Item>
@@ -171,7 +137,7 @@ function Header() {
                 </Menu>
                 <main id="page-wrap"></main>
               </div>
-              <a
+              <Nav.Link
                 href="https://m.codere.pa/deportespanama/#/HomePage"
                 rel="nofollow"
               >
@@ -179,7 +145,7 @@ function Header() {
                   src={LOGO}
                   alt="Logo Casa de Apuestas Codere - Real Madrid "
                 />
-              </a>
+              </Nav.Link>
               <div id="header_buttons">
                 <Button
                   href={acceder}
@@ -195,7 +161,7 @@ function Header() {
                   className="registrate-button header_btn"
                   rel="nofollow"
                 >
-                  Regístrate
+                  Registrate
                 </Button>
               </div>
             </div>
@@ -210,59 +176,29 @@ function Header() {
                   alt="Logo Casa de Apuestas Codere - Real Madrid "
                 />
               </a>
-
               <Nav className="me-auto">
-                <Nav.Link
-                  href="https://m.codere.pa/deportespanama/#/HomePage"
-                  rel="nofollow"
-                >
-                  DEPORTES
-                </Nav.Link>
-                <Nav.Link
-                  href="https://m.codere.pa/deportespanama/#/DirectosPage"
-                  rel="nofollow"
-                >
-                  EN VIVO
-                </Nav.Link>
-                <Nav.Link
-                  href="https://m.codere.pa/deportespanama/#/CasinoPage"
-                  rel="nofollow"
-                >
-                  CASINO
-                </Nav.Link>
-                <Nav.Link
-                  href="https://m.codere.pa/deportespanama/#/PromotionsPage"
-                  rel="nofollow"
-                >
-                  PROMOCIONES
-                </Nav.Link>
+                {menu.map((m, k) => (
+                  <Nav.Link key={k} rel="nofollow" href={m.url}>
+                    <span style={{ textTransform: "uppercase" }}>{m.name}</span>
+                  </Nav.Link>
+                ))}
               </Nav>
+
               <Dropdown>
                 <Dropdown.Toggle className="header_btn">
                   <FontAwesomeIcon icon={faAngleDown} />
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                  <Dropdown.Item href="https://www.codere.pa/casino">
-                    Casino
-                  </Dropdown.Item>
-                  <Dropdown.Item href="https://www.codere.pa/casino/ruleta">
-                    Ruleta
-                  </Dropdown.Item>
-                  <Dropdown.Item href="https://www.codere.pa/casino/blackjack">
-                    Blackjack
-                  </Dropdown.Item>
-                  <Dropdown.Item href="https://www.codere.pa/casino/slots">
-                    Slots
-                  </Dropdown.Item>
-                  <Dropdown.Item href="https://www.codere.pa/cuotas-deportivas/apuestas-nfl-futbol-americano">
-                    NFL
-                  </Dropdown.Item>
-                  <Dropdown.Item href="https://www.codere.pa/cuotas-deportivas/apuestas-beisbol-grandes-ligas">
-                    Béisbol
-                  </Dropdown.Item>
-                  <Dropdown.Item href="https://www.codere.pa/cuotas-deportivas/apuestas-futbol">
-                    Fútbol
-                  </Dropdown.Item>
+                  {seo_menu.map((d, k) => (
+                    <Dropdown.Item
+                      as={d.spa ? Link : "a"}
+                      to={d.url}
+                      key={k}
+                      href={d.url}
+                    >
+                      {d.name}
+                    </Dropdown.Item>
+                  ))}
                 </Dropdown.Menu>
               </Dropdown>
 
@@ -279,7 +215,7 @@ function Header() {
                 className="registrate-button header_btn"
                 rel="nofollow"
               >
-                Regístrate
+                Registrate
               </Button>
             </Container>
           )}

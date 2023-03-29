@@ -5,26 +5,13 @@ import {
   faTwitter,
   faYoutube,
   faWhatsapp,
-  faInstagramSquare,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faComments,
   faHeadset,
   faPhone,
-  faMapLocation,
-  faVoicemail,
-  faMap,
-  faMapLocationDot,
-  faMapPin,
-  faMailBulk,
 } from "@fortawesome/free-solid-svg-icons";
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
-
-import "../CSS/footer.css";
 // Codere Footer \\
 function Footer() {
   return (
@@ -109,7 +96,7 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      href="/ayuda/reglas"
+                      href="https://m.codere.pa/deportespanama/#/InformationPage?type=reglas"
                       title=""
                       rel="nofollow"
                     >
@@ -128,7 +115,7 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      href="/ayuda/politica-de-cookies"
+                      href="https://www.codere.pa/Paginas/Pol%C3%ADtica-de-cookies.aspx"
                       title=""
                       rel="nofollow"
                     >
@@ -145,53 +132,18 @@ function Footer() {
                 <ul className="list-unstyled">
                   <li>
                     <a
-                      href="/ayuda/resultados-y-estadisticas"
+                      href="https://www.codere.pa/resultados-y-estadisticas"
                       title=""
-                      
+                      rel="nofollow"
                     >
                       Resultados y Estadísticas
                     </a>
                   </li>
                   <li>
                     <a
-                      href="https://www.codere.pa/casino"
-                      title=""
-                      
-                    >
-                      Casino
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.codere.pa/casino/ruleta"
-                      title=""
-                      
-                    >
-                      Ruleta
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.codere.pa/casino/blackjack"
-                      title=""
-                      
-                    >
-                      Blackjack
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.codere.pa/casino/slots"
-                      title=""
-                      
-                    >
-                      Slots
-                    </a>
-                  </li>
-                  <li>
-                    <a
                       href="https://www.codere.pa/cuotas-deportivas"
                       title=""
+                      rel="nofollow"
                     >
                       Cuotas Deportivas
                     </a>
@@ -223,7 +175,7 @@ function Footer() {
                 <ul className="list-unstyled">
                   <li>
                     <a
-                      href="/ayuda/deposito-online"
+                      href="https://www.codere.pa/dep%C3%B3sitos/dep%C3%B3sito-online"
                       title=""
                     >
                       Info Depósitos y Cobros
@@ -231,7 +183,7 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      href="/ayuda/como-y-donde-apostar"
+                      href="https://www.codere.pa/apuestas/c%C3%B3mo-y-d%C3%B3nde-apostar"
                       title=""
                     >
                       Cómo Apostar
@@ -311,46 +263,28 @@ function Footer() {
           </div>
         </div>
 
+        <hr style={{ marginBottom: "2vw" }} />
 
-        <Container className='mt-4 mb-4'>
-          <Row className='footerData43mobile'>
-            <div className="col footerTextData43 " style={{ color: "#fff" }}>
-              <p>JUGAR COMPULSIVAMENTE ES PERJUDICIAL PARA TI Y TU FAMILIA</p>
-            </div>
-            <div className="col footerTextData43 " style={{ color: "#fff" }}>
-              <p>
-                En la Sección de Juego Responsable de la Junta de Control de
-                Juegos, Te Brindamos Orientación Gratuita y Confidencial
-              </p>
-            </div>
-            <div className="col footerData43ImageMobileF" style={{ color: "#fff" }}>
-              <img className='footerData43ImageMobile'
-                src="https://www.codere.pa/_catalogs/masterpage/codere/images/footerIconsTrs23.webp"
-                alt="Gobierno República de Panamá"
+        <div className="row juegas-banners">
+          <div className="col">
+            <img
+              src="https://www.codere.pa/_catalogs/masterpage/codere/react-splash/assets/repPan.png"
+              alt="Gobierno República de Panamá"
+            />
+
+            <a href="mailto:jcj-quejas@mef.gob.pa">
+              <img
+                src="https://www.codere.pa/_catalogs/masterpage/codere/react-splash/assets/junta.png"
+                alt="JugarSeguro"
               />
-            </div>
-          </Row>
+            </a>
 
-          <Row>
-            <Col lg="3" xs={12} className='footerLinkData43 codere-text-footer7852TR mb-2'>
-              {" "}
-              <FontAwesomeIcon icon={faPhone} className="footerLinkData43 " />
-              {"  "} + 507 377 2602
-            </Col>
-            <Col lg="3" xs={12} className='footerLinkData43 mb-2'>
-              <FontAwesomeIcon icon={faMailBulk} />{" "}
-              jcjjuegoresponsable@mef.gob.pa
-            </Col>
-            <Col lg="3" xs={12} className='footerLinkData43 mb-2'>
-              <FontAwesomeIcon icon={faMapPin} /> Ave.Perú, Calle 35, Edificio
-              de Finanzas, Piso 7
-            </Col>
-            <Col lg="3" xs={12} className='footerLinkData43'>
-              <FontAwesomeIcon icon={faInstagram} style={{ color: "#fff" }} />{" "}
-              jcjpma
-            </Col >
-          </Row>
-        </Container>
+            <img
+              src="https://www.codere.pa/_catalogs/masterpage/codere/react-splash/assets/jugarRes.png"
+              alt="Juega Responsablemente"
+            />
+          </div>
+        </div>
 
         <div id="legals" style={{ float: "right", marginBottom: ".2vw" }}>
           S.A., con domicilio en Panamá, Ciudad de Panamá, Vía Israel y Calle 76

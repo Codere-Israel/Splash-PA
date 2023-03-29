@@ -2,15 +2,23 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "@fontsource/roboto-condensed";
 import Header from "./Components/Header";
-import MySwiper from "./Components/MySwiper";
-import SportGames from "./Components/SportGames";
-import Games from "./Components/Games";
-import Content from "./Components/Content";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Outlet,
+} from "react-router-dom";
+
 import Footer from "./Components/Footer";
 import StickyFooter from "./Components/StickyFooter";
 import { isMobile } from "react-device-detect";
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import CookieConsent from "react-cookie-consent";
+import Inicio from "./Components/Inicio";
+import Basketball from "./Components/seo/events/Basketball";
+import Tenis from "./Components/seo/events/Tenis";
+import Formula from "./Components/seo/events/Formula";
+import EventosDeportivos from "./Components/seo/EventosDeportivos";
 
 // import Timer from "./Components/Timer";
 // import { Zoom, Slide, Fade } from "react-awesome-reveal";
@@ -42,14 +50,10 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const memoSwiper = useMemo(() => {
-    return <MySwiper />;
-  }, []);
-
   return (
-    <div className="App">
-      <isMobileContext.Provider value={flag}>
-        <div id="first-section">
+    <Router>
+      <div className="App">
+        <isMobileContext.Provider value={flag}>
           <Header />
           <CookieConsent
             cookieName="codere_cookie"
@@ -69,21 +73,42 @@ function App() {
             mostrar anuncios basados en tus intereses. Si sigues navegando,
             consideramos que aceptas su uso. Puedes obtener más información en
             nuestra{" "}
-            <a href="/ayuda/politica-de-cookies">
+            <a href="https://www.codere.pa/Paginas/Pol%C3%ADtica-de-cookies.aspx">
               política de cookies
             </a>
             .
           </CookieConsent>
           {flag ? <StickyFooter /> : null}
-          {memoSwiper}
-
-          {/* <SportGames /> */}
-        </div>
-        <Games />
-        <Content />
-        <Footer />
-      </isMobileContext.Provider>
-    </div>
+          <Routes>
+            <Route path="/" element={<Inicio />} />
+            <Route exact path="eventos-deportivos">
+              <Route
+                exact
+                path=""
+                element={<EventosDeportivos flag={flag} index={0} />}
+              />
+              <Route
+                exact
+                path="apuestas-mundial-baloncesto"
+                element={<Basketball flag={flag} index={1} />}
+              />
+              <Route
+                exact
+                path="apuestas-grand-slam"
+                element={<Tenis flag={flag} index={2} />}
+              />
+              <Route
+                exact
+                path="apuestas-grand-prix"
+                element={<Formula flag={flag} index={3} />}
+              />
+            </Route>
+          </Routes>
+          <Outlet />
+        </isMobileContext.Provider>
+      </div>
+      <Footer />
+    </Router>
   );
 }
 
