@@ -71,6 +71,10 @@ function Header() {
 
   const seo_menu = [
     { name: "Casino", url: "https://www.codere.pa/casino" },
+    {
+      name: "Casino en vivo",
+      url: "https://www.codere.pa/casino/casino-en-vivo",
+    },
     { name: "Ruleta", url: "https://www.codere.pa/casino/ruleta" },
     { name: "BlackJack", url: "https://www.codere.pa/casino/blackjack" },
     { name: "Slots", url: "https://www.codere.pa/casino/slots" },
@@ -161,7 +165,7 @@ function Header() {
                   className="registrate-button header_btn"
                   rel="nofollow"
                 >
-                  Registrate
+                  Regístrate
                 </Button>
               </div>
             </div>
@@ -215,7 +219,7 @@ function Header() {
                 className="registrate-button header_btn"
                 rel="nofollow"
               >
-                Registrate
+                Regístrate
               </Button>
             </Container>
           )}

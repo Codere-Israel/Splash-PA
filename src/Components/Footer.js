@@ -14,6 +14,53 @@ import {
 
 // Codere Footer \\
 function Footer() {
+  const model = {
+    sobre: [
+      {
+        name: "Juego Responsable",
+        url: "https://condiciones.apuestas.codere.es/Panama/juego_responsable.html",
+      },
+      {
+        name: "Contrato",
+        url: "https://m.codere.pa/csbgonline/condicionesgenerales/ContratoPanama.pdf",
+      },
+      {
+        name: "Reglas",
+        url: "https://m.codere.pa/deportespanama/#/InformationPage?type=reglas",
+      },
+      {
+        name: "Política de Privacidad",
+        url: "https://m.codere.pa/csbgonline/condicionesgenerales/politicaprivacidadPanama.pdf",
+      },
+      {
+        url: "https://www.codere.pa/Paginas/Pol%C3%ADtica-de-cookies.aspx",
+        name: "Política de Cookies",
+      },
+    ],
+    links: [
+      {
+        url: "https://www.codere.pa/resultados-y-estadisticas",
+        name: "Resultados y Estadísticas",
+      },
+      {
+        url: "Cuotas Deportivas",
+        name: "https://www.codere.pa/cuotas-deportivas",
+        inner: [
+          {
+            url: "https://www.codere.pa/cuotas-deportivas/apuestas-nfl-futbol-americano",
+            name: "NFL",
+          },
+          { url: "", name: "" },
+          { url: "", name: "" },
+        ],
+      },
+
+      { url: "", name: "" },
+    ],
+    deportes: [],
+    ayuda: [],
+  };
+
   return (
     <div>
       {/* <hr /> */}
@@ -196,15 +243,6 @@ function Footer() {
                       rel="nofollow"
                     >
                       Opciones de apuesta
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://m.codere.pa/deportespanama/#/CheckTicketPage"
-                      title=""
-                      rel="nofollow"
-                    >
-                      Consulta tu ticket
                     </a>
                   </li>
                 </ul>
