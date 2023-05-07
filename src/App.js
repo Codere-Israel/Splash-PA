@@ -17,6 +17,7 @@ import CookieConsent from "react-cookie-consent";
 import Inicio from "./Components/Inicio";
 import Basketball from "./Components/seo/events/Basketball";
 import Tenis from "./Components/seo/events/Tenis";
+import Mundeal from "./Components/seo/events/Mundeal";
 import Formula from "./Components/seo/events/Formula";
 import EventosDeportivos from "./Components/seo/EventosDeportivos";
 
@@ -101,6 +102,11 @@ function App() {
                 exact
                 path="apuestas-grand-prix"
                 element={<Formula flag={flag} index={3} />}
+              />
+              <Route
+                exact
+                path="apuestas-mundial-fifa"
+                element={<Mundeal flag={flag} index={4} />}
               />
             </Route>
           </Routes>

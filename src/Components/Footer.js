@@ -33,7 +33,7 @@ function Footer() {
         url: "https://m.codere.pa/csbgonline/condicionesgenerales/politicaprivacidadPanama.pdf",
       },
       {
-        url: "https://www.codere.pa/Paginas/Pol%C3%ADtica-de-cookies.aspx",
+        url: "https://www.codere.pa/ayuda/politica-de-cookies",
         name: "Política de Cookies",
       },
     ],
@@ -162,7 +162,7 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      href="https://www.codere.pa/Paginas/Pol%C3%ADtica-de-cookies.aspx"
+                      href="https://www.codere.pa/ayuda/politica-de-cookies"
                       title=""
                       rel="nofollow"
                     >
@@ -230,7 +230,7 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      href="https://www.codere.pa/apuestas/c%C3%B3mo-y-d%C3%B3nde-apostar"
+                      href="https://www.codere.pa/ayuda/como-y-donde-apostar"
                       title=""
                     >
                       Cómo Apostar

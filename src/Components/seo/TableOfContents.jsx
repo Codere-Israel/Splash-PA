@@ -4,11 +4,16 @@ import React from "react";
 import { Col, Container, Nav, Row } from "react-bootstrap";
 
 export default function TableOfContents(props) {
+  const calcScroll = ()=>{
+    // window.scrollTo(0, window.scrollY - 1500);
+    // console.log('scrolled');
+  }
+
   const link = (instnace) => {
     return (
       <div className="_tx flexed-centered">
         <FontAwesomeIcon icon={faAngleRight} />
-        <Nav.Link href={`#${instnace.id}`}>{instnace.title}</Nav.Link>
+        <Nav.Link href={`#${instnace.id}`} onClick={calcScroll}>{instnace.title}</Nav.Link>
       </div>
     );
   };

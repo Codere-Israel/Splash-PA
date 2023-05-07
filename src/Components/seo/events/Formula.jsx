@@ -1,4 +1,12 @@
-import { Container, Nav, Accordion, Row, Col, Image } from "react-bootstrap";
+import {
+  Container,
+  Nav,
+  Accordion,
+  Row,
+  Col,
+  Image,
+  Placeholder,
+} from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fade, Zoom } from "react-awesome-reveal";
@@ -7,11 +15,14 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { backTopTop } from "../EventosDeportivosV2";
 import "./events.css";
 import Navigations from "./Navigations";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Floating from "../Floating";
 import TableOfContents from "../TableOfContents";
 
 export default function Formula(props) {
+  const [loaded, setLoaded] = useState(false);
+  const skeleton = `https://www.codere.pa/seopages/eventos-deportivos/icons/skeleton.png`;
+
   const title = "Apuesta para el Grand prix 🏎️ | Codere®";
   const description =
     "En esta Guía de apuestas de la F1 🥇 encontrarás las respuestas a las preguntas más comunes sobre el deporte de mayor emoción automovilística.";
@@ -151,7 +162,7 @@ export default function Formula(props) {
         <title>{title}</title>
         <link
           rel="canonical"
-          href="http://www.codere.pa/eventos-deportivos/apuestas-grand-prix"
+          href="https://www.codere.pa/eventos-deportivos/apuestas-grand-prix"
         />
         <meta name="description" content={description} />
         <meta name="robots" content="noindex" />
@@ -159,14 +170,21 @@ export default function Formula(props) {
       </Helmet>
       <Navigations index={props.index} />
       <Floating text="Recorre las pistas" />
+
+      {!loaded ? (
+        <Placeholder as={Image} src={skeleton} animation="wave" />
+      ) : null}
       <Fade duration={1000} triggerOnce>
         <Image
           className="ratio ratio-1220x319"
+          style={loaded ? {} : { display: "none" }}
           src={`https://www.codere.pa/seopages/eventos-deportivos/f1/imgs/${
             props.flag ? "M" : "D"
           }-Header-F1.jpg`}
+          onLoad={() => setLoaded(true)}
         />
       </Fade>
+
       <Container>
         <div className="event">
           <Container style={{ marginTop: "2rem" }}>

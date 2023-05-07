@@ -1,10 +1,10 @@
 {
   "desktop_slide_list": [{
-      "image": "https://www.codere.pa/assets/inicio-banners/real-madrid-manchester-city-desktop.jpg",
-      "img_alt": "real-madrid-manchester-city",
+      "image": "https://www.codere.pa/assets/inicio-banners/barcelona-real-madrid-desktop.jpg",
+      "img_alt": "barcelona-real-madrid",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2023-05-07T14:00:00Z",
-      "endDate": "2023-05-09T19:00:00Z",
+      "startDate": "2023-03-17T14:00:00Z",
+      "endDate": "2023-03-19T20:00:00Z",
       "scheduled": true
     },
     {
@@ -40,11 +40,11 @@
     }
   ],
   "mobile_slide_list": [{
-      "image": "https://www.codere.pa/assets/inicio-banners/chelsea-real-madrid-mobile.jpg",
-      "img_alt": "chelsea-real-madrid",
+      "image": "https://www.codere.pa/assets/inicio-banners/barcelona-real-madrid-mobile.jpg",
+      "img_alt": "barcelona-real-madrid",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2023-05-07T14:00:00Z",
-      "endDate": "2023-05-09T19:00:00Z",
+      "startDate": "2023-03-17T14:00:00Z",
+      "endDate": "2023-03-19T20:00:00Z",
       "scheduled": true
     },
     {

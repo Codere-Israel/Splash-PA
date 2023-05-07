@@ -20,11 +20,12 @@ export const backTopTop = () => {
 };
 
 export default function EventosDeportivos(props) {
-  const directions = ["left", "down", "right"];
+  const directions = ["left", "down", "right", "left"];
   const prefix = "https://www.codere.pa/assets/seo/";
 
   const title = "Apuesta en los mejores Eventos Deportivos | Codere®";
-  const description = "Aprende acerca de los mejores eventos deportivos a nivel mundial junto el Casino Online #1 de Panamá y alistate para ganar eligiendo Codere";
+  const description =
+    "Aprende acerca de los mejores eventos deportivos a nivel mundial junto el Casino Online #1 de Panamá y alistate para ganar eligiendo Codere";
   const json = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -72,32 +73,19 @@ export default function EventosDeportivos(props) {
         h2: "Apuesta para el Grand prix",
         game: "Formula1",
       },
-    ],
-    bottom_games: [
-      {
-        img: "tenis-promo",
-        url: "/eventos-deportivos/apuestas-grand-slam",
-        h2: "Apuestapara el Grand Slam de Tenis",
-      },
-
-      {
-        img: "balenco-promo",
-        url: "/eventos-deportivos/apuestas-mundial-baloncesto",
-        h2: "Apuestapara Mundial de Baloncesto",
-      },
-
       {
         img: "f1-promo",
-        url: "/eventos-deportivos/apuestas-grand-prix",
-        h2: "Apuestapara el Grand prix",
+        url: "/eventos-deportivos/apuestas-mundial-fifa",
+        h2: "Apuesta para Mundial Fifa",
+        game: "Mundial",
       },
     ],
   };
 
   const cardGenerator = (g, i) => {
     return (
-      <Col xl={4} xs={6} key={i}>
-        <Card className={`eventos_card ${!props.flag ? "mb-4" : ""}`}>
+      <Col xs={6} key={i}>
+        <Card className={`eventos_card`}>
           <Link style={{ textDecoration: "unset" }} to={g.url}>
             <Card.Header as={"h2"}>{!props.flag ? g.h2 : g.game}</Card.Header>
           </Link>
@@ -129,7 +117,7 @@ export default function EventosDeportivos(props) {
     <>
       <Helmet>
         <title>{title}</title>
-        <link rel="canonical" href="http://www.codere.pa/eventos-deportivos" />
+        <link rel="canonical" href="https://www.codere.pa/eventos-deportivos" />
         <meta name="description" content={description} />
         <meta name="robots" content="noindex" />
         <script type="application/ld+json">{JSON.stringify(json)}</script>

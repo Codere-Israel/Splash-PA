@@ -43,6 +43,11 @@ export default function Navigations(props) {
       title: "Grand Prix",
       url: "/eventos-deportivos/apuestas-grand-prix",
     },
+    {
+      icon: "mundial",
+      title: "Mundial",
+      url: "/eventos-deportivos/apuestas-mundial-fifa",
+    },
   ];
 
   return (
@@ -60,7 +65,7 @@ export default function Navigations(props) {
           <LazyLoadImage
             src={prefix + n.icon + ".svg"}
             className={active === k + 1 ? "colored" : ""}
-            style={{ fontSize: "1.75rem" }}
+            style={{ height: 32 }}
           />
           <h5
             className={active === k + 1 ? "colored" : ""}

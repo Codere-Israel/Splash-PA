@@ -1,4 +1,12 @@
-import { Container, Nav, Accordion, Row, Col, Image } from "react-bootstrap";
+import {
+  Container,
+  Nav,
+  Accordion,
+  Row,
+  Col,
+  Image,
+  Placeholder,
+} from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fade, Zoom } from "react-awesome-reveal";
@@ -7,11 +15,13 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { backTopTop } from "../EventosDeportivosV2";
 import Navigations from "./Navigations";
 import "./events.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Floating from "../Floating";
 import TableOfContents from "../TableOfContents";
 
 export default function Tenis(props) {
+  const [loaded, setLoaded] = useState(false);
+  const skeleton = `https://www.codere.pa/seopages/eventos-deportivos/icons/skeleton.png`;
   const prefix = `https://www.codere.pa/seopages/eventos-deportivos/tenis/imgs/${
     props.flag ? "M" : "D"
   }-Tennis-`;
@@ -151,7 +161,7 @@ export default function Tenis(props) {
         <title>{title}</title>
         <link
           rel="canonical"
-          href="http://www.codere.pa/eventos-deportivos/apuestas-grand-slam"
+          href="https://www.codere.pa/eventos-deportivos/apuestas-grand-slam"
         />
         <meta name="description" content={description} />
         <meta name="robots" content="noindex" />
@@ -161,12 +171,17 @@ export default function Tenis(props) {
       <Navigations index={props.index} />
       <Floating text="Vive el deporte blanco" />
 
+      {!loaded ? (
+        <Placeholder as={Image} src={skeleton} animation="wave" />
+      ) : null}
       <Fade duration={1000} triggerOnce>
         <Image
-          width="100%"
+          className="ratio ratio-1220x319"
+          style={loaded ? {} : { display: "none" }}
           src={`https://www.codere.pa/seopages/eventos-deportivos/tenis/imgs/${
             props.flag ? "M" : "D"
           }-Header.jpg`}
+          onLoad={() => setLoaded(true)}
         />
       </Fade>
 

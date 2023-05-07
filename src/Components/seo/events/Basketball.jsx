@@ -5,6 +5,7 @@ import {
   Container,
   Image,
   Nav,
+  Placeholder,
   Row,
 } from "react-bootstrap";
 import { Helmet } from "react-helmet";
@@ -16,11 +17,14 @@ import { backTopTop } from "../EventosDeportivos";
 
 import "./events.css";
 import Navigations from "./Navigations";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Floating from "../Floating";
 import TableOfContents from "../TableOfContents";
 
 export default function Balenco(props) {
+  const [loaded, setLoaded] = useState(false);
+  const skeleton = `https://www.codere.pa/seopages/eventos-deportivos/icons/skeleton.png`;
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -160,7 +164,7 @@ export default function Balenco(props) {
         <title>{title}</title>
         <link
           rel="canonical"
-          href="http://www.codere.pa/eventos-deportivos/apuestas-mundial-baloncesto"
+          href="https://www.codere.pa/eventos-deportivos/apuestas-mundial-baloncesto"
         />
         <meta name="description" content={description} />
         <meta name="robots" content="noindex" />
@@ -170,14 +174,20 @@ export default function Balenco(props) {
       <Navigations index={props.index} />
       <Floating text="Encesta con la NBA" />
 
+      {!loaded ? (
+        <Placeholder as={Image} src={skeleton} animation="wave" />
+      ) : null}
       <Fade duration={1000} triggerOnce>
         <Image
           className="ratio ratio-1220x319"
+          style={loaded ? {} : { display: "none" }}
           src={`https://www.codere.pa/seopages/eventos-deportivos/baloncesto/imgs/${
             props.flag ? "M" : "D"
           }-Header.jpg`}
+          onLoad={() => setLoaded(true)}
         />
       </Fade>
+
       <Container>
         <div className="event">
           <Container>

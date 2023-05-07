@@ -24,7 +24,7 @@ body {
 }
 
 .e-nav {
-  padding: 3.8rem 0 0.3rem 0;
+  padding: 4.2rem 0 0.3rem 0;
 }
 
 .e-nav a:hover,
@@ -81,7 +81,7 @@ body {
 /* Card */
 
 .eventos-container {
-  max-width: 80%;
+  max-width: 50%;
   display: flex;
   text-align: center;
 }
@@ -171,17 +171,20 @@ body {
     max-width: 100%;
     display: block;
   }
+
   .eventos-container h2,
   .eventos-container p,
   .ver_btn {
     text-align: center;
     float: none;
   }
+
   .eventos_card {
     width: 100%;
     margin: auto;
     padding: 0.35rem 0;
   }
+
   .eventos-container .row > * {
     padding: 0.25rem;
   }
@@ -199,6 +202,7 @@ body {
     width: 100%;
   }
 }
+
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
@@ -252,13 +256,16 @@ body {
 @media (min-width: 320px) and (max-width: 480px) {
   /* CSS */
 }
+
 @media (max-width: 320px) {
   .e-nav a svg {
     font-size: 1.75rem !important;
   }
+
   .e-nav h5 {
     font-size: 1rem;
   }
+
   .header {
     font-size: 1.15rem !important;
   }
