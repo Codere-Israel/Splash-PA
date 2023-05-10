@@ -210,7 +210,7 @@ export default function Tenis(props) {
             <Fade duration={1000} triggerOnce>
               <LazyLoadImage src={prefix + "1" + jpg} width="100%" />
             </Fade>
-            <Container style={{ width: "90%" }}>
+            <Container>
               {origens.list.map((o, k) => (
                 <div key={k}>
                   <div className="para">

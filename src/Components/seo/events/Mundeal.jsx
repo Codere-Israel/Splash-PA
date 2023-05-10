@@ -269,7 +269,7 @@ export default function Balenco(props) {
                 <h2 className="subtitle">{tips.h2}</h2>
               </div>
               <p>{tips.p}</p>
-              <Container style={{ width: "90%" }}>
+              <Container >
                 {tips.list.map((t, i) => (
                   <div key={i}>
                     <Zoom triggerOnce>
@@ -290,7 +290,7 @@ export default function Balenco(props) {
                   {preguntas.h2}
                 </h2>
                 <p>{preguntas.p}</p>
-                <Container style={{ width: "90%" }}>
+                <Container>
                   <Accordion>
                     {preguntas.questions.map((q, k) => (
                       <Accordion.Item key={k} eventKey={k + ""}>
