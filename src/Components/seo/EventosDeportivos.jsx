@@ -76,7 +76,7 @@ export default function EventosDeportivos(props) {
       {
         img: "soccer-promo",
         url: "/eventos-deportivos/apuestas-mundial-fifa",
-        h2: "Apuesta para Mundial Fifa",
+        h2: "Apuesta para el Mundial de Fútbol",
         game: "Mundial",
       },
     ],
