@@ -29,6 +29,7 @@
 .floating span {
   font-size: 5vw;
   font-family: Codere;
+  line-height: 4.5vw;
 }
 
 .content-table {
@@ -110,6 +111,7 @@
   }
   .floating span {
     font-size: 3rem;
+    line-height: 2.7rem;
   }
 
   .content-table {

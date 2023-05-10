@@ -29,9 +29,9 @@ export default function Balenco(props) {
     window.scrollTo(0, 0);
   }, []);
 
-  const title = "Apuestas deportivas online para la Copa del Mundo | Codere®";
+  const title = "Apuesta para el Mundial de Fútbol";
   const description =
-    "Codere tiene las mejores estadísticas y pronósticos para el mundial de futbol, selecciona tus apuestas y juega en línea con las mejores cuotas del mercado.";
+    "Acá te dejamos una explicación sobre en qué consisten algunas populares opciones de apuesta y algunas que no son tan populares. Apuesta en Codere.";
   const prefix = `https://www.codere.pa/seopages/eventos-deportivos/fifa/imgs/${
     props.flag ? "M" : "D"
   }-Soccer`;
@@ -204,7 +204,7 @@ export default function Balenco(props) {
       </Helmet>
 
       <Navigations index={props.index} />
-      <Floating text="Encesta con la NBA" />
+      <Floating text="La Copa del Mundo en Codere" />
 
       {!loaded ? (
         <Placeholder as={Image} src={skeleton} animation="wave" />
