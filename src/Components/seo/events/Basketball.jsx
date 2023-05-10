@@ -210,7 +210,7 @@ export default function Balenco(props) {
             <Fade duration={1000} triggerOnce>
               <LazyLoadImage src={prefix + "1" + jpg} width="100%" />
             </Fade>
-            <Container style={{ width: "90%" }}>
+            <Container>
               <div className="para">
                 <h3 id="clasificaciones" className="subtitle">
                   Clasificaciones
@@ -243,7 +243,7 @@ export default function Balenco(props) {
                 <h2 className="subtitle">Tipos de Apuestas en Baloncesto</h2>
               </div>
               <p>{tips_par}</p>
-              <Container style={{ width: "90%" }}>
+              <Container>
                 {tips.list.map((t, i) => (
                   <div key={i}>
                     <Zoom triggerOnce>
@@ -257,7 +257,7 @@ export default function Balenco(props) {
                 <h2 style={{ color: "#79c000" }}>
                   Preguntas frecuentes sobre el Mundial de Basketball
                 </h2>
-                <Container style={{ width: "90%" }}>
+                <Container>
                   <Accordion>
                     {como_balenco.list.map((i, k) => (
                       <Accordion.Item key={k} eventKey={k + ""}>

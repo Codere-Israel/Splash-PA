@@ -210,7 +210,7 @@ export default function Formula(props) {
               <p>{history_par}</p>
             </Zoom>
 
-            <Container style={{ width: "90%" }}>
+            <Container>
               {history.list.map((h, k) => (
                 <div key={k}>
                   <h3 id={h.id} className="para">
