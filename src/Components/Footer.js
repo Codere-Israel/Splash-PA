@@ -169,6 +169,16 @@ function Footer() {
                       Política de Cookies
                     </a>
                   </li>
+                  <li>
+                    <a
+                      href="https://www.codere-partners.com/es/"
+                      title=""
+                      rel="nofollow"
+                      target='_blank'
+                    >
+                      Afiliados de Codere
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
