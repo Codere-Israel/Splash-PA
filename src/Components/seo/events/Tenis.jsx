@@ -54,6 +54,7 @@ export default function Tenis(props) {
   };
 
   const table_list = [
+    { title: "Top de tenistas a nivel mundial", id: "top" },
     {
       title: "Origen del Grand Slam",
       id: "origen",
@@ -62,7 +63,6 @@ export default function Tenis(props) {
         { title: "Torneos del Grand Slam", id: "torneos" },
       ],
     },
-    { title: "Top de tenistas a nivel mundial", id: "top" },
     { title: "Conoce las Estadísticas", id: "conoce" },
   ];
 
@@ -202,11 +202,11 @@ export default function Tenis(props) {
                 Origen del Grand Slam
               </h2>
             </div>
-            <Zoom triggerOnce>
+            {/* <Zoom triggerOnce> */}
               {origen_par.map((o, k) => (
                 <p key={k}>{o}</p>
               ))}
-            </Zoom>
+            {/* </Zoom> */}
             <Fade duration={1000} triggerOnce>
               <LazyLoadImage src={prefix + "1" + jpg} width="100%" />
             </Fade>
@@ -219,17 +219,17 @@ export default function Tenis(props) {
                     </h3>
                   </div>
                   {o.text ? (
-                    <Zoom triggerOnce>
-                      {o.text.map((t, k) => (
+                    // <Zoom triggerOnce>
+                      o.text.map((t, k) => (
                         <p key={k}>{t}</p>
-                      ))}
-                    </Zoom>
+                      ))
+                    // </Zoom>
                   ) : o.tops ? (
                     <ol style={{ color: "#fff" }}>
                       {o.tops.map((t, k) => (
-                        <Zoom key={k} triggerOnce>
+                        // <Zoom key={k} triggerOnce>
                           <li>{t}</li>
-                        </Zoom>
+                        // </Zoom>
                       ))}
                     </ol>
                   ) : null}

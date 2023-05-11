@@ -8,15 +8,20 @@
 
 .floating {
   color: #fff;
-  position: absolute;
-  top: 8rem;
-  z-index: 2;
-  margin: auto;
   left: 0;
+  line-height: .8;
+  margin: auto;
+  position: absolute;
   right: 0;
   text-align: center;
-  line-height: 0.8;
+  top: 12rem;
   width: 22%;
+  z-index: 2;
+}
+.floating span {
+  font-family: Codere;
+  font-size: 3.5vw;
+  line-height: 4vw;
 }
 
 .floating a {
@@ -25,22 +30,55 @@
   font-size: 1.4rem;
   border-radius: 1.5rem;
   padding: 0.55vw 2.15rem;
-}
-.floating span {
-  font-size: 4vw;
-  font-family: Codere;
-  line-height: 4vw;
+  text-transform: uppercase;
 }
 
 .content-table {
   margin: auto;
   color: #fff;
   padding: 1.25rem;
-  width: 85%;
+  width: 100%;
   /* box-shadow: #7ac00049 0px 2px 6px, #7ac00017 0px 1px 4px,
     #7ac00013 0px 0px 12px; */
-  background-color: #282828;
+  background-color: #333;
   border-radius: 0.45rem;
+  overflow: auto;
+}
+.content-table i {
+  background: #333f48;
+  border-radius: 50px;
+  display: inline-block;
+  height: 1.5vw;
+  margin-right: 1vw;
+  position: relative;
+  top: 0.4vw;
+  width: 1.5vw;
+}
+.content-table i:after,.content-table i:before {
+  border-style: solid;
+  content: "";
+  display: block;
+  height: 0;
+  position: absolute;
+  top: 0.5vw;
+  width: 0;
+}
+.content-table i:before {
+  border-color: transparent transparent transparent #fff;
+  border-width: 0.3vw 0 0.3vw 0.3vw;
+  left: 0.7vw;
+}
+.content-table i:after {
+  border-color: transparent transparent transparent #333f48;
+  border-width: 0.3vw 0 0.3vw 0.3vw;
+  left: 0.6vw;
+}
+.content-table .subtitle {
+  border-left: 3px solid #79c000;
+  border-radius: 0;
+  padding-left: 0.75rem;
+  color: #79c000;
+  margin-left: 1.5rem;
 }
 .content-table svg {
   padding: 0.25rem;
@@ -53,7 +91,14 @@
   display: flex;
   align-items: center;
 }
-
+.container > div > ._tx.flexed-centered, .container > ._tx.flexed-centered{
+  width: 48%;
+  display: inline-block;
+  float: left;
+}
+.container.formulaTable > ._tx.flexed-centered {
+    width: 100%;
+}
 .tabla {
   display: flex;
 }
@@ -82,25 +127,32 @@
   color: #79c000;
   padding-top: 4.1rem;
 }
-
+.h3, h3 {
+  font-size: 1.4rem;
+}
 @media screen and (max-width: 767px) {
   .scroll-to-top {
     right: 5vw !important;
     bottom: 18vw !important;
   }
-
+  .h3, h3 {
+    font-size: calc(1.1rem + .6vw);
+}
   .scroll .fa-chevron-up {
     font-size: 2rem;
     padding: 0.7rem, 0.3rem, 0.7rem, 0.3rem;
   }
-
   .floating {
-    top: 38vw;
-    width: 65%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-  }
+    top: 40vw;
+    width: 65%;
+}
+.floating span {
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+}
 
   .floating a {
     margin-top: 1.15rem;
@@ -108,10 +160,6 @@
     font-weight: 600;
     padding: 0.55rem 1.65rem;
     line-height: 1;
-  }
-  .floating span {
-    font-size: 2.5rem;
-    line-height: 2.7rem;
   }
 
   .content-table {

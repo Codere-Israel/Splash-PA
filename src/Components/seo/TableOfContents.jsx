@@ -12,8 +12,8 @@ export default function TableOfContents(props) {
   const link = (instnace) => {
     return (
       <div className="_tx flexed-centered">
-        <FontAwesomeIcon icon={faAngleRight} />
-        <Nav.Link href={`#${instnace.id}`} onClick={calcScroll}>{instnace.title}</Nav.Link>
+        {/* <FontAwesomeIcon icon={faAngleRight} /> */}
+        <Nav.Link href={`#${instnace.id}`} onClick={calcScroll}><i></i>{instnace.title}</Nav.Link>
       </div>
     );
   };
@@ -46,7 +46,7 @@ export default function TableOfContents(props) {
             {t.inner ? (
               <>
                 {t.inner.map((i, k) => (
-                  <Container key={k}>{link(i)}</Container>
+                  <Container className="formulaTable" key={k}>{link(i)}</Container>
                 ))}
               </>
             ) : null}

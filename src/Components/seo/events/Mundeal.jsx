@@ -172,21 +172,22 @@ export default function Balenco(props) {
       title: "La historia de las copas del mundo",
       id: "historia",
     },
+
+    {
+      title: "Tipos de apuestas en la copa mundial de fútbol",
+      id: "tipos",
+    },    
     {
       title: "Principales estadísticas de los Mundiales de Futbol",
       id: "principales",
     },
     {
-      title: "Tipos de apuestas en la copa mundial de fútbol",
-      id: "tipos",
+      title: "Preguntas frecuentes sobre el mundial de futbol de 2026",
+      id: "preguntas",
     },
     {
       title: "Consejos de Codere para apuestas de futbol",
       id: "consejos",
-    },
-    {
-      title: "Preguntas frecuentes sobre el mundial de futbol de 2026",
-      id: "preguntas",
     },
   ];
 
@@ -236,9 +237,9 @@ export default function Balenco(props) {
                 {history.h2}
               </h2>
             </div>
-            <Zoom triggerOnce>
+            {/* <Zoom triggerOnce> */}
               <p style={{ color: "#fff" }}>{history.p}</p>
-            </Zoom>
+            {/* </Zoom> */}
             <Fade duration={1000} triggerOnce>
               <LazyLoadImage src={prefix + "1" + jpg} width="100%" />
             </Fade>
@@ -247,7 +248,7 @@ export default function Balenco(props) {
                 {principales.h2}
               </h2>
             </div>
-            <Zoom triggerOnce>
+            {/* <Zoom triggerOnce> */}
               <p> {principales.p}</p>
               <ul>
                 {principales.list.map((p, k) => (
@@ -259,7 +260,7 @@ export default function Balenco(props) {
                   </li>
                 ))}
               </ul>
-            </Zoom>
+            {/* </Zoom> */}
 
             <Fade duration={1000} triggerOnce>
               <LazyLoadImage src={prefix + "2" + jpg} width="100%" />
@@ -272,10 +273,10 @@ export default function Balenco(props) {
               <Container >
                 {tips.list.map((t, i) => (
                   <div key={i}>
-                    <Zoom triggerOnce>
+                    {/* <Zoom triggerOnce> */}
                       <h3>{t.h3}</h3>
                       <p>{t.text}</p>
-                    </Zoom>
+                    {/* </Zoom> */}
                   </div>
                 ))}
               </Container>

@@ -174,7 +174,7 @@ export default function Formula(props) {
       {!loaded ? (
         <Placeholder as={Image} src={skeleton} animation="wave" />
       ) : null}
-      <Fade duration={1000} triggerOnce>
+      {/* <Fade duration={1000} triggerOnce> */}
         <Image
           className="ratio ratio-1220x319"
           style={loaded ? {} : { display: "none" }}
@@ -183,7 +183,7 @@ export default function Formula(props) {
           }-Header-F1.jpg`}
           onLoad={() => setLoaded(true)}
         />
-      </Fade>
+      {/* </Fade> */}
 
       <Container>
         <div className="event">
@@ -194,11 +194,11 @@ export default function Formula(props) {
               <></>
             )}
 
-            <Fade>
+            {/* <Fade> */}
               <h1 className="header subtitle">
                 Guía de apuestas en Grand Prix
               </h1>
-            </Fade>
+            {/* </Fade> */}
             <p>{top_par}</p>
 
             <div className="para">
@@ -206,9 +206,9 @@ export default function Formula(props) {
                 Historia del Gran Premio de la F1
               </h2>
             </div>
-            <Zoom triggerOnce>
+            {/* <Zoom triggerOnce> */}
               <p>{history_par}</p>
-            </Zoom>
+            {/* </Zoom> */}
 
             <Container>
               {history.list.map((h, k) => (
@@ -216,17 +216,17 @@ export default function Formula(props) {
                   <h3 id={h.id} className="para">
                     {h.h3}
                   </h3>
-                  <Zoom triggerOnce>
+                  {/* <Zoom triggerOnce> */}
                     {h.text.map((t, k) => (
                       <p key={k}>{t}</p>
                     ))}
-                  </Zoom>
+                  {/* </Zoom> */}
                 </div>
               ))}
             </Container>
-            <Fade duration={1000} triggerOnce>
+            {/* <Fade duration={1000} triggerOnce> */}
               <LazyLoadImage src={prefix + "1" + postfix} width="100%" />
-            </Fade>
+            {/* </Fade> */}
             <div id="apuestas" style={{ paddingTop: "4.1rem" }}>
               <div className="subtitle">
                 <h2 style={{ color: "#79c000" }}>Apuestas y cuotas en F1</h2>
@@ -261,9 +261,9 @@ export default function Formula(props) {
                 </Accordion.Item>
               ))}
             </Accordion>
-            <Fade duration={1000} triggerOnce>
+            {/* <Fade duration={1000} triggerOnce> */}
               <LazyLoadImage src={prefix + "2" + postfix} width="100%" />
-            </Fade>
+            {/* </Fade> */}
           </Container>
         </div>
       </Container>

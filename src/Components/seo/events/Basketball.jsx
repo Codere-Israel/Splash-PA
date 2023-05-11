@@ -177,7 +177,7 @@ export default function Balenco(props) {
       {!loaded ? (
         <Placeholder as={Image} src={skeleton} animation="wave" />
       ) : null}
-      <Fade duration={1000} triggerOnce>
+      {/* <Fade duration={1000} triggerOnce> */}
         <Image
           className="ratio ratio-1220x319"
           style={loaded ? {} : { display: "none" }}
@@ -186,45 +186,45 @@ export default function Balenco(props) {
           }-Header.jpg`}
           onLoad={() => setLoaded(true)}
         />
-      </Fade>
+      {/* </Fade> */}
 
       <Container>
         <div className="event">
           <Container>
             {!props.flag ? <TableOfContents table={table_list} /> : <></>}
 
-            <Fade>
+            {/* <Fade> */}
               <h1 className="header subtitle">
                 Guía de apuestas para el Mundial de Baloncesto
               </h1>
-            </Fade>
+            {/* </Fade> */}
             <p>{top_par}</p>
             <div className="para">
               <h2 id="historia" className="subtitle">
                 Historia Del Mundial de Baloncesto
               </h2>
             </div>
-            <Zoom triggerOnce>
+            {/* <Zoom triggerOnce> */}
               <p style={{ color: "#fff" }}>{history_par}</p>
-            </Zoom>
-            <Fade duration={1000} triggerOnce>
+            {/* </Zoom> */}
+            {/* <Fade duration={1000} triggerOnce> */}
               <LazyLoadImage src={prefix + "1" + jpg} width="100%" />
-            </Fade>
+            {/* </Fade> */}
             <Container>
               <div className="para">
                 <h3 id="clasificaciones" className="subtitle">
                   Clasificaciones
                 </h3>
               </div>
-              <Zoom triggerOnce>
+              {/* <Zoom triggerOnce> */}
                 <p style={{ color: "#fff" }}>{clasificaciones_par}</p>
-              </Zoom>
+              {/* </Zoom> */}
               <div className="para">
                 <h3 id="maximos" className="subtitle">
                   Máximos anotadores
                 </h3>
               </div>
-              <Zoom cascade triggerOnce duration={750}>
+              {/* <Zoom cascade triggerOnce duration={750}> */}
                 <p style={{ color: "#fff" }}>{maximos_par}</p>
                 <ol style={{ color: "#fff", width: "85%" }}>
                   {maximos.list.map((m, k) => (
@@ -233,11 +233,11 @@ export default function Balenco(props) {
                     </li>
                   ))}
                 </ol>
-              </Zoom>
+              {/* </Zoom> */}
             </Container>
-            <Fade duration={1000} triggerOnce>
+            {/* <Fade duration={1000} triggerOnce> */}
               <LazyLoadImage src={prefix + "2" + jpg} width="100%" />
-            </Fade>
+            {/* </Fade> */}
             <div id="tipos">
               <div className="para">
                 <h2 className="subtitle">Tipos de Apuestas en Baloncesto</h2>
@@ -246,10 +246,10 @@ export default function Balenco(props) {
               <Container>
                 {tips.list.map((t, i) => (
                   <div key={i}>
-                    <Zoom triggerOnce>
+                    {/* <Zoom triggerOnce> */}
                       <h3 className="subtitle">{t.h3}</h3>
                       <p>{t.text}</p>
-                    </Zoom>
+                    {/* </Zoom> */}
                   </div>
                 ))}
               </Container>
@@ -271,9 +271,9 @@ export default function Balenco(props) {
                 </Container>
               </div>
             </div>
-            <Fade duration={1000} triggerOnce>
+            {/* <Fade duration={1000} triggerOnce> */}
               <LazyLoadImage src={prefix + "3" + jpg} width="100%" />
-            </Fade>
+            {/* </Fade> */}
           </Container>
         </div>
       </Container>
