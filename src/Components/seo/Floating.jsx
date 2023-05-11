@@ -6,11 +6,11 @@ export default function Floating(props) {
       <span>{props.text}</span>
       <br />
       <Button
-        href="https://m.codere.pa/deportespanama/#/HomePage"
+        href="https://m.codere.pa/deportespanama/#/RegistroPAPage"
         rel="nofollow"
         className="floating-btn"
       >
-        Juega ahora
+        Regístrate ahora
       </Button>
     </div>
   );
