@@ -312,7 +312,7 @@ function Content(props) {
           </tr>
           <tr>
             <td>💳 Formas de Pago </td>
-            <td>Visa, Mastercard, Tranferecnia Bancaria, Punto Pago</td>
+            <td>Nequi, Crown Casino, Clave, Tranferecnia Bancaria, Punto Pago</td>
           </tr>
         </tbody>
       </Table>
