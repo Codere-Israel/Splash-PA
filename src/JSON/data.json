@@ -1,10 +1,10 @@
 {
   "desktop_slide_list": [{
-      "image": "https://www.codere.pa/assets/inicio-banners/panama-vs-canada-desktop.jpg",
-      "img_alt": "panama-vs-canada",
+      "image": "https://www.codere.pa/assets/inicio-banners/panama-el-salvador-desktop.jpg",
+      "img_alt": "panama-el-salvador",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2023-06-14T14:00:00Z",
-      "endDate": "2023-06-15T23:00:00Z",
+      "startDate": "2023-07-03T14:00:00Z",
+      "endDate": "2023-07-05T00:30:00Z",
       "scheduled": true
     },
     {
@@ -40,11 +40,11 @@
     }
   ],
   "mobile_slide_list": [{
-      "image": "https://www.codere.pa/assets/inicio-banners/panama-vs-canada-mobile.jpg",
-      "img_alt": "panama-vs-canada",
+      "image": "https://www.codere.pa/assets/inicio-banners/panama-el-salvador-mobile.jpg",
+      "img_alt": "panama-el-salvador",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2023-06-14T14:00:00Z",
-      "endDate": "2023-06-15T23:00:00Z",
+      "startDate": "2023-07-03T14:00:00Z",
+      "endDate": "2023-07-05T00:30:00Z",
       "scheduled": true
     },
     {
