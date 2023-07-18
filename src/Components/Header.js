@@ -69,14 +69,15 @@ function Header() {
   ];
 
   const seo_menu = [
-    { name: "Casino", url: "https://www.codere.pa/casino" },
+    { name: "Casino", url: "/casino", spa: true },
     {
       name: "Casino en vivo",
-      url: "https://www.codere.pa/casino/casino-en-vivo",
+      url: "/casino/casino-en-vivo",
+      spa: true,
     },
-    { name: "Ruleta", url: "https://www.codere.pa/casino/ruleta" },
-    { name: "BlackJack", url: "https://www.codere.pa/casino/blackjack" },
-    { name: "Slots", url: "https://www.codere.pa/casino/slots" },
+    { name: "Ruleta", url: "/casino/ruleta", spa: true },
+    { name: "Slots", url: "/casino/slots", spa: true },
+    { name: "BlackJack", url: "/casino/blackjack", spa: true },
     { name: "Eventos Deportivos", url: "/eventos-deportivos", spa: true },
     {
       name: "Cuotas Deportivas",

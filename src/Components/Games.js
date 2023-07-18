@@ -11,19 +11,37 @@ import { useState } from "react";
 // Top Games \\
 
 function Games() {
+  const desktopTitleStyles = {
+    color: "#fff",
+    fontSize: "1.75rem",
+    fontWeight: 700,
+  };
+  const mobileTitleStyles = {
+    color: "#79c000",
+    fontWeight: 700,
+    textAlign: "center",
+    fontSize: "5vw",
+    margin: "1.75vw 0",
+  };
   return (
     <isMobileContext.Consumer>
       {(isMobile) => {
         return isMobile ? (
-          <section id="mobile-games-section">
-            <h2 className="gamesTitle"> Juegos Destacados </h2>
+          <div id="mobile-games-section">
+            <div style={mobileTitleStyles}>
+              <span> Juegos Destacados </span>
+            </div>
             <GameSwiper games={gameCarousel.first_slide_list} order={0} />
-            <h2 className="gamesTitle mt-3"> Nuevos Juegos </h2>
+            <div style={mobileTitleStyles}>
+              <span> Nuevos Juegos </span>
+            </div>
             <GameSwiper games={gameCarousel.second_slide_list} order={1} />
-          </section>
+          </div>
         ) : (
           <div id={gameCSS.desktop_games}>
-            <h2> Mejores Juegos </h2>
+            <div>
+              <span style={desktopTitleStyles}>Mejores Juegos</span>
+            </div>
             <div className={gameCSS.top_games_conatiner}>
               {deskGames.top_games.map((item, key) => {
                 return (
@@ -40,7 +58,9 @@ function Games() {
                 );
               })}
             </div>
-            <h2> Nuevos Juegos </h2>
+            <div>
+              <span style={desktopTitleStyles}>Nuevos Juegos</span>
+            </div>
 
             <div className={gameCSS.bottom_conatiner}>
               {deskGames.bottom_games.map((item, key) => {

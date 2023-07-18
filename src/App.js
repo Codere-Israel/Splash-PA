@@ -2,24 +2,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "@fontsource/roboto-condensed";
 import Header from "./Components/Header";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Outlet,
-} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import Footer from "./Components/Footer";
+import Routing from "./routes/Routing";
+
 import StickyFooter from "./Components/StickyFooter";
 import { isMobile } from "react-device-detect";
 import React, { useState, useEffect } from "react";
 import CookieConsent from "react-cookie-consent";
-import Inicio from "./Components/Inicio";
-import Basketball from "./Components/seo/events/Basketball";
-import Tenis from "./Components/seo/events/Tenis";
-import Mundeal from "./Components/seo/events/Mundeal";
-import Formula from "./Components/seo/events/Formula";
-import EventosDeportivos from "./Components/seo/EventosDeportivos";
 
 // import Timer from "./Components/Timer";
 // import { Zoom, Slide, Fade } from "react-awesome-reveal";
@@ -61,7 +52,7 @@ function App() {
             expires={365}
             buttonText="- Aceptar -"
             buttonClasses="cookie-btn"
-            overlay={true}
+            overlay={false}
             cookieValue={"accepted"}
             extraCookieOptions={{ domain: ".codere.pa" }}
             overlayClasses="cookie-overlay"
@@ -79,41 +70,12 @@ function App() {
             </a>
             .
           </CookieConsent>
+          <Routing flag={flag} />
+
+          <Footer />
           {flag ? <StickyFooter /> : null}
-          <Routes>
-            <Route path="/" element={<Inicio />} />
-            <Route exact path="eventos-deportivos">
-              <Route
-                exact
-                path=""
-                element={<EventosDeportivos flag={flag} index={0} />}
-              />
-              <Route
-                exact
-                path="apuestas-mundial-baloncesto"
-                element={<Basketball flag={flag} index={1} />}
-              />
-              <Route
-                exact
-                path="apuestas-grand-slam"
-                element={<Tenis flag={flag} index={2} />}
-              />
-              <Route
-                exact
-                path="apuestas-grand-prix"
-                element={<Formula flag={flag} index={3} />}
-              />
-              <Route
-                exact
-                path="apuestas-mundial-fifa"
-                element={<Mundeal flag={flag} index={4} />}
-              />
-            </Route>
-          </Routes>
-          <Outlet />
         </isMobileContext.Provider>
       </div>
-      <Footer />
     </Router>
   );
 }

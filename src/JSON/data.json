@@ -1,18 +1,17 @@
 {
-  "desktop_slide_list": [{
-      "image": "https://www.codere.pa/assets/inicio-banners/mexico-panama-desktop.jpg",
-      "img_alt": "mexico-panama",
-      "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2023-07-14T14:00:00Z",
-      "endDate": "2023-07-16T23:30:00Z",
-      "scheduled": true
+  "desktop_slide_list": [
+    {
+      "image": "https://www.codere.pa/assets/inicio-banners/girls-desktop.jpg",
+      "img_alt": "girls",
+      "tycLink": "http://m.codere.pa/deportespanama/#/PromotionsPage?url=https://www.codere.pa/PromocionesPA/actives/Codere_Con_Ellas.aspx",
+      "scheduled": false
     },
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/real-madrid-liverpool-desktop.jpg",
-      "img_alt": "real-madrid-liverpool",
+      "image": "https://www.codere.pa/assets/inicio-banners/panama-el-salvador-desktop.jpg",
+      "img_alt": "panama-el-salvador",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2023-03-13T14:00:00Z",
-      "endDate": "2023-03-15T20:00:00Z",
+      "startDate": "2023-07-03T14:00:00Z",
+      "endDate": "2023-07-05T00:30:00Z",
       "scheduled": true
     },
     {
@@ -39,20 +38,19 @@
       "scheduled": false
     }
   ],
-  "mobile_slide_list": [{
-      "image": "https://www.codere.pa/assets/inicio-banners/mexico-panama-mobile.jpg",
-      "img_alt": "mexico-panama",
-      "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2023-07-14T14:00:00Z",
-      "endDate": "2023-07-16T23:30:00Z",
-      "scheduled": true
+  "mobile_slide_list": [
+    {
+      "image": "https://www.codere.pa/assets/inicio-banners/girls-mobile.jpg",
+      "img_alt": "girls",
+      "tycLink": "http://m.codere.pa/deportespanama/#/PromotionsPage?url=https://www.codere.pa/PromocionesPA/actives/Codere_Con_Ellas.aspx",
+      "scheduled": false
     },
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/real-madrid-liverpool-mobile.jpg",
-      "img_alt": "real-madrid-liverpool",
+      "image": "https://www.codere.pa/assets/inicio-banners/panama-el-salvador-mobile.jpg",
+      "img_alt": "panama-el-salvador",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2023-03-13T14:00:00Z",
-      "endDate": "2023-03-15T20:00:00Z",
+      "startDate": "2023-07-03T14:00:00Z",
+      "endDate": "2023-07-05T00:30:00Z",
       "scheduled": true
     },
     {
