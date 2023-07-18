@@ -1,0 +1,221 @@
+.scroll-to-top {
+  width: 50px !important;
+  height: 50px !important;
+  font-size: 2rem;
+  background-color: #79c000 !important;
+  border-radius: 10rem !important;
+}
+
+.floating {
+  color: #fff;
+  left: 0;
+  /* line-height: 0.8; */
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  /* top: 7vw; */
+  margin-top: 1vw;
+  width: 32%;
+  z-index: 2;
+}
+
+.floating span {
+  font-family: Codere;
+  font-size: 5.5vw;
+  line-height: 1;
+}
+
+.floating a {
+  background-color: #0056fe;
+  margin-top: 0.75vw;
+  font-weight: 700;
+  font-size: 1.65rem;
+  border-radius: 10rem;
+  padding: 0.55vw 2.15rem;
+}
+
+.seotable {
+  width: 60%;
+  margin: unset !important;
+}
+
+.content-table {
+  margin: auto;
+  color: #fff;
+  padding: 1.25rem;
+  width: 100%;
+  /* box-shadow: #7ac00049 0px 2px 6px, #7ac00017 0px 1px 4px,
+    #7ac00013 0px 0px 12px; */
+  background-color: #333;
+  border-radius: 0.45rem;
+  overflow: auto;
+}
+
+.content-table i {
+  background: #333f48;
+  border-radius: 50px;
+  display: inline-block;
+  height: 1.5vw;
+  margin-right: 1vw;
+  position: relative;
+  top: 0.4vw;
+  width: 1.5vw;
+}
+
+.content-table i:after,
+.content-table i:before {
+  border-style: solid;
+  content: "";
+  display: block;
+  height: 0;
+  position: absolute;
+  top: 0.5vw;
+  width: 0;
+}
+
+.content-table i:before {
+  border-color: transparent transparent transparent #fff;
+  border-width: 0.3vw 0 0.3vw 0.3vw;
+  left: 0.7vw;
+}
+
+.content-table i:after {
+  border-color: transparent transparent transparent #333f48;
+  border-width: 0.3vw 0 0.3vw 0.3vw;
+  left: 0.6vw;
+}
+
+.content-table .subtitle {
+  border-left: 3px solid #79c000;
+  border-radius: 0;
+  padding-left: 0.75rem;
+  color: #79c000;
+  margin-left: 1.5rem;
+}
+
+.content-table svg {
+  padding: 0.25rem;
+  margin-right: 1rem;
+  background-color: #333f48;
+  text-align: center;
+  border-radius: 1.5rem;
+}
+
+.flexed-centered {
+  display: flex;
+  align-items: center;
+}
+
+.container > div > ._tx.flexed-centered,
+.container > ._tx.flexed-centered {
+  width: 48%;
+  display: inline-block;
+  float: left;
+}
+
+.container.formulaTable > ._tx.flexed-centered {
+  width: 100%;
+}
+
+.tabla {
+  display: flex;
+}
+
+._tx {
+  margin: 0.35rem;
+}
+
+._tx a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.content-table a:hover,
+.content-table a:active,
+.content-table a:focus {
+  color: #4b7502 !important;
+}
+
+#tipos h2,
+#tipos h3 {
+  color: #79c000;
+}
+
+.para {
+  color: #79c000;
+  padding-top: 4.1rem;
+}
+
+.h3,
+h3 {
+  font-size: 1.4rem;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  color: #79c000;
+}
+
+@media screen and (max-width: 767px) {
+  .scroll-to-top {
+    right: 5vw !important;
+    bottom: 18vw !important;
+  }
+
+  .h3,
+  h3 {
+    font-size: calc(1.1rem + 0.6vw);
+  }
+
+  .scroll .fa-chevron-up {
+    font-size: 2rem;
+    padding: 0.7rem, 0.3rem, 0.7rem, 0.3rem;
+  }
+
+  .floating {
+    text-align: center;
+    display: flex;
+    height: 49vw;
+    width: 62%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .floating span {
+    font-size: 10.2vw;
+    line-height: 1;
+  }
+
+  .floating a {
+    margin-top: 1.15rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.55rem 1.65rem;
+    line-height: 1;
+  }
+
+  .content-table {
+    width: 100%;
+    display: block;
+    max-width: 450px;
+    min-width: 300px;
+    padding: 1.75rem;
+  }
+
+  .para {
+    color: #79c000;
+    padding-top: 0;
+  }
+
+  .seotable {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content-table {
+    padding: 0.75rem;
+  }
+}

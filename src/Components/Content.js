@@ -281,21 +281,21 @@ function Content(props) {
         <tbody>
           <tr>
             <td>🏆 Establecido</td>
-            <td>2005</td>
+            <td>2021</td>
           </tr>
           <tr>
             <td>⚽ Apuestas Deportivas</td>
-            <td>Apuestas NFL, Apuestas MLB, Apuestas LaLiga Santander y más</td>
+            <td>Apuestas de fútbol (La Liga, UEFA Champions League, Nations League, Premier entre otros) MLB, NFL, y mucho mas!</td>
           </tr>
           <tr>
             <td>🎰 Juegos de Casino</td>
-            <td>Máquinas tragamonedas (slots), ruleta y blackjack</td>
+            <td>Máquinas tragamonedas (slots) y Casino en Vivo (Blackjack, Ruleta, Baccarat).</td>
           </tr>
           <tr>
             <td>🎲 Licencia</td>
             <td>
-              Contratos Nº 38 de 22/01/2003 y Nº 193 de 4/10/2005, y Resolución
-              Nº. 921 de 21/09/2017.
+              	
+Contratos Contrato No. 2021-006 de 26 de mayo de 2021.
             </td>
           </tr>
           <tr>
@@ -304,15 +304,17 @@ function Content(props) {
           </tr>
           <tr>
             <td>💰 Depósito mínimo</td>
-            <td>Minimo $10 Dolares</td>
+            <td>Mínimo $20 Dólares</td>
           </tr>
           <tr>
             <td>💸 Limites de Retiros</td>
-            <td>Retiro mínimo es de $50.</td>
+            <td>Retiro mínimo es de $50 (Por Transferencia Bancaria). En nuestros Crown Casinos no hay límite de retiro (Se cobrara el 5.5% por retiro en Crown Casinos).</td>
           </tr>
           <tr>
             <td>💳 Formas de Pago </td>
-            <td>Nequi, Crown Casino, Clave, Tranferecnia Bancaria, Punto Pago</td>
+            <td>
+            Tarjeta Codere, Transferencia Bancaria, Crown Casinos, Punto Pago, Punto Pago App (Visa, MasterCard y Clave) y Páguelo fácil (Nequi/ Tarjeta Clave).
+            </td>
           </tr>
         </tbody>
       </Table>

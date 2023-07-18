@@ -244,9 +244,9 @@ body {
   border: 1px solid #333f48;
   color: #333f48;
   font-size: 0.95vw;
-  line-height: 2.25vw;
-  padding: 0 1vw;
+  padding: 0.45rem 1rem;
   border-radius: 30px;
+  /* line-height: 2.25vw; */
 }
 
 .acceder-button,
@@ -271,7 +271,7 @@ body {
 .bottom-game-regis {
   border-radius: 30px;
   font-size: 0.95vw;
-  padding: 0.4vw 1.3vw;
+  padding: 0.45rem 1.3rem;
   margin: 0;
   margin-left: 0.5vw;
   font-weight: bold;
@@ -448,25 +448,29 @@ body {
 
 /* Swiper */
 
-#mobile-games-section .swiper-slide-next img {
+/* #mobile-games-section .swiper-slide-next img {
   position: unset;
   transform: scale(1.1) !important;
   filter: grayscale(0) !important;
-  /* transition: transform 1000ms; */
   transition: all 750ms;
 }
 
 #mobile-games-section .swiper-slide img {
-  /* width: 100%; */
   overflow: visible;
   transform: scale(0.9);
-  filter: grayscale(60%) blur(1px);
+  filter: grayscale(20%) blur(0.51px);
 
   transition: all 1000ms;
-}
+} */
 
 .swiper-slide a img {
   width: 100%;
+}
+
+.game-carousel .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
 }
 
 .game-carousel img {
@@ -816,7 +820,7 @@ img.game_logo:hover {
 
 /* Table */
 .table {
-  width: 90%;
+  width: 68%;
   margin: auto;
   margin-bottom: 1rem;
 }
@@ -1290,7 +1294,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .bm-item-list {
     color: #b8b7ad;
-    padding-top: 0.8em;
+    /* padding-top: 0; */
     width: 182%;
   }
 

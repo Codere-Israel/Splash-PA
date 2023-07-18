@@ -87,16 +87,26 @@ img.topGameImage {
 img.game_logo {
   margin: auto;
   position: absolute;
-  width: 19vw;
-  top: 7vw;
-  z-index: 1;
-  right: 2vw;
-}
-
-.top_games_conatiner .topGame:nth-child(2) .game_logo {
-  top: 5vw;
   left: 0;
   right: 0;
+  /* width: 19vw; */
+  /* top: 7vw; */
+  z-index: 1;
+
+  /* right: 2vw; */
+}
+
+.top_games_conatiner .topGame:nth-child(1) .game_logo {
+  -webkit-filter: drop-shadow(1px 2px 5px #000);
+  filter: drop-shadow(0px 3px 0px #000);
+}
+.top_games_conatiner .topGame:nth-child(2) .game_logo {
+  /* top: 8vw; */
+  left: 0;
+  /* height: 10rem; */
+  right: unset;
+  -webkit-filter: drop-shadow(1px 2px 5px #000);
+  filter: drop-shadow(0px 1px 15px #000);
 }
 
 img.game_logo:hover {
@@ -210,16 +220,22 @@ img.game_logo:hover {
   margin-bottom: 15px;
 }
 
+.logo img {
+  max-height: 18rem;
+}
+
 .bottom_conatiner > a:nth-child(1) .logo,
 .bottom_conatiner > a:nth-child(3) .logo {
   bottom: 10px;
 }
+
 .bottom_conatiner > a:nth-child(2) .game_logo {
-  top: 120px;
+  /* top: 120px; */
 }
+
 .bottom_conatiner > a:nth-child(2) .logo img,
 .bottom_conatiner > a:nth-child(3) .logo img {
-  height: 6rem;
+  max-height: 8rem;
 }
 
 .bottom_box .logo {
@@ -330,11 +346,13 @@ img.game_logo:hover {
   );
   z-index: 1;
 }
+
 @keyframes slide {
   0% {
     left: -20vw;
     top: 0;
   }
+
   100% {
     left: 30vw;
     top: 0;

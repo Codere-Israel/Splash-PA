@@ -6,19 +6,14 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { Slide } from "react-awesome-reveal";
 
 function TopGame(props) {
-  const dir = ["left", "right", "top", "bottom"];
+  const dir = ["right", "left", "top", "bottom"];
 
   return (
     <div className={gameCSS.topGame}>
       <div className={gameCSS.card}>
         <a href={props.gameLink} rel={"nofollow"}>
-          {/* <div id="avner"> */}
           <img className="topGameImage" src={props.imgSrc} alt={props.alt} />
-          {/* </div> */}
-          <Slide
-            duration={1500}
-            direction={props.imgSrc.includes("blackjack") ? "left" : "right"}
-          >
+          <Slide direction="top" duration={1500}>
             <img
               className={gameCSS.game_logo}
               src={props.logo}
