@@ -7,11 +7,11 @@
       "scheduled": false
     },
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/panama-el-salvador-desktop.jpg",
-      "img_alt": "panama-el-salvador",
+      "image": "https://www.codere.pa/assets/inicio-banners/real-madrid-milan-desktop.jpg",
+      "img_alt": "real-madrid-milan",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2023-07-03T14:00:00Z",
-      "endDate": "2023-07-05T00:30:00Z",
+      "startDate": "2023-07-21T14:00:00Z",
+      "endDate": "2023-07-24T02:00:00Z",
       "scheduled": true
     },
     {
@@ -46,11 +46,11 @@
       "scheduled": false
     },
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/panama-el-salvador-mobile.jpg",
-      "img_alt": "panama-el-salvador",
+      "image": "https://www.codere.pa/assets/inicio-banners/real-madrid-milan-mobile.jpg",
+      "img_alt": "real-madrid-milan",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2023-07-03T14:00:00Z",
-      "endDate": "2023-07-05T00:30:00Z",
+      "startDate": "2023-07-21T14:00:00Z",
+      "endDate": "2023-07-24T02:00:00Z",
       "scheduled": true
     },
     {
