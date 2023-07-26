@@ -225,53 +225,7 @@ export default function Casino(props) {
         <title>{title}</title>
         <link rel="canonical" href="https://www.codere.pa/casino" />
         <meta name="description" content={description} />
-
         <script type="application/ld+json">{JSON.stringify(json)}</script>
-        <link
-          rel="alternate"
-          hreflang="x-default"
-          href="https://www.codere.es/casino"
-        />
-        <link
-          rel="alternate"
-          hreflang="en-mx"
-          href="https://www.codere.mx/casino"
-        />
-        <link
-          rel="alternate"
-          hreflang="es-co"
-          href="https://www.codere.com.co/casino"
-        />
-        <link
-          rel="alternate"
-          hreflang="es-mx"
-          href="https://www.codere.mx/casino"
-        />
-        <link
-          rel="alternate"
-          hreflang="en-co"
-          href="https://www.codere.com.co/casino"
-        />
-        <link
-          rel="alternate"
-          hreflang="es-ar"
-          href="https://www.codere.bet.ar/casino"
-        />
-        <link
-          rel="alternate"
-          hreflang="en-ar"
-          href="https://www.codere.bet.ar/casino"
-        />
-        <link
-          rel="alternate"
-          hreflang="es-pa"
-          href="https://www.codere.pa/casino/"
-        />
-        <link
-          rel="alternate"
-          hreflang="en-pa"
-          href="https://www.codere.pa/casino/"
-        />
       </Helmet>
 
       <Navigations index={props.index} type={1} />

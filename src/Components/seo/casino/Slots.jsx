@@ -250,53 +250,7 @@ export default function Slots(props) {
       <Helmet>
         <title>{title}</title>
         <link rel="canonical" href="https://www.codere.pa/casino/slots" />
-        <link
-          rel="alternate"
-          hreflang="x-default"
-          href="https://www.codere.es/casino/slots"
-        />
-        <link
-          rel="alternate"
-          hreflang="es-mx"
-          href="https://www.codere.mx/yak"
-        />
-        <link
-          rel="alternate"
-          hreflang="en-mx"
-          href="https://www.codere.mx/yak"
-        />
-        <link
-          rel="alternate"
-          hreflang="es-co"
-          href="https://www.codere.com.co/casino/slots"
-        />
-        <link
-          rel="alternate"
-          hreflang="en-co"
-          href="https://www.codere.com.co/casino/slots"
-        />
-        <link
-          rel="alternate"
-          hreflang="es-ar"
-          href="https://www.codere.bet.ar/casino/slots"
-        />
-        <link
-          rel="alternate"
-          hreflang="en-ar"
-          href="https://www.codere.bet.ar/casino/slots"
-        />
-        <link
-          rel="alternate"
-          hreflang="es-pa"
-          href="https://www.codere.pa/casino/slots"
-        />
-        <link
-          rel="alternate"
-          hreflang="en-pa"
-          href="https://www.codere.pa/casino/slots"
-        />
         <meta name="description" content={description} />
-
         <script type="application/ld+json">{JSON.stringify(json)}</script>
       </Helmet>
 
