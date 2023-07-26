@@ -190,53 +190,7 @@ export default function CasinoLive(props) {
           rel="canonical"
           href="https://www.codere.pa/casino/casino-en-vivo"
         />
-        <link
-          rel="alternate"
-          hreflang="x-default"
-          href="https://www.codere.es/casino/casino-en-vivo"
-        />
-        <link
-          rel="alternate"
-          hreflang="en-mx"
-          href="https://www.codere.mx/casino-en-vivo"
-        />
-        <link
-          rel="alternate"
-          hreflang="es-co"
-          href="https://www.codere.com.co/casino/casino-en-vivo"
-        />
-        <link
-          rel="alternate"
-          hreflang="es-mx"
-          href="https://www.codere.mx/casino-en-vivo"
-        />
-        <link
-          rel="alternate"
-          hreflang="en-co"
-          href="https://www.codere.com.co/casino/casino-en-vivo"
-        />
-        <link
-          rel="alternate"
-          hreflang="es-ar"
-          href="https://www.codere.bet.ar/casino/casino-en-vivo"
-        />
-        <link
-          rel="alternate"
-          hreflang="en-ar"
-          href="https://www.codere.bet.ar/casino/casino-en-vivo"
-        />
-        <link
-          rel="alternate"
-          hreflang="es-pa"
-          href="https://www.codere.pa/casino/casino-en-vivo"
-        />
-        <link
-          rel="alternate"
-          hreflang="en-pa"
-          href="https://www.codere.pa/casino/casino-en-vivo"
-        />
         <meta name="description" content={description} />
-
         <script type="application/ld+json">{JSON.stringify(json)}</script>
       </Helmet>
 
