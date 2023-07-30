@@ -10,14 +10,32 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { backTopTop } from "../EventosDeportivos";
 
 export default function Balenco(props) {
-  const [loaded, setLoaded] = useState(false);
-  const skeleton = `https://www.codere.pa/seopages/eventos-deportivos/icons/skeleton.png`;
+  function getCookie(cookieName) {
+    const name = cookieName + "=";
+    const decodedCookie = decodeURIComponent(document.cookie);
+    const cookieArray = decodedCookie.split(";");
+
+    for (let i = 0; i < cookieArray.length; i++) {
+      let cookie = cookieArray[i];
+      while (cookie.charAt(0) === " ") {
+        cookie = cookie.substring(1);
+      }
+      if (cookie.indexOf(name) === 0) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  const segmentCookieExist = getCookie("segmentMe");
+  console.log(segmentCookieExist);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const title = "Apuesta para el Mundial de Fútbol | Codere®";
+  const segmentedTitle = "test test test | Codere";
   const description =
     "Acá te dejamos una explicación sobre en qué consisten algunas populares opciones de apuesta y algunas que no son tan populares. Apuesta en Codere.";
   const prefix = `https://www.codere.pa/seopages/eventos-deportivos/fifa/imgs/${
@@ -182,7 +200,7 @@ export default function Balenco(props) {
   return (
     <>
       <Helmet>
-        <title>{title}</title>
+        <title>{segmentCookieExist ? segmentedTitle : title}</title>
         <link
           rel="canonical"
           href="https://www.codere.pa/eventos-deportivos/apuestas-mundial-fifa"
@@ -196,35 +214,56 @@ export default function Balenco(props) {
 
       <div
         className="top-bg-seo"
-        style={{
-          backgroundImage: `url(https://www.codere.pa/seopages/eventos-deportivos/fifa/imgs/${
-            props.flag ? "M" : "D"
-          }-Header.jpg)`,
-          backgroundSize: "cover",
-        }}
+        style={
+          segmentCookieExist
+            ? {
+                backgroundImage: `url(${prefix}1.jpg)`,
+                backgroundSize: "cover",
+              }
+            : {
+                backgroundImage: `url(https://www.codere.pa/seopages/eventos-deportivos/fifa/imgs/${
+                  props.flag ? "M" : "D"
+                }-Header.jpg)`,
+                backgroundSize: "cover",
+              }
+        }
       ></div>
 
       <Container>
         <div className="event">
           <Container>
-            {!props.flag ? <TableOfContents table={table_list} /> : <></>}
-
             <Fade>
-              <h1 className="header subtitle">
-                Apuestas deportivas para el Mundial de Futbol
-              </h1>
+              {segmentCookieExist ? (
+                <h5 className="subtitle mt-4" style={{ textAlign: "center" }}>
+                  Segmented - Apuestas deportivas para el Mundial de Futbol
+                </h5>
+              ) : (
+                <h1 className="header subtitle mt-4">
+                  Apuestas deportivas para el Mundial de Futbol
+                </h1>
+              )}
             </Fade>
             <p>{top_par}</p>
+
+            {!props.flag ? <TableOfContents table={table_list} /> : <></>}
+
             <div className="para">
               <h2 id="historia" className="subtitle">
                 {history.h2}
               </h2>
             </div>
-            {/* <Zoom triggerOnce> */}
             <p style={{ color: "#fff" }}>{history.p}</p>
-            {/* </Zoom> */}
             <Fade duration={1000} triggerOnce>
-              <LazyLoadImage src={prefix + "1" + jpg} width="100%" />
+              {segmentCookieExist ? (
+                <LazyLoadImage
+                  src={`https://www.codere.pa/seopages/eventos-deportivos/fifa/imgs/${
+                    props.flag ? "M" : "D"
+                  }-Header.jpg`}
+                  width="100%"
+                />
+              ) : (
+                <LazyLoadImage src={prefix + "1" + jpg} width="100%" />
+              )}
             </Fade>
             <div className="para">
               <h2 id="principales" className="subtitle">
