@@ -7,11 +7,11 @@
       "scheduled": false
     },
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/tauro-vs-plaza-desktop.jpg",
-      "img_alt": "tauro-vs-plaza",
+      "image": "https://www.codere.pa/assets/inicio-banners/athletic-bilbao-vs-real-madrid-desktop.jpg",
+      "img_alt": "athletic-bilbao-vs-real-madrid",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2023-08-03T14:00:00Z",
-      "endDate": "2023-08-05T12:15:00Z",
+      "startDate": "2023-08-10T07:00:00Z",
+      "endDate": "2023-08-12T19:30:00Z",
       "scheduled": true
     },
     {
@@ -46,11 +46,11 @@
       "scheduled": false
     },
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/tauro-vs-plaza-mobile.jpg",
-      "img_alt": "tauro-vs-plaza",
+      "image": "https://www.codere.pa/assets/inicio-banners/athletic-bilbao-vs-real-madrid-mobile.jpg",
+      "img_alt": "athletic-bilbao-vs-real-madrid",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?src=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
-      "startDate": "2023-08-03T14:00:00Z",
-      "endDate": "2023-08-05T12:15:00Z",
+      "startDate": "2023-08-10T07:00:00Z",
+      "endDate": "2023-08-12T19:30:00Z",
       "scheduled": true
     },
     {
