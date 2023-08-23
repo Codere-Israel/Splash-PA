@@ -832,8 +832,8 @@ img.game_logo:hover {
 
 /* Table */
 .table {
-  width: 68%;
-  /* max-width: 80; */
+  width: 950px;
+  max-width: 95%;
   margin: auto;
   margin-bottom: 1rem;
 }
