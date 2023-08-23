@@ -36,6 +36,7 @@ export default function Inicio(props) {
       "https://www.google.com/search?kgmid=/g/121c515_",
     ],
   };
+
   const json2 = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
