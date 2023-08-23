@@ -28,12 +28,12 @@ body {
     brightness(94%) contrast(77%);
 }
 
-.e-nav h5 {
+.e-nav span {
   font-weight: 400;
   font-size: 1.1rem;
 }
 
-h5.colored {
+span.colored {
   border-bottom: 3px solid #79c000;
   padding-bottom: 5px;
 }
@@ -43,8 +43,14 @@ h5.colored {
   padding: 4.2rem 0 0.3rem 0;
 }
 
+.e-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .e-nav a:hover,
-.e-nav a:hover h5 {
+.e-nav a:hover span {
   filter: invert(55%) sepia(103%) saturate(1266%) hue-rotate(62deg)
     brightness(94%) contrast(77%);
   /* border-bottom: 3px solid #79c000;
@@ -52,7 +58,7 @@ h5.colored {
   /* border-radius: 0.25rem; */
   /* transition: all 300ms ease-in-out; */
 }
-.e-nav a:hover h5 {
+.e-nav a:hover span {
   border-bottom: 3px solid #79c000;
   padding-bottom: 0.25rem;
 }
@@ -402,7 +408,7 @@ h5.colored {
   .cas-reg-btn {
     max-width: 60vw;
   }
-  .e-nav h5 {
+  .e-nav span {
     font-size: 4vw;
   }
 }

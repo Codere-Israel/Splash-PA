@@ -170,12 +170,12 @@ export default function Balenco(props) {
       <Container>
         <div className="event">
           <Container>
-            {!props.flag ? <TableOfContents table={table_list} /> : <></>}
-
-            <h1 className="header subtitle">
+            <h1 className="header subtitle mt-4">
               Guía de apuestas para el Mundial de Baloncesto
             </h1>
             <p>{top_par}</p>
+            {!props.flag ? <TableOfContents table={table_list} /> : <></>}
+
             <div className="para">
               <h2 id="historia" className="subtitle">
                 Historia Del Mundial de Baloncesto

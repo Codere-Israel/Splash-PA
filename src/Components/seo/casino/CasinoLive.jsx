@@ -238,12 +238,15 @@ export default function CasinoLive(props) {
             .slice(0, !props.flag ? live_games.length : 4)
             .map((game, k) => (
               <Col lg={2} md={4} xs={6} key={k}>
-                <NavLink href={`${game_prefix}${game.sponsor} ${game.name}`}>
+                <NavLink
+                  rel="nofollow"
+                  href={`${game_prefix}${game.sponsor} ${game.name}`}
+                >
                   <div className="cas-game-wrapper">
                     <LazyLoadImage
                       className="casino-game-img shining"
                       src={
-                        "https://www.codere.es/lobby_tiles/" + game.img + ".jpg"
+                        "https://www.codere.pa/lobby_tiles/" + game.img + ".jpg"
                       }
                     />
                     <div className="hvr">

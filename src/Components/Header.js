@@ -5,6 +5,7 @@ import {
   Navbar,
   Dropdown,
   Accordion,
+  InputGroup,
 } from "react-bootstrap";
 import { isMobileContext } from "../App";
 import React, { useState } from "react";
@@ -14,18 +15,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleDown,
   faAngleRight,
-  faFutbol,
   faCirclePlay,
   faBullhorn,
   faCrosshairs,
-  faBaseball,
-  faFootball,
   faCoins,
-  faTrophy,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
-function Header() {
+function Header(props) {
   var regis = "https://m.codere.pa/deportespanama/#/RegistroPAPage";
   const acceder =
     "https://m.codere.pa/deportespanama/#/HomePage?openlogin=true";
@@ -91,141 +89,139 @@ function Header() {
   };
 
   return (
-    <isMobileContext.Consumer>
-      {(isMobile) => (
-        <Navbar className="header_nav stroke" variant="dark">
-          {isMobile ? (
-            <div id="father">
-              <div id="outer-container">
-                <Menu
-                  id="elastic"
-                  left
-                  customCrossIcon={false}
-                  pageWrapId={"page-wrap"}
-                  outerContainerId={"outer-container"}
-                  burgerButtonClassName={onShow}
-                  isOpen={hamburger}
-                  onOpen={hamburgerHandler}
-                  onClose={hamburgerHandler}
-                >
-                  {menu.map((m, k) => (
-                    <Nav.Link key={k} rel="nofollow" href={m.url}>
-                      <FontAwesomeIcon icon={m.icon} />
-                      {m.name}
-                      <FontAwesomeIcon icon={faAngleRight} />
-                    </Nav.Link>
-                  ))}
+    <Navbar className="header_nav stroke" variant="dark">
+      {props.flag ? (
+        <div id="father">
+          <div id="outer-container">
+            <Menu
+              id="elastic"
+              left
+              customCrossIcon={false}
+              pageWrapId={"page-wrap"}
+              outerContainerId={"outer-container"}
+              burgerButtonClassName={onShow}
+              isOpen={hamburger}
+              onOpen={hamburgerHandler}
+              onClose={hamburgerHandler}
+            >
+              {menu.map((m, k) => (
+                <Nav.Link key={k} rel="nofollow" href={m.url}>
+                  <FontAwesomeIcon icon={m.icon} />
+                  {m.name}
+                  <FontAwesomeIcon icon={faAngleRight} />
+                </Nav.Link>
+              ))}
 
-                  <Accordion className="hamb-accordion">
-                    <Accordion.Item eventKey="0">
-                      <Accordion.Header>Links Destacados</Accordion.Header>
-                      <Accordion.Body>
-                        <ul>
-                          {seo_menu.map((s, k) => (
-                            <li key={k}>
-                              <Nav.Link
-                                onClick={s.spa ? hamburgerHandler : null}
-                                as={s.spa ? Link : "a"}
-                                to={s.url}
-                                href={s.url}
-                              >
-                                {s.name}
-                                <FontAwesomeIcon icon={faAngleRight} />
-                              </Nav.Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </Accordion>
-                </Menu>
-                <main id="page-wrap"></main>
-              </div>
-              <Nav.Link
-                href="https://m.codere.pa/deportespanama/#/HomePage"
-                rel="nofollow"
-              >
-                <img
-                  src={LOGO}
-                  alt="Logo Casa de Apuestas Codere - Real Madrid "
-                />
-              </Nav.Link>
-              <div id="header_buttons">
-                <Button
-                  href={acceder}
-                  className="acceder-button header_btn"
-                  rel="nofollow"
-                >
-                  Acceder
-                </Button>
-                {/* <DialogModal /> */}
+              <Accordion className="hamb-accordion">
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>Links Destacados</Accordion.Header>
+                  <Accordion.Body>
+                    <ul>
+                      {seo_menu.map((s, k) => (
+                        <li key={k}>
+                          <Nav.Link
+                            onClick={s.spa ? hamburgerHandler : null}
+                            as={s.spa ? Link : "a"}
+                            to={s.url}
+                            href={s.url}
+                          >
+                            {s.name}
+                            <FontAwesomeIcon icon={faAngleRight} />
+                          </Nav.Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </Menu>
+            <main id="page-wrap"></main>
+          </div>
+          <Nav.Link
+            href="https://m.codere.pa/deportespanama/#/HomePage"
+            rel="nofollow"
+          >
+            <img src={LOGO} alt="Logo Casa de Apuestas Codere - Real Madrid " />
+          </Nav.Link>
+          <div id="header_buttons">
+            <Button
+              href={acceder}
+              className="acceder-button header_btn"
+              rel="nofollow"
+            >
+              Acceder
+            </Button>
+            {/* <DialogModal /> */}
 
-                <Button
-                  href={regis}
-                  className="registrate-button header_btn"
-                  rel="nofollow"
-                >
-                  Regístrate
-                </Button>
-              </div>
-            </div>
-          ) : (
-            <Container>
-              <a
-                href="https://m.codere.pa/deportespanama/#/HomePage"
-                rel="nofollow"
-              >
-                <img
-                  src={LOGO}
-                  alt="Logo Casa de Apuestas Codere - Real Madrid "
-                />
-              </a>
-              <Nav className="me-auto">
-                {menu.map((m, k) => (
-                  <Nav.Link key={k} rel="nofollow" href={m.url}>
-                    <span style={{ textTransform: "uppercase" }}>{m.name}</span>
-                  </Nav.Link>
+            <Button
+              href={regis}
+              className="registrate-button header_btn"
+              rel="nofollow"
+            >
+              Regístrate
+            </Button>
+          </div>
+        </div>
+      ) : (
+        <Container>
+          <InputGroup className="header-group-left">
+            <Nav.Link
+              href="https://m.codere.pa/deportespanama/#/HomePage"
+              rel="nofollow"
+            >
+              <LazyLoadImage
+                src={LOGO}
+                style={{ maxWidth: 160 }}
+                alt="Logo Casa de Apuestas Codere - Real Madrid "
+              />
+            </Nav.Link>
+            <Nav className="me-auto">
+              {menu.map((m, k) => (
+                <Nav.Link key={k} rel="nofollow" href={m.url}>
+                  <span style={{ textTransform: "uppercase" }}>{m.name}</span>
+                </Nav.Link>
+              ))}
+            </Nav>
+          </InputGroup>
+
+          <div style={{ display: "flex", right: "30px", position: "absolute" }}>
+            <Dropdown>
+              <Dropdown.Toggle className="header_btn">
+                <FontAwesomeIcon icon={faAngleDown} />
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                {seo_menu.map((d, k) => (
+                  <Dropdown.Item
+                    as={d.spa ? Link : "a"}
+                    to={d.url}
+                    key={k}
+                    href={d.url}
+                  >
+                    {d.name}
+                  </Dropdown.Item>
                 ))}
-              </Nav>
+              </Dropdown.Menu>
+            </Dropdown>
 
-              <Dropdown>
-                <Dropdown.Toggle className="header_btn">
-                  <FontAwesomeIcon icon={faAngleDown} />
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                  {seo_menu.map((d, k) => (
-                    <Dropdown.Item
-                      as={d.spa ? Link : "a"}
-                      to={d.url}
-                      key={k}
-                      href={d.url}
-                    >
-                      {d.name}
-                    </Dropdown.Item>
-                  ))}
-                </Dropdown.Menu>
-              </Dropdown>
-
-              <Button
-                href={acceder}
-                className="acceder-button header_btn"
-                rel="nofollow"
-              >
-                Acceder
-              </Button>
-              {/* <DialogModal /> */}
-              <Button
-                href={regis}
-                className="registrate-button header_btn"
-                rel="nofollow"
-              >
-                Regístrate
-              </Button>
-            </Container>
-          )}
-        </Navbar>
+            <Button
+              href={acceder}
+              className="acceder-button header_btn"
+              rel="nofollow"
+            >
+              Acceder
+            </Button>
+            {/* <DialogModal /> */}
+            <Button
+              href={regis}
+              className="registrate-button header_btn"
+              rel="nofollow"
+            >
+              Regístrate
+            </Button>
+          </div>
+        </Container>
       )}
-    </isMobileContext.Consumer>
+    </Navbar>
   );
 }
 

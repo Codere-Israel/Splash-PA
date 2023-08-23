@@ -5,6 +5,7 @@ import {
   faTwitter,
   faYoutube,
   faWhatsapp,
+  faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faComments,
@@ -101,7 +102,7 @@ function Footer() {
                   title=""
                   rel="nofollow"
                 >
-                  <FontAwesomeIcon icon={faTwitter} />
+                  <FontAwesomeIcon icon={faXTwitter} />
                 </a>
               </li>
               <li>
@@ -174,7 +175,7 @@ function Footer() {
                       href="https://www.codere-partners.com/es/"
                       title=""
                       rel="nofollow"
-                      target='_blank'
+                      target="_blank"
                     >
                       Afiliados de Codere
                     </a>
@@ -343,7 +344,7 @@ function Footer() {
             rel="nofollow"
           >
             <img
-              src="https://m.apuestas.codere.es/deportes/assets/img/logoaenoriso27001.png"
+              src="https://www.codere.pa/assets/footer/aenor-logo.png"
               alt="AENOR Seguridad Información"
             />
           </a>

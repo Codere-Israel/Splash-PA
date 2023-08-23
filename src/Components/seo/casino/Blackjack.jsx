@@ -224,6 +224,7 @@ export default function Blackjack(props) {
       <Helmet>
         <title>{title}</title>
         <link rel="canonical" href="https://www.codere.pa/casino/blackjack" />
+
         <meta name="description" content={description} />
         <script type="application/ld+json">{JSON.stringify(json)}</script>
       </Helmet>
@@ -260,7 +261,10 @@ export default function Blackjack(props) {
             .slice(0, !props.flag ? live_games.length : 4)
             .map((game, k) => (
               <Col lg={2} md={4} xs={6} key={k}>
-                <NavLink href={`${game_prefix}${game.sponsor} ${game.name}`}>
+                <NavLink
+                  rel="nofollow"
+                  href={`${game_prefix}${game.sponsor} ${game.name}`}
+                >
                   <div className="cas-game-wrapper">
                     <LazyLoadImage
                       className="casino-game-img shining"

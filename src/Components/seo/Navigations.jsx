@@ -94,7 +94,7 @@ export default function Navigations(props) {
             className={active === k + 1 ? "colored" : ""}
             style={isMobile ? { height: 32 } : { height: "2rem" }}
           />
-          <h5 className={active === k + 1 ? "colored" : ""}>{n.title}</h5>
+          <span className={active === k + 1 ? "colored" : ""}>{n.title}</span>
         </Link>
       ))}
     </div>

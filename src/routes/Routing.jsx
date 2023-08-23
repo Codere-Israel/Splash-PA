@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Inicio from "../Components/Inicio";
 import Basketball from "../Components/seo/sports/events/Basketball";
 import Tenis from "../Components/seo/sports/events/Tenis";
@@ -10,13 +10,19 @@ import Slots from "../Components/seo/casino/Slots";
 import CasinoLive from "../Components/seo/casino/CasinoLive";
 import Blackjack from "../Components/seo/casino/Blackjack";
 import Ruleta from "../Components/seo/casino/Ruleta";
+import { useEffect } from "react";
 
 export default function Routing(props) {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
     <Routes>
-      <Route path="/" element={<Inicio />} />
-      <Route path="stg" element={<Inicio />} />
-      <Route path="/stg/index.html" element={<Inicio />} />
+      <Route path="/" element={<Inicio flag={props.flag} />} />
+      <Route path="stg" element={<Inicio flag={props.flag} />} />
+      <Route path="/stg/index.html" element={<Inicio flag={props.flag} />} />
       <Route exact path="eventos-deportivos">
         <Route
           exact

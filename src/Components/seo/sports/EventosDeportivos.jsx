@@ -26,28 +26,28 @@ export default function EventosDeportivos(props) {
   const title = "Apuesta en los mejores Eventos Deportivos | Codere®";
   const description =
     "Aprende acerca de los mejores eventos deportivos a nivel mundial junto el Casino Online #1 de Panamá y alistate para ganar eligiendo Codere";
-  // const json = {
-  //   "@context": "https://schema.org",
-  //   "@type": "FAQPage",
-  //   mainEntity: [
-  //     {
-  //       "@type": "Question",
-  //       name: "¿Qué significa hándicap +5.5 en basquet?",
-  //       acceptedAnswer: {
-  //         "@type": "Answer",
-  //         text: "El hándicap de +5.5 consiste en atribuir o restar una serie de puntos a cada equipo. Al favorito se le restan y al no favorito se le suman. Es así cómo las diferencias en basketball  se “igualan” y se les añade emoción para apostar.",
-  //       },
-  //     },
-  //     {
-  //       "@type": "Question",
-  //       name: "¿Qué es un back to back de la NBA?",
-  //       acceptedAnswer: {
-  //         "@type": "Answer",
-  //         text: "En la NBA es fundamental la estadística de los «Back-to-back». Su definición consiste en el rendimiento de los equipos cuando juegan dos (o más) partidos seguidos sin descanso entre días.",
-  //       },
-  //     },
-  //   ],
-  // };
+  const json = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "¿Qué significa hándicap +5.5 en basquet?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "El hándicap de +5.5 consiste en atribuir o restar una serie de puntos a cada equipo. Al favorito se le restan y al no favorito se le suman. Es así cómo las diferencias en basketball  se “igualan” y se les añade emoción para apostar.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Qué es un back to back de la NBA?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "En la NBA es fundamental la estadística de los «Back-to-back». Su definición consiste en el rendimiento de los equipos cuando juegan dos (o más) partidos seguidos sin descanso entre días.",
+        },
+      },
+    ],
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -119,7 +119,7 @@ export default function EventosDeportivos(props) {
         <title>{title}</title>
         <link rel="canonical" href="https://www.codere.pa/eventos-deportivos" />
         <meta name="description" content={description} />
-        {/* <script type="application/ld+json">{JSON.stringify(json)}</script> */}
+        <script type="application/ld+json">{JSON.stringify(json)}</script>
       </Helmet>
       <div id="eventos">
         <div className="scroll">{backTopTop()}</div>

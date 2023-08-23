@@ -74,6 +74,11 @@ body {
 }
 
 /* stroke */
+
+.navbar-nav {
+  padding-top: 5px;
+  padding-left: 25px;
+}
 .stroke .navbar-nav a,
 .stroke .navbar-nav a:after,
 .stroke .navbar-nav a:before {
@@ -104,6 +109,12 @@ body {
 
 /* End Stroke */
 
+.header-group-left {
+  display: flex;
+  position: absolute;
+  left: 30px;
+}
+
 .header_nav {
   position: relative;
   background-color: #79c000;
@@ -132,9 +143,9 @@ body {
 
 .header_nav img {
   position: relative;
-  height: 3rem;
-  margin-right: 1vw;
-  left: 0;
+  /* height: 2.8rem; */
+  /* top: 6px; */
+  /* left: 35px; */
   cursor: pointer;
 }
 
@@ -441,6 +452,7 @@ body {
 }
 
 #carousel-section {
+  min-height: 80vh;
   position: relative;
   top: 3.3rem;
   margin-bottom: 2.2vw;
@@ -1026,8 +1038,8 @@ footer.nb-footer .about .social-media {
   color: #4267b2;
 }
 
-.fa-twitter {
-  color: #4267b2;
+.fa-x-twitter {
+  color: #000;
 }
 
 .fa-youtube {
@@ -1167,13 +1179,11 @@ footer.nb-footer .footer-info-single p {
   /* End Buttons Mobile */
 
   .header_nav img {
+    position: relative;
     width: 33vw;
+    top: auto;
     height: auto;
     left: -1.5vw;
-    /* left: 2.65rem;
-    margin-top: 0.4rem;
-    top: 0;
-    margin-right: 14vw; */
   }
 
   .navbar {
@@ -1294,6 +1304,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .bm-item-list {
     color: #b8b7ad;
+    overflow-y: auto;
     /* padding-top: 0; */
     width: 182%;
   }
@@ -1549,12 +1560,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 /* 
-  ##Device = Laptops, Desktops
+  ##Device = Laptops,ג Desktops
   ##Screen = B/w 1025px to 1280px
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  /* CSS */
+  .navbar-nav {
+    margin-left: 12vw;
+  }
 }
 
 /* 

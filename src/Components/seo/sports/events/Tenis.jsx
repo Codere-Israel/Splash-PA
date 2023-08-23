@@ -26,22 +26,23 @@ export default function Tenis(props) {
     mainEntity: [
       {
         "@type": "Question",
-        name: "¿Qué es +2.5 en tenis?",
+        name: "¿Cuál es el equipo más ganador de la F1?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Le suma al tenista elegido 2.5 puntos al total de sus puntos al final del partido. Se usa para mejorar las probabilidades de ganar la apuesta realizada",
+          text: "El equipo ganador de la F1 en los últimos años fue la escudería Mercedes. Pero estas últimas dos temporadas la F1 ha dado un giro ya que la escudería Ferrari y la escudería de Red Bull se han puesto en disputa del Campeonato también.",
         },
       },
       {
         "@type": "Question",
-        name: "¿Cómo saber si el pronóstico en tenis es fiable?",
+        name: "¿Cuándo es el  Grand Prix?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "<ol><li>Por el número de tie breaks, ya que los encuentros en pista rápida y hierba suelen ser  mayor  especialmente los que enfrentan a dos sacadores.</li><li>Por lo general, en los partidos de tenis femenino influye menos quien sirve y quien resta que en el tenis masculino.</li></ol>",
+          text: "La FIA (mejor conocida como el órgano rector del deporte automovilístico mundial) aprobó recién finalizada la temporada 2022 en septiembre el calendario para la próxima temporada con grandes premios. Serán un total de 24 carreras que van a conformar una temporada en la que se estrenarán algunos circuitos como el GP de Las Vegas y se mantendrán algunos circuitos que se pensó no estarían presentes como Mónaco y Spa tras muchos rumores que apuntaban a su desaparición. El Mundial de la F1 2023 tendrá inicio en Bahréin el 5 de marzo y tendrá su culminación el 26 de noviembre en Abu Dhabi. El GP de España tuvo un cambio de fecha, y pasó de mayo a junio. Francia queda eliminada del calendario y regresan a él los grandes premios de Qatar y China.",
         },
       },
     ],
   };
+
   const table_list = [
     { title: "Top de tenistas a nivel mundial", id: "top" },
     {
@@ -172,14 +173,14 @@ export default function Tenis(props) {
       <Container>
         <div className="event">
           <Container>
-            {!props.flag ? <TableOfContents table={table_list} /> : <></>}
-
             <Fade>
-              <h1 className="header subtitle">
+              <h1 className="header subtitle mt-4">
                 Consejos para apuestas para el Grand Slam del Tenis
               </h1>
             </Fade>
             <p>{top_par}</p>
+
+            {!props.flag ? <TableOfContents table={table_list} /> : <></>}
 
             <div className="para">
               <h2 id="origen" className="subtitle">

@@ -16,7 +16,7 @@ import TableOfContents from "../TableOfContents";
 export default function Slots(props) {
   const game_prefix = "https://m.codere.pa/deportes/#/CasinoPage?playgame=";
 
-  const title = "Tragamonedas Online » Los Slots más Divertidos | Codere® ";
+  const title = "Slots Online ✔ en Panamá  | Codere®";
   const description =
     "Ahora también puedes jugar a las tragamonedas, las clásicas maquinitas de casino en línea ✔, Crown Casino Panamá tiene la mejor selección para ti.";
   const json = {
@@ -286,12 +286,15 @@ export default function Slots(props) {
             .slice(0, !props.flag ? live_games.length : 4)
             .map((game, k) => (
               <Col lg={2} md={4} xs={6} key={k}>
-                <NavLink href={`${game_prefix}${game.sponsor} ${game.name}`}>
+                <NavLink
+                  rel="nofollow"
+                  href={`${game_prefix}${game.sponsor} ${game.name}`}
+                >
                   <div className="cas-game-wrapper">
                     <LazyLoadImage
                       className="casino-game-img shining"
                       src={
-                        "https://www.codere.es/lobby_tiles/" + game.img + ".jpg"
+                        "https://www.codere.pa/lobby_tiles/" + game.img + ".jpg"
                       }
                     />
                     <div className="hvr">

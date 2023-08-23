@@ -15,7 +15,7 @@ import TableOfContents from "../TableOfContents";
 export default function Ruleta(props) {
   const game_prefix = "https://m.codere.pa/deportes/#/CasinoPage?playgame=";
 
-  const title = "Juega ahora a la mejor Ruleta Online en Panamá  | Codere® ";
+  const title = "Ruleta Online en Panamá  | Codere®";
   const description =
     "El Crown Casino Panamá, trae ahora uno de los juegos más populares de todos los tiempos, las famosas mesas de ruleta. Juega en línea y diviértete girando.";
   const json = {
@@ -208,6 +208,7 @@ export default function Ruleta(props) {
       <Helmet>
         <title>{title}</title>
         <link rel="canonical" href="https://www.codere.pa/casino/ruleta" />
+
         <meta name="description" content={description} />
         <script type="application/ld+json">{JSON.stringify(json)}</script>
       </Helmet>
@@ -239,12 +240,15 @@ export default function Ruleta(props) {
             .slice(0, !props.flag ? live_games.length : 4)
             .map((game, k) => (
               <Col lg={2} md={4} xs={6} key={k}>
-                <NavLink href={`${game_prefix}${game.sponsor} ${game.name}`}>
+                <NavLink
+                  rel="nofollow"
+                  href={`${game_prefix}${game.sponsor} ${game.name}`}
+                >
                   <div className="cas-game-wrapper">
                     <LazyLoadImage
                       className="casino-game-img shining"
                       src={
-                        "https://www.codere.es/lobby_tiles/" + game.img + ".jpg"
+                        "https://www.codere.pa/lobby_tiles/" + game.img + ".jpg"
                       }
                     />
                     <div className="hvr">

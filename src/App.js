@@ -45,36 +45,34 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <isMobileContext.Provider value={flag}>
-          <Header />
-          <CookieConsent
-            cookieName="codere_cookie"
-            expires={365}
-            buttonText="- Aceptar -"
-            buttonClasses="cookie-btn"
-            overlay={false}
-            cookieValue={"accepted"}
-            extraCookieOptions={{ domain: ".codere.pa" }}
-            overlayClasses="cookie-overlay"
-            containerClasses="cookie-container"
-            contentClasses="cookie-content"
-          >
-            <h3>Uso Cookies</h3>
-            Utilizamos cookies propias y de terceros para mejorar tu
-            accesibilidad, personalizar, analizar tu navegación, así como para
-            mostrar anuncios basados en tus intereses. Si sigues navegando,
-            consideramos que aceptas su uso. Puedes obtener más información en
-            nuestra{" "}
-            <a href="https://www.codere.pa/Paginas/Pol%C3%ADtica-de-cookies.aspx">
-              política de cookies
-            </a>
-            .
-          </CookieConsent>
-          <Routing flag={flag} />
+        <Header flag={flag} />
+        <CookieConsent
+          cookieName="codere_cookie"
+          expires={365}
+          buttonText="- Aceptar -"
+          buttonClasses="cookie-btn"
+          overlay={false}
+          cookieValue={"accepted"}
+          extraCookieOptions={{ domain: ".codere.pa" }}
+          overlayClasses="cookie-overlay"
+          containerClasses="cookie-container"
+          contentClasses="cookie-content"
+        >
+          <h3>Uso Cookies</h3>
+          Utilizamos cookies propias y de terceros para mejorar tu
+          accesibilidad, personalizar, analizar tu navegación, así como para
+          mostrar anuncios basados en tus intereses. Si sigues navegando,
+          consideramos que aceptas su uso. Puedes obtener más información en
+          nuestra{" "}
+          <a href="https://www.codere.pa/Paginas/Pol%C3%ADtica-de-cookies.aspx">
+            política de cookies
+          </a>
+          .
+        </CookieConsent>
+        <Routing flag={flag} />
 
-          <Footer />
-          {flag ? <StickyFooter /> : null}
-        </isMobileContext.Provider>
+        <Footer />
+        {flag ? <StickyFooter /> : null}
       </div>
     </Router>
   );

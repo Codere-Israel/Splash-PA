@@ -27,8 +27,8 @@ export default function Balenco(props) {
     return false;
   }
 
-  const segmentCookieExist = getCookie("segmentMe");
-  console.log(segmentCookieExist);
+  // const segmentCookieExist = getCookie("segmentMe");
+  // console.log(segmentCookieExist);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -200,7 +200,8 @@ export default function Balenco(props) {
   return (
     <>
       <Helmet>
-        <title>{segmentCookieExist ? segmentedTitle : title}</title>
+        {/* <title>{segmentCookieExist ? segmentedTitle : title}</title> */}
+        <title>{title}</title>
         <link
           rel="canonical"
           href="https://www.codere.pa/eventos-deportivos/apuestas-mundial-fifa"
@@ -214,34 +215,21 @@ export default function Balenco(props) {
 
       <div
         className="top-bg-seo"
-        style={
-          segmentCookieExist
-            ? {
-                backgroundImage: `url(${prefix}1.jpg)`,
-                backgroundSize: "cover",
-              }
-            : {
-                backgroundImage: `url(https://www.codere.pa/seopages/eventos-deportivos/fifa/imgs/${
-                  props.flag ? "M" : "D"
-                }-Header.jpg)`,
-                backgroundSize: "cover",
-              }
-        }
+        style={{
+          backgroundImage: `url(https://www.codere.pa/seopages/eventos-deportivos/fifa/imgs/${
+            props.flag ? "M" : "D"
+          }-Header.jpg)`,
+          backgroundSize: "cover",
+        }}
       ></div>
 
       <Container>
         <div className="event">
           <Container>
             <Fade>
-              {segmentCookieExist ? (
-                <h5 className="subtitle mt-4" style={{ textAlign: "center" }}>
-                  Segmented - Apuestas deportivas para el Mundial de Futbol
-                </h5>
-              ) : (
-                <h1 className="header subtitle mt-4">
-                  Apuestas deportivas para el Mundial de Futbol
-                </h1>
-              )}
+              <h1 className="header subtitle mt-4">
+                Apuestas deportivas para el Mundial de Futbol
+              </h1>
             </Fade>
             <p>{top_par}</p>
 
@@ -254,16 +242,7 @@ export default function Balenco(props) {
             </div>
             <p style={{ color: "#fff" }}>{history.p}</p>
             <Fade duration={1000} triggerOnce>
-              {segmentCookieExist ? (
-                <LazyLoadImage
-                  src={`https://www.codere.pa/seopages/eventos-deportivos/fifa/imgs/${
-                    props.flag ? "M" : "D"
-                  }-Header.jpg`}
-                  width="100%"
-                />
-              ) : (
-                <LazyLoadImage src={prefix + "1" + jpg} width="100%" />
-              )}
+              <LazyLoadImage src={prefix + "1" + jpg} width="100%" />
             </Fade>
             <div className="para">
               <h2 id="principales" className="subtitle">

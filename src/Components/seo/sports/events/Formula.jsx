@@ -169,14 +169,16 @@ export default function Formula(props) {
       <Container>
         <div className="event">
           <Container style={{ marginTop: "2rem" }}>
+            <h1 className="header subtitle mt-4">
+              Guía de apuestas en Grand Prix
+            </h1>
+            <p>{top_par}</p>
+
             {!props.flag ? (
               <TableOfContents isFormula={true} table={table_list} />
             ) : (
               <></>
             )}
-
-            <h1 className="header subtitle">Guía de apuestas en Grand Prix</h1>
-            <p>{top_par}</p>
 
             <div className="para">
               <h2 id="historia" className="subtitle">
