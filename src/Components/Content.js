@@ -196,7 +196,7 @@ function Content(props) {
                 href="https://www.codere.pa"
               >
                 {" "}
-                Codere.pa{" "}
+                Codere.pa
               </a>
             </h2>
             <div className="bottomContentText">
@@ -277,7 +277,7 @@ function Content(props) {
           </Zoom>
         </div>
       </div>
-      <Table striped bordered hover variant="dark">
+      <Table striped bordered hover variant="dark" className="mt-4">
         <tbody>
           <tr>
             <td>🏆 Establecido</td>
@@ -319,7 +319,7 @@ function Content(props) {
         </tbody>
       </Table>
 
-      <section id="acc-section">
+      <section id="acc-section" className="mt-5">
         <h2 className="bottomContentTitle">
           Preguntas frecuentes sobre Apuestas deportivas en Panamá
         </h2>
