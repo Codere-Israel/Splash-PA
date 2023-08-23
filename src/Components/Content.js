@@ -4,14 +4,14 @@ import React from "react";
 
 var questions = [
   "¿Cómo funcionan las apuestas deportivas en línea?",
-  "¿Dónde están ubicadas las casas de apuestas deportivas de Codere?",
-  "¿Qué tips de apuestas deportivas puedo usar para ganar?",
+  "¿Dónde están ubicados los locales físicos de Codere?",
+  "¿Dónde puedo ver tips de apuestas para ganar?",
   "¿Qué es un parley?",
 ];
 var answers = [
   "Las apuestas deportivas consisten en apostar una cantidad monetaria a un determinado resultado o resultado de un evento deportivo. El propósito de una apuesta deportiva es beneficiarse de un pronóstico o predicción hecha para que el apostante, y este tenga una ganancia alta por el dinero apostado (el presupuesto multiplicador dividido por la cuota)",
-  "Las Casas de apuesta deportiva Codere están alrededor de toda la ciudad de Panamá, en 6 diferentes Casinos Crown ( El Panamá, el Hipódromo, Continental, Riande, Sheraton, Soloy), , y muchos más que puedes ver al hacer clic en nuestra página web en la sección de Locales, donde podrás ver por google maps todas sucursales y direcciones.",
-  "Los mejores Tips los puedes conseguir en nuestras redes sociales, en instagram @coderepan, donde tenemos nuestros videos semanales con nuestros influencers Rony Vargas y Nicolle Ferguson, los cuales dan su análisis en los diferentes partidos, para ayudar a nuestros clientes a hacer las mejores selecciones posibles para garantizar sus victorias en sus apuestas.",
+  "Las casas de apuestas deportivas Codere están alrededor de toda la ciudad de Panamá, en 9 diferentes Casinos Crown ( El Panamá, el Hipódromo, Continental, Riande, Sheraton, Soloy, Guayacanes (Chitre), Mirage (Chiriqui) y Hotel Nacional (Chiriqui)) y que puedes ver al hacer clic en nuestra página web en la sección de Locales, donde podrás ver por google maps todas sucursales y sus direcciones.",
+  "Los mejores tips los puedes conseguir en nuestras redes sociales, en Instagram @coderepan, Twitter @Coderepan y Facebook @Coderepanama donde tenemos cuotas, promociones, y comunicaciones sobre los diferentes partidos, para ayudar a nuestros clientes a hacer las mejores selecciones posibles.",
   "En Codere, al hacer una apuesta deportiva con varias selecciones de juegos, a esto se le llama un parlay, el cual entre más juegos tengas, la cantidad de ganancia aumenta exponencialmente, para ganar una apuesta de tipo parlay, todos los juegos seleccionados deben cumplir con el pronóstico escogido, dentro de Codere tenemos una mejora del porcentaje de ganancia al poner más juegos, es decir además de aumentar la cantidad de ganancia por las líneas, damos un porcentaje extra por selecciones adicionales.",
 ];
 
