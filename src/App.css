@@ -452,7 +452,7 @@ body {
 }
 
 #carousel-section {
-  min-height: 80vh;
+  min-height: 25vh;
   position: relative;
   top: 3.3rem;
   margin-bottom: 2.2vw;
@@ -1410,7 +1410,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   #carousel-section {
     top: 14vw;
-    margin-bottom: 14vw;
+    margin-bottom: 7vw;
   }
 
   .swiper-horizontal > .swiper-pagination-bullets,

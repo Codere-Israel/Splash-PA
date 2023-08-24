@@ -1,5 +1,5 @@
 import { Zoom } from "react-awesome-reveal";
-import { Table, Accordion } from "react-bootstrap";
+import { Table, Accordion, Row, Col } from "react-bootstrap";
 import React from "react";
 
 var questions = [
@@ -18,8 +18,8 @@ var answers = [
 function Content(props) {
   return (
     <div className="content-container">
-      <div className="row">
-        <div className="col-12 col-sm-4 left-col">
+      <Row style={{ justifyContent: "center" }}>
+        <Col md={12} sm={4} className="left-col">
           <Zoom triggerOnce>
             <h1 className="bottomContentSubTitle">
               Bienvenido a la mejor casa de apuestas deportivas en Panamá
@@ -103,8 +103,8 @@ function Content(props) {
               </p>
             </div>
           </Zoom>
-        </div>
-        <div className="col-12 col-sm-4 middle-col">
+        </Col>
+        <Col md={12} sm={4} className="middle-col">
           <Zoom triggerOnce>
             <h3 className="bottomContentSubTitle">
               Conocer Tus Probabilidades
@@ -186,8 +186,8 @@ function Content(props) {
               </p>
             </div>
           </Zoom>
-        </div>
-        <div className="col-12 col-sm-4 right-col">
+        </Col>
+        <Col md={12} sm={4} className="right-col">
           <Zoom triggerOnce>
             <h2 className="bottomContentSubTitle">
               El Mejor Casino online de Panamá está en{" "}
@@ -275,8 +275,8 @@ function Content(props) {
               </p>
             </div>
           </Zoom>
-        </div>
-      </div>
+        </Col>
+      </Row>
       <Table
         striped
         bordered
