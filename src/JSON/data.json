@@ -1,12 +1,6 @@
 {
   "desktop_slide_list": [
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/girls-desktop.jpg",
-      "img_alt": "girls",
-      "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?url=https://www.codere.pa/PromocionesPA/actives/Codere_Con_Ellas.aspx",
-      "scheduled": false
-    },
-    {
       "image": "https://www.codere.pa/assets/inicio-banners/casino-gen-desktop.jpg",
       "img_alt": "casino-gen",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?url=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
@@ -39,12 +33,6 @@
     }
   ],
   "mobile_slide_list": [
-    {
-      "image": "https://www.codere.pa/assets/inicio-banners/girls-mobile.jpg",
-      "img_alt": "girls",
-      "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?url=https://www.codere.pa/PromocionesPA/actives/Codere_Con_Ellas.aspx",
-      "scheduled": false
-    },
     {
       "image": "https://www.codere.pa/assets/inicio-banners/casino-gen-mobile.jpg",
       "img_alt": "casino-gen",

@@ -831,9 +831,14 @@ img.game_logo:hover {
 }
 
 /* Table */
+
+.responsive-table {
+  width: 750px;
+}
+
 .table {
-  width: 950px;
-  max-width: 95%;
+  /* width: 950px; */
+  /* max-width: 95%; */
   margin: auto;
   margin-bottom: 1rem;
 }
@@ -1111,17 +1116,33 @@ footer.nb-footer .footer-info-single p {
 
 .juegas-banners .col {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .juegas-banners img {
-  max-height: 5.5rem;
-  padding-left: 2vw;
+  max-height: 55px;
+  /* max-width: 125px; */
+  margin: 0 1rem;
+  /* padding-left: 2vw; */
 }
 
 /* End Footer */
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .juegas-banners img {
+    max-height: auto;
+    max-width: 105px;
+  }
+  .juegas-banners .col {
+    margin-top: 1rem;
+    justify-content: space-around;
+  }
+  .responsive-table {
+    width: 90%;
+  }
   /* Cookie */
   .cookie-btn {
     width: 92vw;

@@ -277,7 +277,13 @@ function Content(props) {
           </Zoom>
         </div>
       </div>
-      <Table striped bordered hover variant="dark" className="mt-4">
+      <Table
+        striped
+        bordered
+        hover
+        variant="dark"
+        className="responsive-table mt-4"
+      >
         <tbody>
           <tr>
             <td>🏆 Establecido</td>
