@@ -12,6 +12,7 @@ import {
   faHeadset,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // Codere Footer \\
 function Footer() {
@@ -67,6 +68,11 @@ function Footer() {
       {/* <hr /> */}
       <footer className="nb-footer">
         <div className="about">
+          <LazyLoadImage
+            className="mb-4"
+            width={155}
+            src="https://www.codere.pa/assets/footer/RealMadrid.png"
+          />
           <div className="social-media">
             <ul className="list-inline">
               <li>

@@ -78,6 +78,8 @@ body {
 .navbar-nav {
   padding-top: 5px;
   padding-left: 25px;
+  display: flex;
+  align-items: center;
 }
 .stroke .navbar-nav a,
 .stroke .navbar-nav a:after,
@@ -91,7 +93,7 @@ body {
 
 .stroke .navbar-nav a:after {
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   right: 0;
   margin: auto;
