@@ -16,6 +16,15 @@
       "scheduled": false
     },
     {
+      "image": "https://www.codere.pa/assets/inicio-banners/crown-desktop.jpg",
+      "img_alt": "crown",
+      "tycLink": "https://m.codere.pa/deportespanama/#/NearestLocalPage",
+      "startDate": "2023-09-12T14:00:00Z",
+      "endDate": "2024-09-12T00:00:00Z",
+      "specialTerms": false,
+      "scheduled": true
+    },
+    {
       "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/casino-pa-desktop.jpg",
       "img_alt": "Bienvenida",
       "scheduled": false
@@ -47,6 +56,15 @@
       "img_alt": "reg-offer",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?url=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
       "scheduled": false
+    },
+    {
+      "image": "https://www.codere.pa/assets/inicio-banners/crown-mobile.jpg",
+      "img_alt": "crown",
+      "tycLink": "https://m.codere.pa/deportespanama/#/NearestLocalPage",
+      "startDate": "2023-09-12T14:00:00Z",
+      "endDate": "2024-09-12T00:00:00Z",
+      "specialTerms": false,
+      "scheduled": true
     },
     {
       "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/casino-pa-mobile.jpg",
