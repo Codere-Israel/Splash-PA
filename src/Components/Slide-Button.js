@@ -7,7 +7,7 @@ import React, { Component } from "react";
 const slider = React.createRef();
 const container = React.createRef();
 const isTouchDevice = "ontouchstart" in document.documentElement;
-const regis = "https://m.codere.pa/deportespanama/#/RegistroPAPage";
+// const regis = "https://m.codere.pa/deportespanama/#/RegistroPAPage";
 export default class SlideButton extends Component {
   state = {};
 
@@ -51,7 +51,7 @@ export default class SlideButton extends Component {
     if (this.isDragging) {
       this.isDragging = false;
       if (this.sliderLeft > this.containerWidth * 0.55) {
-        window.location.href = regis;
+        window.location.href = this.props.regis;
 
         this.sliderLeft = this.containerWidth;
         if (this.props.onSuccess) {
@@ -107,7 +107,7 @@ export default class SlideButton extends Component {
   render() {
     return (
       <div className="ReactSwipeButton mobile_regis">
-        <a href={regis} rel={"nofollow"}>
+        <a href={this.props.regis} rel={"nofollow"}>
           <div
             className={
               "rsbContainer " +
@@ -126,7 +126,7 @@ export default class SlideButton extends Component {
                 <FontAwesomeIcon icon={faChevronRight} />
               </span>
             </div>
-            <div className="rsbcText shine">{"Regístrate"}</div>
+            <div className="rsbcText shine">{this.props.ctaText}</div>
           </div>
         </a>
       </div>

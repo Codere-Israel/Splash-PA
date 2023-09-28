@@ -67,19 +67,18 @@ function Header(props) {
   ];
 
   const seo_menu = [
-    { name: "Casino", url: "/casino", spa: true },
+    { name: "Casino", url: "/casino" },
     {
       name: "Casino en vivo",
       url: "/casino/casino-en-vivo",
-      spa: true,
     },
-    { name: "Ruleta", url: "/casino/ruleta", spa: true },
-    { name: "Slots", url: "/casino/slots", spa: true },
-    { name: "BlackJack", url: "/casino/blackjack", spa: true },
-    { name: "Eventos Deportivos", url: "/eventos-deportivos", spa: true },
+    { name: "Ruleta", url: "/casino/ruleta" },
+    { name: "Slots", url: "/casino/slots" },
+    { name: "BlackJack", url: "/casino/blackjack" },
+    { name: "Eventos Deportivos", url: "/eventos-deportivos" },
     {
       name: "Cuotas Deportivas",
-      url: "https://www.codere.pa/cuotas-deportivas",
+      url: "/cuotas-deportivas",
     },
   ];
 
@@ -120,10 +119,9 @@ function Header(props) {
                       {seo_menu.map((s, k) => (
                         <li key={k}>
                           <Nav.Link
-                            onClick={s.spa ? hamburgerHandler : null}
-                            as={s.spa ? Link : "a"}
+                            onClick={hamburgerHandler}
+                            as={Link}
                             to={s.url}
-                            href={s.url}
                           >
                             {s.name}
                             <FontAwesomeIcon icon={faAngleRight} />
@@ -191,12 +189,7 @@ function Header(props) {
               </Dropdown.Toggle>
               <Dropdown.Menu>
                 {seo_menu.map((d, k) => (
-                  <Dropdown.Item
-                    as={d.spa ? Link : "a"}
-                    to={d.url}
-                    key={k}
-                    href={d.url}
-                  >
+                  <Dropdown.Item as={Link} to={d.url} key={k}>
                     {d.name}
                   </Dropdown.Item>
                 ))}
