@@ -1,5 +1,5 @@
 import { Zoom } from "react-awesome-reveal";
-import { Table, Accordion } from "react-bootstrap";
+import { Table, Accordion, Row, Col } from "react-bootstrap";
 import React from "react";
 
 var questions = [
@@ -18,8 +18,8 @@ var answers = [
 function Content(props) {
   return (
     <div className="content-container">
-      <div className="row">
-        <div className="col-12 col-sm-4 left-col">
+      <Row style={{ justifyContent: "center" }}>
+        <Col md={12} sm={4} className="left-col">
           <Zoom triggerOnce>
             <h1 className="bottomContentSubTitle">
               Bienvenido a la mejor casa de apuestas deportivas en Panamá
@@ -103,8 +103,8 @@ function Content(props) {
               </p>
             </div>
           </Zoom>
-        </div>
-        <div className="col-12 col-sm-4 middle-col">
+        </Col>
+        <Col md={12} sm={4} className="middle-col">
           <Zoom triggerOnce>
             <h3 className="bottomContentSubTitle">
               Conocer Tus Probabilidades
@@ -186,8 +186,8 @@ function Content(props) {
               </p>
             </div>
           </Zoom>
-        </div>
-        <div className="col-12 col-sm-4 right-col">
+        </Col>
+        <Col md={12} sm={4} className="right-col">
           <Zoom triggerOnce>
             <h2 className="bottomContentSubTitle">
               El Mejor Casino online de Panamá está en{" "}
@@ -275,28 +275,37 @@ function Content(props) {
               </p>
             </div>
           </Zoom>
-        </div>
-      </div>
-      <Table striped bordered hover variant="dark" className="mt-4">
+        </Col>
+      </Row>
+      <Table
+        striped
+        bordered
+        hover
+        variant="dark"
+        className="responsive-table mt-4"
+      >
         <tbody>
           <tr>
             <td>🏆 Establecido</td>
-            <td>2005</td>
+            <td>2021</td>
           </tr>
           <tr>
             <td>⚽ Apuestas Deportivas</td>
-            <td>Apuestas NFL, Apuestas MLB, Apuestas LaLiga Santander y más</td>
+            <td>
+              Apuestas de fútbol (La Liga, UEFA Champions League, Nations
+              League, Premier entre otros) MLB, NFL, y mucho mas!
+            </td>
           </tr>
           <tr>
             <td>🎰 Juegos de Casino</td>
-            <td>Máquinas tragamonedas (slots), ruleta y blackjack</td>
+            <td>
+              Máquinas tragamonedas (slots) y Casino en Vivo (Blackjack, Ruleta,
+              Baccarat).
+            </td>
           </tr>
           <tr>
             <td>🎲 Licencia</td>
-            <td>
-              Contratos Nº 38 de 22/01/2003 y Nº 193 de 4/10/2005, y Resolución
-              Nº. 921 de 21/09/2017.
-            </td>
+            <td>Contratos Contrato No. 2021-006 de 26 de mayo de 2021.</td>
           </tr>
           <tr>
             <td>✔️ Moneda</td>
@@ -304,16 +313,21 @@ function Content(props) {
           </tr>
           <tr>
             <td>💰 Depósito mínimo</td>
-            <td>Minimo $10 Dolares</td>
+            <td>Minimo $20 Dolares</td>
           </tr>
           <tr>
             <td>💸 Limites de Retiros</td>
-            <td>Retiro mínimo es de $50.</td>
+            <td>
+              Retiro mínimo es de $50 (Por Transferencia Bancaria). En nuestros
+              Crown Casinos no hay límite de retiro (Se cobrara el 5.5% por
+              retiro en Crown Casinos).
+            </td>
           </tr>
           <tr>
             <td>💳 Formas de Pago </td>
             <td>
-              Nequi, Crown Casino, Clave, Tranferecnia Bancaria, Punto Pago
+              Tarjeta Codere, Transferencia Bancaria, Punto Pago, Punto Pago App
+              (Visa, MasterCard y Clave) y Páguelo fácil (Nequi/ Tarjeta Clave).
             </td>
           </tr>
         </tbody>
