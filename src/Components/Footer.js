@@ -13,6 +13,10 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Col, Container, NavLink, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
+
 
 // Codere Footer \\
 function Footer() {
@@ -21,51 +25,125 @@ function Footer() {
       {
         name: "Juego Responsable",
         url: "https://condiciones.apuestas.codere.es/Panama/juego_responsable.html",
+        rel: "nofollow",
       },
       {
         name: "Contrato",
         url: "https://m.codere.pa/csbgonline/condicionesgenerales/ContratoPanama.pdf",
+        rel: "nofollow",
       },
       {
         name: "Reglas",
         url: "https://m.codere.pa/deportespanama/#/InformationPage?type=reglas",
+        rel: "nofollow",
       },
       {
         name: "Política de Privacidad",
         url: "https://m.codere.pa/csbgonline/condicionesgenerales/politicaprivacidadPanama.pdf",
+        rel: "nofollow",
+        target: "_blank",
       },
       {
         url: "https://www.codere.pa/ayuda/politica-de-cookies",
         name: "Política de Cookies",
+        rel: "nofollow",
+      },
+      {
+        url: "https://www.codere-partners.com/es/",
+        name: "Afiliados de Codere",
+        rel: "nofollow",
+        target: "_blank",
       },
     ],
     links: [
       {
         url: "https://www.codere.pa/resultados-y-estadisticas",
         name: "Resultados y Estadísticas",
+        rel: "nofollow",
+      },
+      { url: "/casino", name: "Casino", spa: true },
+      {
+        url: "/casino/casino-en-vivo",
+        name: "Casino En Vivo",
+        spa: true,
+      },
+      { url: "/casino/ruleta", name: "Ruleta", spa: true },
+      { url: "/casino/slots", name: "Slots", spa: true },
+      {
+        url: "/casino/blackjack",
+        name: "Blackjack",
+        spa: true,
       },
       {
-        url: "Cuotas Deportivas",
-        name: "https://www.codere.pa/cuotas-deportivas",
-        inner: [
-          {
-            url: "https://www.codere.pa/cuotas-deportivas/apuestas-nfl-futbol-americano",
-            name: "NFL",
-          },
-          { url: "", name: "" },
-          { url: "", name: "" },
-        ],
+        url: "/eventos-deportivos",
+        name: "Eventos Deportivos",
+        spa: true,
       },
-
-      { url: "", name: "" },
+      {
+        url: "https://www.codere.pa/cuotas-deportivas",
+        name: "Cuotas Deportivas",
+      },
     ],
-    deportes: [],
-    ayuda: [],
+    deportes: [
+      {
+        url: "https://www.codere.pa/ayuda/deposito-online",
+        name: "Info Depósitos y Cobros",
+        rel: "nofollow",
+      },
+      {
+        url: "https://www.codere.pa/ayuda/como-y-donde-apostar",
+        name: "Cómo Apostar",
+        rel: "nofollow",
+      },
+      {
+        url: "https://m.codere.pa/deportespanama/#/CuotaTypePage",
+        name: "Opciones de apuesta",
+        rel: "nofollow",
+      },
+      {
+        url: "https://m.codere.pa/deportespanama/#/HomePage",
+        name: "Apuestas Deportivas",
+        rel: "nofollow",
+      },
+      {
+        url: "https://blog.codere.pa/",
+        name: "Blog Codere",
+        target: "_blank",
+      },
+    ],
+    ayuda: [
+      {
+        url: "https://www.codere.pa/ayuda",
+        name: "Ayuda Términos y Condiciones",
+        rel: "nofollow",
+      },
+      {
+        url: "https://m.codere.pa/deportespanama/#/LanguagePage",
+        name: "Idioma",
+        rel: "nofollow",
+      },
+      {
+        url: "mailto:apuestas@codere.com",
+        name: "Contacto: apuestas@codere.com",
+        rel: "nofollow",
+      },
+      {
+        url: "https://wa.me/50769314912",
+        name: " + 507 6931 4912",
+        icon: faWhatsapp,
+        rel: "nofollow",
+      },
+      {
+        url: "tel:+5073772602",
+        name: " + 507 377 2602",
+        icon: faPhone,
+        rel: "nofollow",
+      },
+    ],
   };
 
   return (
     <div>
-      {/* <hr /> */}
       <footer className="nb-footer">
         <div className="about">
           <LazyLoadImage
@@ -78,43 +156,29 @@ function Footer() {
               <li>
                 <a
                   href="https://m.codere.pa/deportespanama/#/ContactPage"
-                  title=""
                   rel="nofollow"
                 >
                   <FontAwesomeIcon icon={faHeadset} />
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.facebook.com/CoderePan"
-                  title=""
-                  rel="nofollow"
-                >
+                <a href="https://www.facebook.com/CoderePan" rel="nofollow">
                   <FontAwesomeIcon icon={faFacebookF} />
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.instagram.com/coderepan/"
-                  title=""
-                  rel="nofollow"
-                >
+                <a href="https://www.instagram.com/coderepan/" rel="nofollow">
                   <FontAwesomeIcon icon={faInstagram} />
                 </a>
               </li>
               <li>
-                <a
-                  href="https://twitter.com/CoderePanama"
-                  title=""
-                  rel="nofollow"
-                >
+                <a href="https://twitter.com/CoderePanama" rel="nofollow">
                   <FontAwesomeIcon icon={faXTwitter} />
                 </a>
               </li>
               <li>
                 <a
                   href="https://www.youtube.com/channel/UCWSDewbh7GXcpfOzl-bisfQ"
-                  title=""
                   rel="nofollow"
                 >
                   <FontAwesomeIcon icon={faYoutube} />
@@ -124,201 +188,75 @@ function Footer() {
           </div>
         </div>
 
-        <div className="container">
-          <div className="row">
-            <div className="col">
+        <Container>
+          <Row>
+            <Col>
               <div className="footer-info-single">
                 <span className="title">SOBRE NOSOTROS</span>
                 <ul className="list-unstyled">
-                  <li>
-                    <a
-                      href="https://condiciones.apuestas.codere.es/Panama/juego_responsable.html"
-                      title=""
-                      rel="nofollow"
-                    >
-                      Juego Responsable
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://m.codere.pa/csbgonline/condicionesgenerales/ContratoPanama.pdf"
-                      title=""
-                      rel="nofollow"
-                    >
-                      Contrato
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://m.codere.pa/deportespanama/#/InformationPage?type=reglas"
-                      title=""
-                      rel="nofollow"
-                    >
-                      Reglas
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://m.codere.pa/csbgonline/condicionesgenerales/politicaprivacidadPanama.pdf"
-                      title=""
-                      target={"_blank"}
-                      rel="nofollow"
-                    >
-                      Política de Privacidad
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.codere.pa/ayuda/politica-de-cookies"
-                      title=""
-                      rel="nofollow"
-                    >
-                      Política de Cookies
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.codere-partners.com/es/"
-                      title=""
-                      rel="nofollow"
-                      target="_blank"
-                    >
-                      Afiliados de Codere
-                    </a>
-                  </li>
+                  {model.sobre.map((li, k) => (
+                    <li key={k}>
+                      <NavLink href={li.url} target={li.target} rel={li.rel}>
+                        {li.name}
+                      </NavLink>
+                    </li>
+                  ))}
                 </ul>
               </div>
-            </div>
-
-            <div className="col">
+            </Col>
+            <Col>
               <div className="footer-info-single">
                 <span className="title">LINKS DESTACADOS</span>
                 <ul className="list-unstyled">
-                  <li>
-                    <a
-                      href="https://www.codere.pa/resultados-y-estadisticas"
-                      title=""
-                      rel="nofollow"
-                    >
-                      Resultados y Estadísticas
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.codere.pa/cuotas-deportivas"
-                      title=""
-                      rel="nofollow"
-                    >
-                      Cuotas Deportivas
-                    </a>
-                    <ul style={{ color: "#fff", listStyle: "initial" }}>
-                      <li>
-                        <a href="https://www.codere.pa/cuotas-deportivas/apuestas-nfl-futbol-americano">
-                          NFL
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.codere.pa/cuotas-deportivas/apuestas-beisbol-grandes-ligas">
-                          Beisbol
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.codere.pa/cuotas-deportivas/apuestas-futbol">
-                          Futbol
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
+                  {model.links.map((li, k) => (
+                    <li key={k}>
+                      <NavLink
+                        as={li.spa ? Link : NavLink}
+                        to={li.url}
+                        href={li.url}
+                        target={li.target}
+                        rel={li.rel}
+                      >
+                        {li.name}
+                      </NavLink>
+                    </li>
+                  ))}
                 </ul>
               </div>
-            </div>
-
-            <div className="col">
+            </Col>
+            <Col>
               <div className="footer-info-single">
                 <span className="title">DEPORTES</span>
                 <ul className="list-unstyled">
-                  <li>
-                    <a
-                      href="https://www.codere.pa/dep%C3%B3sitos/dep%C3%B3sito-online"
-                      title=""
-                    >
-                      Info Depósitos y Cobros
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.codere.pa/ayuda/como-y-donde-apostar"
-                      title=""
-                    >
-                      Cómo Apostar
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://m.codere.pa/deportespanama/#/CuotaTypePage"
-                      title=""
-                      rel="nofollow"
-                    >
-                      Opciones de apuesta
-                    </a>
-                  </li>
+                  {model.deportes.map((li, k) => (
+                    <li key={k}>
+                      <NavLink href={li.url} target={li.target} rel={li.rel}>
+                        {li.name}
+                      </NavLink>
+                    </li>
+                  ))}
                 </ul>
               </div>
-            </div>
-
-            <div className="col">
+            </Col>
+            <Col>
               <div className="footer-info-single">
                 <span className="title">AYUDA</span>
                 <ul className="list-unstyled">
-                  <li>
-                    <a href="https://www.codere.pa/ayuda" title="">
-                      Ayuda Términos y Condiciones
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://m.codere.pa/deportespanama/#/LanguagePage"
-                      title=""
-                      rel="nofollow"
-                    >
-                      Idioma
-                    </a>
-                  </li>
-                  <li>
-                    <a href="mailto:apuestas@codere.com" title="">
-                      Contacto: apuestas@codere.com
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://wa.me/50769314912"
-                      title=""
-                      rel="nofollow"
-                      target="_blank"
-                      className="whatsapp"
-                    >
-                      <FontAwesomeIcon icon={faWhatsapp} />
-                      {"  "} +507 6931 4912
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="tel:+5073772602"
-                      title=""
-                      rel="nofollow"
-                      className="whatsapp"
-                    >
-                      <FontAwesomeIcon icon={faPhone} />
-                      {"  "} + 507 377 2602
-                    </a>
-                  </li>
+                  {model.ayuda.map((li, k) => (
+                    <li key={k}>
+                      <NavLink href={li.url} target={li.target} rel={li.rel}>
+                        {li.icon ? <FontAwesomeIcon icon={li.icon} /> : null}{" "}
+                        {li.name}
+                      </NavLink>
+                    </li>
+                  ))}
                 </ul>
               </div>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
 
-        <hr style={{ marginBottom: "2vw" }} />
+        <hr className="mb-5" />
 
         <div className="row juegas-banners">
           <div className="col">
@@ -327,7 +265,7 @@ function Footer() {
               alt="Gobierno República de Panamá"
             />
 
-            <a href="mailto:jcj-quejas@mef.gob.pa">
+            <a href="mailto:jcj-quejas@mef.gob.pa" rel="nofollow">
               <img
                 src="https://www.codere.pa/_catalogs/masterpage/codere/react-splash/assets/junta.png"
                 alt="JugarSeguro"

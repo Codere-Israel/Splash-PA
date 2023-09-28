@@ -6,9 +6,10 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 export default function Navigations(props) {
   const [active, setActive] = useState(props.index);
 
-  const prefix = !props.type
-    ? "https://www.codere.pa/seopages/eventos-deportivos/icons/"
-    : "https://www.codere.pa/seopages/casino/assets/icons/";
+  const prefix =
+    props.type != 1 // 0 for eventos, 1 for casino, 2 for cuotas. since cuotas and eventos are placed in the same address, then they share a common uri
+      ? "https://www.codere.pa/seopages/eventos-deportivos/icons/"
+      : "https://www.codere.pa/seopages/casino/assets/icons/";
 
   const eNavStyleDesktop = {
     display: "flex",
@@ -75,6 +76,23 @@ export default function Navigations(props) {
         url: "/casino/ruleta",
       },
     ],
+    [
+      {
+        icon: "soccer",
+        title: "Futbol",
+        url: "/cuotas-deportivas/apuestas-futbol",
+      },
+      {
+        icon: "superbowl",
+        title: "NFL",
+        url: "/cuotas-deportivas/apuestas-nfl-futbol-americano",
+      },
+      {
+        icon: "mlb",
+        title: "MLB",
+        url: "/cuotas-deportivas/apuestas-beisbol-grandes-ligas",
+      },
+    ],
   ];
 
   return (
@@ -84,17 +102,19 @@ export default function Navigations(props) {
     >
       {navs[props.type].map((n, k) => (
         <Link
-          onClick={() => setActive(k + 1)}
+          onClick={() => setActive(k)}
           to={n.url}
           style={{ color: "#fff", textDecoration: "none" }}
           key={k}
         >
           <LazyLoadImage
             src={prefix + n.icon + ".svg"}
-            className={active === k + 1 ? "colored" : ""}
+            className={props.index === k + 1 ? "colored" : ""}
             style={isMobile ? { height: 32 } : { height: "2rem" }}
           />
-          <span className={active === k + 1 ? "colored" : ""}>{n.title}</span>
+          <span className={props.index === k + 1 ? "colored" : ""}>
+            {n.title}
+          </span>
         </Link>
       ))}
     </div>
