@@ -114,7 +114,7 @@ export default function NFL(props) {
   };
 
   const consejos = {
-    id: "",
+    id: "consejos",
     h2: "Consejos de apuestas de NFL",
     ol: [
       "Apostar al equipo en casa que siempre tiene esa ventaja",

@@ -7,7 +7,6 @@ import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { backTopTop } from "../EventosDeportivos";
 
 export default function Balenco(props) {
   function getCookie(cookieName) {
@@ -210,7 +209,6 @@ export default function Balenco(props) {
         <script type="application/ld+json">{JSON.stringify(json)}</script>
       </Helmet>
 
-      <Navigations index={props.index} type={0} />
       <Floating text="La Copa del Mundo" />
 
       <div
@@ -314,8 +312,6 @@ export default function Balenco(props) {
           </Container>
         </div>
       </Container>
-
-      {backTopTop()}
     </>
   );
 }

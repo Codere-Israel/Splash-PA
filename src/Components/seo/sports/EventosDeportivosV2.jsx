@@ -7,14 +7,6 @@ import ScrollToTop from "react-scroll-to-top";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
-export const backTopTop = () => {
-  return (
-    <div className="scroll">
-      <ScrollToTop smooth component={<FontAwesomeIcon icon={faChevronUp} />} />
-    </div>
-  );
-};
-
 export default function EventosDeportivos(props) {
   const prefix = "https://www.codere.pa/assets/seo/";
   const tenis_par =
@@ -93,7 +85,6 @@ export default function EventosDeportivos(props) {
 
   return (
     <div id="eventos">
-      <div className="scroll">{backTopTop()}</div>
       <Fade>
         <LazyLoadImage
           style={

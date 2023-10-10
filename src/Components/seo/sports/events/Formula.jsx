@@ -1,10 +1,8 @@
 import { Container, Accordion, Image, Placeholder } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { backTopTop } from "../EventosDeportivosV2";
 import "./events.css";
-import Navigations from "../../Navigations";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Floating from "../../Floating";
 import TableOfContents from "../../TableOfContents";
 
@@ -153,7 +151,6 @@ export default function Formula(props) {
         <meta name="description" content={description} />
         <script type="application/ld+json">{JSON.stringify(json)}</script>
       </Helmet>
-      <Navigations index={props.index} type={0} />
       <Floating text="Recorre las pistas" />
 
       <div
@@ -242,8 +239,6 @@ export default function Formula(props) {
           </Container>
         </div>
       </Container>
-
-      {backTopTop()}
     </>
   );
 }

@@ -11,14 +11,6 @@ import Navigations from "../Navigations";
 import Floating from "../Floating";
 import { useEffect } from "react";
 
-export const backTopTop = () => {
-  return (
-    <div className="scroll">
-      <ScrollToTop smooth component={<FontAwesomeIcon icon={faChevronUp} />} />
-    </div>
-  );
-};
-
 export default function EventosDeportivos(props) {
   const directions = ["left", "down", "right", "left"];
   const prefix = "https://www.codere.pa/assets/seo/";
@@ -122,8 +114,6 @@ export default function EventosDeportivos(props) {
         <script type="application/ld+json">{JSON.stringify(json)}</script>
       </Helmet>
       <div id="eventos">
-        <div className="scroll">{backTopTop()}</div>
-        <Navigations type={0} />
         <Floating text="Deportes En Vivo" />
         <div
           className="top-bg-seo"
