@@ -160,7 +160,6 @@ span.colored {
 }
 
 .event .accordion-button {
-  color: #fff;
   font-weight: 600;
   font-size: 1.15rem;
 }
@@ -308,7 +307,7 @@ span.colored {
 
   /* Card */
   .eventos-container {
-    max-width: 100%;
+    max-width: 100% !important;
     display: block;
   }
 

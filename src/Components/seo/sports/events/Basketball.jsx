@@ -5,14 +5,8 @@ import TableOfContents from "../../TableOfContents";
 import { Accordion, Container, Image, Placeholder } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { backTopTop } from "../EventosDeportivos";
-import { useEffect, useState } from "react";
 
 export default function Balenco(props) {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   const title = "Apuesta para Mundial de Baloncesto 🏀 | Codere®";
   const description =
     "En la siguiente guía, encontrarás algunos consejos para que tu experiencia en Codere durante el mundial de Baloncesto, sea mucho más provechosa.";
@@ -154,7 +148,6 @@ export default function Balenco(props) {
         <script type="application/ld+json">{JSON.stringify(json)}</script>
       </Helmet>
 
-      <Navigations index={props.index} type={0} />
       <Floating text="Encesta con la NBA" />
 
       <div
@@ -240,8 +233,6 @@ export default function Balenco(props) {
           </Container>
         </div>
       </Container>
-
-      {backTopTop()}
     </>
   );
 }

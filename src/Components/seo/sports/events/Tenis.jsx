@@ -6,12 +6,9 @@ import { Container, Accordion, Image, Placeholder } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import { Fade } from "react-awesome-reveal";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { backTopTop } from "../EventosDeportivosV2";
 import { useEffect, useState } from "react";
 
 export default function Tenis(props) {
-  const [loaded, setLoaded] = useState(false);
-  const skeleton = `https://www.codere.pa/seopages/eventos-deportivos/icons/skeleton.png`;
   const prefix = `https://www.codere.pa/seopages/eventos-deportivos/tenis/imgs/${
     props.flag ? "M" : "D"
   }-Tennis-`;
@@ -157,7 +154,6 @@ export default function Tenis(props) {
         <script type="application/ld+json">{JSON.stringify(json)}</script>
       </Helmet>
 
-      <Navigations index={props.index} type={0} />
       <Floating text="Vive el deporte blanco" />
 
       <div
@@ -262,8 +258,6 @@ export default function Tenis(props) {
           </Container>
         </div>
       </Container>
-
-      {backTopTop()}
     </>
   );
 }

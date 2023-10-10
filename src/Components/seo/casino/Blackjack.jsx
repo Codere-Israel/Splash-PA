@@ -229,7 +229,6 @@ export default function Blackjack(props) {
         <script type="application/ld+json">{JSON.stringify(json)}</script>
       </Helmet>
 
-      <Navigations index={props.index} type={1} />
       <Floating text="¡El mejor Blackjack!" juega={true} />
       <div
         className="top-bg-seo"

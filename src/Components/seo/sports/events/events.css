@@ -27,12 +27,18 @@
 }
 
 .floating a {
-  background-color: #0056fe;
   margin-top: 0.75vw;
   font-weight: 700;
   font-size: 1.65rem;
   border-radius: 10rem;
   padding: 0.55vw 2.15rem;
+  background-color: #0056fe;
+}
+
+.floating-btn:active,
+.floating-btn:focus {
+  background-color: #0056fe;
+  border: unset;
 }
 
 .seotable {

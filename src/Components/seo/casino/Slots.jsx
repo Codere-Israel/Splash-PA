@@ -254,7 +254,6 @@ export default function Slots(props) {
         <script type="application/ld+json">{JSON.stringify(json)}</script>
       </Helmet>
 
-      <Navigations index={props.index} type={1} />
       <Floating text="¡Las mejores Slots!" juega={true} />
       <div
         className="top-bg-seo"

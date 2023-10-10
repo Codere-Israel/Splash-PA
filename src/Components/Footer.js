@@ -16,8 +16,6 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Col, Container, NavLink, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-
-
 // Codere Footer \\
 function Footer() {
   const model = {

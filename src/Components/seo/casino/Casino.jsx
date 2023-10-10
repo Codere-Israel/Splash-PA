@@ -229,7 +229,6 @@ export default function Casino(props) {
         <script type="application/ld+json">{JSON.stringify(json)}</script>
       </Helmet>
 
-      <Navigations index={props.index} type={1} />
       <Floating text="¡El mejor Casino!" juega={true} />
       <div
         className="top-bg-seo"

@@ -194,7 +194,6 @@ export default function CasinoLive(props) {
         <script type="application/ld+json">{JSON.stringify(json)}</script>
       </Helmet>
 
-      <Navigations index={props.index} type={1} />
       <div
         className="top-bg-seo"
         style={{
