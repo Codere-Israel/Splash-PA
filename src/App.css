@@ -1,10 +1,10 @@
-body {
-  background-color: #252a30;
-}
-
 html,
 body {
   overflow-x: hidden !important;
+}
+
+body {
+  background-color: #252a30;
 }
 
 .modal-open {
@@ -222,6 +222,11 @@ body {
   text-transform: capitalize;
   width: 80%;
 }
+
+.dropdown-item:active {
+  background-color: #212529db;
+}
+
 .dropdown a:nth-child(1) {
   padding-top: 5px;
 }
@@ -900,17 +905,11 @@ img.game_logo:hover {
   text-align: center;
 } */
 
-.left-col,
-.middle-col,
-.right-col {
+.content-container .row > div {
   width: 30%;
   padding: 1.2em 1.2em 0 1.2em;
   border-radius: 25px;
-  /* background-color: rgb(68, 68, 68); */
-
   margin: 1px;
-  /* -webkit-box-shadow: 1px 2px 11px 0px rgba(121, 192, 0, 0.51);
-  box-shadow: 1px 2px 11px 0px rgba(121, 192, 0, 0.51); */
 }
 
 /* Table */
@@ -1040,6 +1039,7 @@ img.game_logo:hover {
   border-bottom: #fff 1px solid;
   border: unset;
   box-shadow: none;
+  padding: 10px 0 0 15px;
 }
 
 .hamb-accordion .accordion-body {
@@ -1242,10 +1242,9 @@ footer.nb-footer .footer-info-single p {
   .content-container .row {
     margin: auto;
   }
-  .left-col,
-  .middle-col,
-  .right-col {
+  .content-container .row > div {
     padding: 0;
+    width: 100%;
   }
 
   .modal-dialog {
@@ -1326,6 +1325,10 @@ footer.nb-footer .footer-info-single p {
     border-bottom: #fff 1px solid;
     padding: 1vw;
     padding-top: 3vw;
+  }
+
+  .bm-item-list a:hover {
+    color: #fff;
   }
 
   #father a svg:first-child {

@@ -19,6 +19,7 @@ import {
   faBullhorn,
   faCrosshairs,
   faCoins,
+  faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -63,6 +64,11 @@ function Header(props) {
       name: "Promociones",
       url: "https://m.codere.pa/deportespanama/#/PromotionsPage",
       icon: faBullhorn,
+    },
+    {
+      name: "Crown Casinos",
+      url: "https://m.codere.pa/deportespanama/#/NearestLocalPage",
+      icon: faLocationDot,
     },
   ];
 
