@@ -19,7 +19,7 @@ import TableOfContents from "../TableOfContents";
 export default function Casino(props) {
   const game_prefix = "https://m.codere.pa/deportes/#/CasinoPage?playgame=";
 
-  const title = "Casino Online regulado en Panamá 🎰 | Codere®";
+  const title = "Casino Online en Panamá » 5 Giros Gratis | Codere®";
   const description =
     "Juega en línea en el Crown Casino de Panamá, encuentra la mejor selección de juegos online, aprovecha nuestras promociones y diviértete a lo grande aquí.";
   const json = {

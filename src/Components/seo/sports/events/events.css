@@ -16,13 +16,14 @@
   text-align: center;
   /* top: 7vw; */
   margin-top: 1vw;
-  width: 32%;
+  width: 25%;
   z-index: 2;
 }
 
 .floating span {
   font-family: Codere;
-  font-size: 5.5vw;
+  font-size: 4.5vw;
+  /* font-size: 5.5vw; */
   line-height: 1;
 }
 
@@ -57,6 +58,17 @@
   border-radius: 0.45rem;
   overflow: auto;
 }
+
+/* Rollback */
+
+/* .content-table i {
+  background: #79c000;
+  border-radius: 2.5px;
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+  margin-right: 10px;
+} */
 
 .content-table i {
   background: #333f48;

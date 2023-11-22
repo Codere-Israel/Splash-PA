@@ -107,7 +107,7 @@ function MySwiper(props) {
               onClick={() => setShowTycModal(false)}
               className="accept-btn"
             >
-              Acceptar
+              Aceptar
             </Button>
           </Modal.Footer>
         </Modal>
