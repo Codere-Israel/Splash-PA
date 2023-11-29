@@ -24,14 +24,14 @@
       },
       {
         "bolded": "",
-        "text": "Si el usuario hace una solicitud de cobro durante el periodo oferta, quedarán invalidados los bonos que le queden por liberar. Las Freebets tendrán un valor de 20. En caso de que el importe a entregar no fuera múltiplo se redondeará al alza."
+        "text": "Si el usuario hace una solicitud de cobro durante el periodo oferta, quedarán invalidados los bonos que le queden por liberar. Las Freebets tendrán el mismo valor al importe del depósito realizado. En caso de que el importe a entregar no fuera múltiplo de $10 se redondeará al alza."
       },
       {
         "bolded": "",
         "text": "Las freebets deberán ser utilizadas en base a los términos y condiciones de las freebets de codere.pa:",
         "inner": [
           "Las freebets deberán utilizarse para realizar apuestas con una cuota igual o superior a 1,50 (-200).",
-          "Las freebets tendrán una duración de 30 días desde su obtención, incluído el periodo de verificación de identidad. Transcurrido dicho periodo, las freebets no utilizadas serán eliminadas.",
+          "Las freebets tendrán una duración de 7 días desde su obtención, incluído el periodo de verificación de identidad. Transcurrido dicho periodo, las freebets no utilizadas serán eliminadas.",
           "Al usar las freebets, en caso de que la apuesta sea ganadora, el usuario solo recibirá la ganancia neta derivada de las mismas.",
           "Al usar las freebets, en caso de que la apuesta resulte cancelada no se devolverá el importe de la freebet ni se asignará otra en su lugar."
         ]
@@ -42,7 +42,7 @@
       },
       {
         "bolded": "",
-        "text": "Las Freebets obtenidas tendrán una validez de 30 días para ser utilizadas, desde el momento de su activación. Transcurrido dicho periodo, las Freebets activas y no utilizadas, serán eliminadas."
+        "text": "Las Freebets obtenidas tendrán una validez de 7 días para ser utilizadas, desde el momento de su activación. Transcurrido dicho periodo, las Freebets activas y no utilizadas, serán eliminadas."
       },
       {
         "bolded": "RESTRICCIONES DE PARTICIPACIÓN: ",
