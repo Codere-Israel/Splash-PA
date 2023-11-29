@@ -31,7 +31,7 @@ function Header(props) {
 
   const URL = "https://dm.apuestas.codere.pa/LoginServicesESApi/login/web";
   const LOGO =
-    new Date() <= new Date("2023-12-30T22:00:00Z") && new Date() >= new Date("2023-12-01T22:00:00Z")
+    new Date() <= new Date("2023-12-30T22:00:00Z") && new Date() >= new Date("2023-12-01T07:00:00Z")
       ? "https://www.codere.pa/_catalogs/masterpage/codere/img/christmassLogo.gif"
       : "https://www.codere.pa/_catalogs/masterpage/codere/img/SponsorsLogoCodere.png";
       
