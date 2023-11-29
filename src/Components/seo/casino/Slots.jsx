@@ -16,7 +16,7 @@ import TableOfContents from "../TableOfContents";
 export default function Slots(props) {
   const game_prefix = "https://m.codere.pa/deportes/#/CasinoPage?playgame=";
 
-  const title = "Slots Online ✔ en Panamá  | Codere®";
+  const title = "Tragamonedas Online » Bono Slots de $100 | Codere®";
   const description =
     "Ahora también puedes jugar a las tragamonedas, las clásicas maquinitas de casino en línea ✔, Crown Casino Panamá tiene la mejor selección para ti.";
   const json = {
