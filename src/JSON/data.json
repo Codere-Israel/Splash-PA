@@ -2,7 +2,7 @@
   "desktop_slide_list": [
     {
       "image": "https://www.codere.pa/assets/inicio-banners/welcome-bonus-desktop.jpg",
-      "name": "bono de bienvenida",
+      "name": "Bono de Bienvenida",
       "img_alt": "welcome-bonus",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?url=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
       "tycType": "sport",
@@ -21,7 +21,7 @@
     },
     {
       "image": "https://www.codere.pa/assets/inicio-banners/reg-offer-desktop.jpg",
-      "name": "Acepta El Reto",
+      "name": "Bono de Bienvenida",
       "img_alt": "reg-offer",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?url=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
       "tycType": "sport",
@@ -51,7 +51,7 @@
   "mobile_slide_list": [
     {
       "image": "https://www.codere.pa/assets/inicio-banners/welcome-bonus-mobile.jpg",
-      "name": "bono de bienvenida",
+      "name": "Bono de Bienvenida",
       "img_alt": "welcome-bonus",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?url=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
       "tycType": "sport",
@@ -70,7 +70,7 @@
     },
     {
       "image": "https://www.codere.pa/assets/inicio-banners/reg-offer-mobile.jpg",
-      "name": "Acepta El Reto",
+      "name": "Bono de Bienvenida",
       "img_alt": "reg-offer",
       "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?url=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
       "tycType": "sport",
