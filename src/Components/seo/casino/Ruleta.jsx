@@ -148,6 +148,7 @@ export default function Ruleta(props) {
 
   const recomendaciones = {
     h2: "Recomendaciones para jugar​",
+    id: "recomendaciones",
     p: [
       "La mayoría de los jugadores nuevos quieren saber el secreto para ganar. Pero la ruleta se basa en probabilidad y existen algunas estrategias que un jugador puede aplicar para mejorar sus probabilidades.",
       "Algunas estrategias se centran en la apuesta. Uno de los métodos más conocidos se llama la estrategia de Martingale. Cuando se juega Martingale, los jugadores mantienen una constante en su apuesta. Cada vez que pierden una ronda, doblan sus apuestas perdidas. Por ejemplo, una apuesta de $10.000 se convierte en una apuesta de $20.000 Martingale.",
@@ -155,7 +156,7 @@ export default function Ruleta(props) {
   };
 
   const como_saber = {
-    id: "como",
+    id: "como_saber",
     h2: "¿Cómo saber a qué apostar en la Ruleta?",
     sub: [
       {

@@ -73,10 +73,7 @@ export default function Slots(props) {
       title: "Los mejores slots online están en Codere",
       id: "mejores",
     },
-    {
-      title: "Tipos de juegos online",
-      id: "tipos",
-    },
+
     {
       title: "Preguntas frecuentes",
       id: "preguntas",
@@ -333,8 +330,8 @@ export default function Slots(props) {
         </Table>
 
         {tipos.tips.map((tip, k) => (
-          <div key={k}>
-            <h3>{tip.h3}</h3>
+          <div key={k} id={tipos.id}>
+            <h3 >{tip.h3}</h3>
             {tip.p.map((t, k) => (
               <p key={k}>{t}</p>
             ))}
