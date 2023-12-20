@@ -11,6 +11,16 @@
       "scheduled": true
     },
     {
+      "image": "https://www.codere.pa/assets/inicio-banners/gana-con-river-desktop.jpg",
+      "name": "Bono de Bienvenida",
+      "img_alt": "gana-con-river",
+      "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?url=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
+      "tycType": "sport",
+      "startDate": "2023-12-20T00:00:00Z",
+      "endDate": "2024-12-20T23:59:00Z",
+      "scheduled": true
+    },
+    {
       "image": "https://www.codere.pa/assets/inicio-banners/casino-gen-desktop.jpg",
       "name": "Juego De La Semana",
       "img_alt": "casino-gen",
@@ -57,6 +67,16 @@
       "tycType": "sport",
       "startDate": "2023-11-29T00:00:00Z",
       "endDate": "2024-11-29T00:30:00Z",
+      "scheduled": true
+    },
+    {
+      "image": "https://www.codere.pa/assets/inicio-banners/gana-con-river-mobile.jpg",
+      "name": "Bono de Bienvenida",
+      "img_alt": "gana-con-river",
+      "tycLink": "https://m.codere.pa/deportespanama/#/PromotionsPage?url=https://www.codere.pa/PromocionesPA/actives/BonodeBienvenida.aspx",
+      "tycType": "sport",
+      "startDate": "2023-12-20T00:00:00Z",
+      "endDate": "2024-12-20T23:59:00Z",
       "scheduled": true
     },
     {
