@@ -13,10 +13,10 @@ import { Helmet } from "react-helmet";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import TableOfContents from "../TableOfContents";
 
-export default function Slots(props) {
+export default function Slots({ device }) {
   const game_prefix = "https://m.codere.pa/deportes/#/CasinoPage?playgame=";
 
-  const title = "Tragamonedas Online » Bono Slots de $100 | Codere®";
+  const title = "Slots Online ✔ en Panamá  | Codere®";
   const description =
     "Ahora también puedes jugar a las tragamonedas, las clásicas maquinitas de casino en línea ✔, Crown Casino Panamá tiene la mejor selección para ti.";
   const json = {
@@ -73,7 +73,10 @@ export default function Slots(props) {
       title: "Los mejores slots online están en Codere",
       id: "mejores",
     },
-
+    {
+      title: "Tipos de juegos online",
+      id: "tipos",
+    },
     {
       title: "Preguntas frecuentes",
       id: "preguntas",
@@ -256,7 +259,7 @@ export default function Slots(props) {
         className="top-bg-seo"
         style={{
           backgroundImage: `url(https://www.codere.pa/seopages/casino/assets/slots/${
-            props.flag ? "M" : "D"
+            device ? "M" : "D"
           }-Header.webp)`,
           backgroundSize: "cover",
         }}
@@ -267,9 +270,7 @@ export default function Slots(props) {
         <p>{top_par.p}</p>
 
         {/* Table */}
-        {!props.flag ? (
-          <TableOfContents table={table_of_contents_list} />
-        ) : null}
+        {!device ? <TableOfContents table={table_of_contents_list} /> : null}
 
         <h2 id={como_juega.id} className="mt-4 mb-3">
           {como_juega.h2}
@@ -279,7 +280,7 @@ export default function Slots(props) {
 
         <Row className="casino-row">
           {live_games
-            .slice(0, !props.flag ? live_games.length : 4)
+            .slice(0, !device ? live_games.length : 4)
             .map((game, k) => (
               <Col lg={2} md={4} xs={6} key={k}>
                 <NavLink
@@ -330,8 +331,8 @@ export default function Slots(props) {
         </Table>
 
         {tipos.tips.map((tip, k) => (
-          <div key={k} id={tipos.id}>
-            <h3 >{tip.h3}</h3>
+          <div key={k}>
+            <h3>{tip.h3}</h3>
             {tip.p.map((t, k) => (
               <p key={k}>{t}</p>
             ))}

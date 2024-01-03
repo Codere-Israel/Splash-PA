@@ -12,7 +12,7 @@ import { Helmet } from "react-helmet";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import TableOfContents from "../TableOfContents";
 
-export default function Ruleta(props) {
+export default function Ruleta({ device }) {
   const game_prefix = "https://m.codere.pa/deportes/#/CasinoPage?playgame=";
 
   const title = "Ruleta Online en Panamá  | Codere®";
@@ -148,7 +148,6 @@ export default function Ruleta(props) {
 
   const recomendaciones = {
     h2: "Recomendaciones para jugar​",
-    id: "recomendaciones",
     p: [
       "La mayoría de los jugadores nuevos quieren saber el secreto para ganar. Pero la ruleta se basa en probabilidad y existen algunas estrategias que un jugador puede aplicar para mejorar sus probabilidades.",
       "Algunas estrategias se centran en la apuesta. Uno de los métodos más conocidos se llama la estrategia de Martingale. Cuando se juega Martingale, los jugadores mantienen una constante en su apuesta. Cada vez que pierden una ronda, doblan sus apuestas perdidas. Por ejemplo, una apuesta de $10.000 se convierte en una apuesta de $20.000 Martingale.",
@@ -156,7 +155,7 @@ export default function Ruleta(props) {
   };
 
   const como_saber = {
-    id: "como_saber",
+    id: "como",
     h2: "¿Cómo saber a qué apostar en la Ruleta?",
     sub: [
       {
@@ -219,7 +218,7 @@ export default function Ruleta(props) {
         className="top-bg-seo"
         style={{
           backgroundImage: `url(https://www.codere.pa/seopages/casino/assets/ruleta/${
-            props.flag ? "M" : "D"
+            device ? "M" : "D"
           }-Header.webp)`,
           backgroundSize: "cover",
         }}
@@ -230,14 +229,12 @@ export default function Ruleta(props) {
         <p>{top_par.p}</p>
 
         {/* Table */}
-        {!props.flag ? (
-          <TableOfContents table={table_of_contents_list} />
-        ) : null}
-        {/* Games */}
+        {!device && <TableOfContents table={table_of_contents_list} />}
 
+        {/* Games */}
         <Row className="casino-row">
           {live_games
-            .slice(0, !props.flag ? live_games.length : 4)
+            .slice(0, !device ? live_games.length : 4)
             .map((game, k) => (
               <Col lg={2} md={4} xs={6} key={k}>
                 <NavLink

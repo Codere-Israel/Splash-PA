@@ -7,7 +7,7 @@ import ScrollToTop from "react-scroll-to-top";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
-export default function EventosDeportivos(props) {
+export default function EventosDeportivos({ device }) {
   const prefix = "https://www.codere.pa/assets/seo/";
   const tenis_par =
     "¡Ven a vivir los mejores puntos con tusapuestas en Codere! Aquí encontrarás las respuestas a las preguntas más comunes sobreel tenis.";
@@ -43,12 +43,12 @@ export default function EventosDeportivos(props) {
   const regular = (g, i) => {
     return (
       <Row key={i} className="mb-4">
-        <Col xs={!props.flag ? 7 : 12}>
+        <Col xs={!device ? 7 : 12}>
           <Slide delay={(i + 1) * 500} triggerOnce>
             <LazyLoadImage src={prefix + g.img + ".jpg"} />
           </Slide>
         </Col>
-        <Col xs={!props.flag ? 5 : 12}>
+        <Col xs={!device ? 5 : 12}>
           <Nav.Link href={g.url}>
             <h2>{g.h2}</h2>
           </Nav.Link>
@@ -64,7 +64,7 @@ export default function EventosDeportivos(props) {
   const flip = (g, i) => {
     return (
       <Row key={i} className="mb-4">
-        <Col xs={!props.flag ? 5 : 12}>
+        <Col xs={!device ? 5 : 12}>
           <Nav.Link href={g.url}>
             <h2>{g.h2}</h2>
           </Nav.Link>
@@ -73,7 +73,7 @@ export default function EventosDeportivos(props) {
             Ver información
           </Button>
         </Col>
-        <Col xs={!props.flag ? 7 : 12}>
+        <Col xs={!device ? 7 : 12}>
           {/* <Slide direction="right"> */}
           <Slide triggerOnce direction="right" delay={(i + 1) * 125}>
             <LazyLoadImage src={prefix + g.img + ".jpg"} />
@@ -88,7 +88,7 @@ export default function EventosDeportivos(props) {
       <Fade>
         <LazyLoadImage
           style={
-            !props.flag
+            !device
               ? { margin: "4rem 0 2rem 0", maxWidth: "100%" }
               : { margin: "3.2rem 0 2rem 0", maxWidth: "100%" }
           }
@@ -100,7 +100,7 @@ export default function EventosDeportivos(props) {
       </h1>
       <Container className="eventos-container">
         {data.games.map((g, i) => {
-          return props.flag
+          return device
             ? regular(g, i)
             : i % 2 === 0
             ? regular(g, i)

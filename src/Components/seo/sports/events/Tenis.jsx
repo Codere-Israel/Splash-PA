@@ -8,9 +8,9 @@ import { Fade } from "react-awesome-reveal";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useEffect, useState } from "react";
 
-export default function Tenis(props) {
+export default function Tenis({ device }) {
   const prefix = `https://www.codere.pa/seopages/eventos-deportivos/tenis/imgs/${
-    props.flag ? "M" : "D"
+    device ? "M" : "D"
   }-Tennis-`;
   const jpg = ".jpg";
 
@@ -160,7 +160,7 @@ export default function Tenis(props) {
         className="top-bg-seo"
         style={{
           backgroundImage: `url(https://www.codere.pa/seopages/eventos-deportivos/tenis/imgs/${
-            props.flag ? "M" : "D"
+            device ? "M" : "D"
           }-Header.jpg)`,
           backgroundSize: "cover",
         }}
@@ -176,7 +176,7 @@ export default function Tenis(props) {
             </Fade>
             <p>{top_par}</p>
 
-            {!props.flag ? <TableOfContents table={table_list} /> : <></>}
+            {!device ? <TableOfContents table={table_list} /> : <></>}
 
             <div className="para">
               <h2 id="origen" className="subtitle">

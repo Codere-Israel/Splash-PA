@@ -3,7 +3,7 @@ import Games from "./Games";
 import Content from "./Content";
 import { Helmet } from "react-helmet";
 
-export default function Inicio(props) {
+export default function Inicio({ device }) {
   const title = "Apuestas Deportivas y Casino Online » Bono de $100 | Codere®";
   const description =
     "Juega en línea con Codere, la casa de Apuestas Deportivas y Casino Online #1 en Panamá. Somos el patrocinador oficial del club de fútbol Real Madrid ⚽.";
@@ -93,8 +93,8 @@ export default function Inicio(props) {
 
         <link rel="canonical" href="https://www.codere.pa/" />
       </Helmet>
-      <MySwiper flag={props.flag} />
-      <Games flag={props.flag} />
+      <MySwiper device={device} />
+      <Games device={device} />
       <Content />
     </>
   );

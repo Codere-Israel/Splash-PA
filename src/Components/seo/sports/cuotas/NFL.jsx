@@ -4,7 +4,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import Floating from "../../Floating";
 import TableOfContents from "../../TableOfContents";
 
-export default function NFL(props) {
+export default function NFL({ device }) {
   const title = "Apuestas Futbol Americano de la NFL 🏈 en Panamá | Codere®";
   const description =
     "Vive la emoción del futbol americano 🏈 en Codere Panamá. Apuesta a los mejores equipos de la NFL rumbo al SuperBowl y juega en grande.";
@@ -49,7 +49,7 @@ export default function NFL(props) {
   };
 
   const prefix = `https://www.codere.pa/seopages/cuotas/NFL/${
-    props.flag ? "M" : "D"
+    device ? "M" : "D"
   }-superbowl-`;
   const postfix = ".jpg";
 
@@ -173,7 +173,7 @@ export default function NFL(props) {
         className="top-bg-seo"
         style={{
           backgroundImage: `url(https://www.codere.pa/seopages/cuotas/NFL/${
-            props.flag ? "M" : "D"
+            device ? "M" : "D"
           }-Header.jpg)`,
           backgroundSize: "cover",
         }}
@@ -184,7 +184,7 @@ export default function NFL(props) {
           <Container style={{ marginTop: "2rem" }}>
             <h1 className="header subtitle">{top_par.h1}</h1>
             <p>{top_par.p}</p>
-            {!props.flag ? <TableOfContents table={table_list} /> : <></>}
+            {!device ? <TableOfContents table={table_list} /> : <></>}
             <div id={equipos.id} className="mt-4">
               <h2 className="subtitle">{equipos.h2}</h2>
               <p>{equipos.p}</p>
