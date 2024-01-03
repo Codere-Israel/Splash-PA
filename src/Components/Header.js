@@ -7,22 +7,12 @@ import {
   Accordion,
   InputGroup,
 } from "react-bootstrap";
-import { isMobileContext } from "../App";
 import React, { useState } from "react";
 import { elastic as Menu } from "react-burger-menu";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import {
-  faAngleDown,
-  faAngleRight,
-  faCirclePlay,
-  faBullhorn,
-  faCrosshairs,
-  faCoins,
-  faLocationDot,
-} from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Arrowrightw, Arrowdown, Deportes, LocalesMenuIcon, Promociones, Ruletasenvivo, CasinoMenuIcon, Directo } from '../icons';
 
 function Header(props) {
   var regis = "https://m.codere.pa/deportespanama/#/RegistroPAPage";
@@ -43,32 +33,32 @@ function Header(props) {
     {
       name: "Deportes",
       url: "https://m.codere.pa/deportespanama/#/HomePage",
-      icon: faCrosshairs,
+      icon: Deportes,
     },
     {
       name: "En Vivo",
       url: "https://m.codere.pa/deportespanama/#/DirectosPage",
-      icon: faCirclePlay,
+      icon: Directo,
     },
     {
       name: "Casino",
       url: "https://m.codere.pa/deportespanama/#/CasinoPage",
-      icon: faCoins,
+      icon: CasinoMenuIcon,
     },
     {
       name: "Casino En Vivo",
       url: "https://m.codere.pa/deportespanama/#/CasinoPage?filter=En%20Vivo",
-      icon: faCoins,
+      icon: Ruletasenvivo,
     },
     {
       name: "Promociones",
       url: "https://m.codere.pa/deportespanama/#/PromotionsPage",
-      icon: faBullhorn,
+      icon: Promociones,
     },
     {
       name: "Crown Casinos",
       url: "https://m.codere.pa/deportespanama/#/NearestLocalPage",
-      icon: faLocationDot,
+      icon: LocalesMenuIcon,
     },
   ];
 
@@ -109,11 +99,17 @@ function Header(props) {
               onOpen={hamburgerHandler}
               onClose={hamburgerHandler}
             >
+
               {menu.map((m, k) => (
                 <Nav.Link key={k} rel="nofollow" href={m.url}>
-                  <FontAwesomeIcon icon={m.icon} />
-                  {m.name}
-                  <FontAwesomeIcon icon={faAngleRight} />
+                  <div className={'mobMenuSVGwrapper'}>
+                    {(React.createElement (m.icon, { className: "mobileMenuIcon" }))}
+                    {m.name}
+                  </div>
+
+                  <div className={'arrowright'}>
+                    < Arrowrightw/>
+                  </div>
                 </Nav.Link>
               ))}
 
@@ -130,7 +126,7 @@ function Header(props) {
                             to={s.url}
                           >
                             {s.name}
-                            <FontAwesomeIcon icon={faAngleRight} />
+                            <Arrowrightw/>
                           </Nav.Link>
                         </li>
                       ))}
@@ -191,7 +187,7 @@ function Header(props) {
           <div style={{ display: "flex", right: "30px", position: "absolute" }}>
             <Dropdown>
               <Dropdown.Toggle className="header_btn">
-                <FontAwesomeIcon icon={faAngleDown} />
+                <Arrowdown/>
               </Dropdown.Toggle>
               <Dropdown.Menu>
                 {seo_menu.map((d, k) => (

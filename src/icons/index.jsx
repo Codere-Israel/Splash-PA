@@ -20,7 +20,10 @@ export { ReactComponent as Instagram } from './social/ig-instagram-icon.svg';
 export { ReactComponent as Twitter } from './social/twitterx.svg';
 export { ReactComponent as Youtube } from './social/youtube-color-icon.svg';
 export { ReactComponent as CodereChat } from './social/contact-us-icon.svg';
+export { ReactComponent as Phone } from './social/phone.svg';
+export { ReactComponent as Whatsapp } from './social/whatsapp.svg';
 
 
 //other
- export { ReactComponent as Arrowrightw } from './other/icon-arrow-right-white.svg';
+export { ReactComponent as Arrowrightw } from './other/icon-arrow-right-white.svg';
+export { ReactComponent as Arrowdown } from './other/arrowdownwhite.svg';

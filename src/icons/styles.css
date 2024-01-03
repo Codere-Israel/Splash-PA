@@ -1,0 +1,95 @@
+.payments {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+	margin: 1.25rem auto;
+	width: 43%;
+	}
+
+h2.comoJugar > button.accordion-button{
+	color:#79c000;
+	}
+
+.payments img {
+	height: auto;
+	max-width: 100px;
+	}
+
+.list-inline {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+
+.about .social-media ul li a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+	width: 46px;
+	background-color: #fff;
+	height: 46px;
+	line-height: 45px;
+	border-radius: 50%;
+	text-decoration: none;
+	font-size: 25px;
+	color: #79c000;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	-webkit-box-shadow: 0 4px 9px -2px rgba(0, 0, 0, 0.71);
+	box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.71);
+	}
+
+.about .social-media ul li a > svg {
+	width: 2vw;
+	}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+	.about .social-media ul li a > svg {
+		width: 7vw;
+		}
+	.payments {
+		width: 100%;
+		}
+
+	.payments img {
+		adding: 1.2vw;
+		width: 27vw;
+		}
+
+
+	/*.mobiles,*/
+	/*.logos,*/
+	/*.payments {*/
+	/*  margin: 0 15px;*/
+	/*  justify-content: space-around;*/
+	/*}*/
+
+	.bm-item-list a {
+		color: #fff;
+		text-decoration: none;
+		font-size: 1.1rem;
+
+		/* border-bottom: #fff 1px solid; */
+		padding: 1vw 3.5vw;
+		padding-top: 3vw;
+
+		/* margin-left: 3vw; */
+		display: flex !important;
+		justify-content: space-between;
+		align-items: center;
+		padding-left: 0;
+		}
+
+	.bm-item-list a > arrowrightw {
+		width: 100%;
+		margin-left: 10vw;
+		}
+	.mobMenuSVGwrapper svg {
+		margin-right: 0.5rem;
+		height: 1em !important;
+		min-width: 36px;
+		}
+	}

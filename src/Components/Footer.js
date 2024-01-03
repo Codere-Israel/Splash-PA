@@ -1,21 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookF,
-  faInstagram,
-  faTwitter,
-  faYoutube,
-  faWhatsapp,
-  faXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faComments,
-  faHeadset,
-  faPhone,
-} from "@fortawesome/free-solid-svg-icons";
+
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Col, Container, NavLink, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import { CodereChat, Facebook, Instagram, Twitter, Youtube, Phone, Whatsapp } from '../icons';
+import React from "react";
 // Codere Footer \\
 function Footer() {
   const model = {
@@ -128,13 +116,13 @@ function Footer() {
       {
         url: "https://wa.me/50769314912",
         name: " + 507 6931 4912",
-        icon: faWhatsapp,
+        icon: Whatsapp,
         rel: "nofollow",
       },
       {
         url: "tel:+5073772602",
         name: " + 507 377 2602",
-        icon: faPhone,
+        icon: Phone,
         rel: "nofollow",
       },
     ],
@@ -156,22 +144,22 @@ function Footer() {
                   href="https://m.codere.pa/deportespanama/#/ContactPage"
                   rel="nofollow"
                 >
-                  <FontAwesomeIcon icon={faHeadset} />
+                  <CodereChat/>
                 </a>
               </li>
               <li>
                 <a href="https://www.facebook.com/CoderePan" rel="nofollow">
-                  <FontAwesomeIcon icon={faFacebookF} />
+                  <Facebook />
                 </a>
               </li>
               <li>
                 <a href="https://www.instagram.com/coderepan/" rel="nofollow">
-                  <FontAwesomeIcon icon={faInstagram} />
+                  <Instagram />
                 </a>
               </li>
               <li>
                 <a href="https://twitter.com/CoderePanama" rel="nofollow">
-                  <FontAwesomeIcon icon={faXTwitter} />
+                  <Twitter />
                 </a>
               </li>
               <li>
@@ -179,7 +167,7 @@ function Footer() {
                   href="https://www.youtube.com/channel/UCWSDewbh7GXcpfOzl-bisfQ"
                   rel="nofollow"
                 >
-                  <FontAwesomeIcon icon={faYoutube} />
+                  <Youtube />
                 </a>
               </li>
             </ul>
@@ -243,7 +231,7 @@ function Footer() {
                   {model.ayuda.map((li, k) => (
                     <li key={k}>
                       <NavLink href={li.url} target={li.target} rel={li.rel}>
-                        {li.icon ? <FontAwesomeIcon icon={li.icon} /> : null}{" "}
+                        {li.icon ? React.createElement (li.icon, { className: "ayudaIconsFooter" }) : null}{" "}
                         {li.name}
                       </NavLink>
                     </li>
