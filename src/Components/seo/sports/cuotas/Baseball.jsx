@@ -4,7 +4,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import Floating from "../../Floating";
 import TableOfContents from "../../TableOfContents";
 
-export default function Baseball(props) {
+export default function Baseball({ device }) {
   const title = "Apuestas de Béisbol ⚾ en Panamá | Codere®";
   const description =
     "Apuesta en Codere online a tu equipo favorito de béisbol de la MLB ⚾ juega en línea y pronostica quien se llevará la serie mundial.";
@@ -81,7 +81,7 @@ export default function Baseball(props) {
   };
 
   const prefix = `https://www.codere.pa/seopages/cuotas/Baseball/${
-    props.flag ? "M" : "D"
+    device ? "M" : "D"
   }-Baseball-`;
   const postfix = ".jpg";
 
@@ -197,7 +197,7 @@ export default function Baseball(props) {
         className="top-bg-seo"
         style={{
           backgroundImage: `url(https://www.codere.pa/seopages/cuotas/Baseball/${
-            props.flag ? "M" : "D"
+            device ? "M" : "D"
           }-Header.jpg)`,
           backgroundSize: "cover",
         }}
@@ -208,7 +208,7 @@ export default function Baseball(props) {
           <Container style={{ marginTop: "2rem" }}>
             <h1 className="header subtitle">{top_par.h1}</h1>
             <p>{top_par.p}</p>
-            {!props.flag ? <TableOfContents table={table_list} /> : <></>}
+            {!device ? <TableOfContents table={table_list} /> : <></>}
             <div id={principales.id} className="mt-4">
               <h2 className="subtitle">{principales.h2}</h2>
               <p>{principales.p}</p>

@@ -6,7 +6,7 @@ import Floating from "../Floating";
 import { useEffect } from "react";
 import axios from "axios";
 
-export default function CuotasDeportivas(props) {
+export default function CuotasDeportivas({ device }) {
   // useEffect(() => {
   //   axios
   //     .get(process.env.REACT_APP_AFFILIATE_API, {
@@ -51,7 +51,7 @@ export default function CuotasDeportivas(props) {
       <Col md={4} xs={6} key={i}>
         <Card className={`eventos_card`}>
           <Link style={{ textDecoration: "unset" }} to={g.url}>
-            <Card.Header as={"h2"}>{!props.flag ? g.h2 : g.game}</Card.Header>
+            <Card.Header as={"h2"}>{!device ? g.h2 : g.game}</Card.Header>
           </Link>
           <Card.Body>
             <LazyLoadImage src={`${prefix}${g.img}.jpg`} />
@@ -88,7 +88,7 @@ export default function CuotasDeportivas(props) {
           className="top-bg-seo"
           style={{
             backgroundImage: `url(https://www.codere.pa/assets/seo/general-${
-              !props.flag ? "desktop" : "mobile"
+              !device ? "desktop" : "mobile"
             }.jpg)`,
             backgroundSize: "cover",
           }}

@@ -17,7 +17,7 @@ import Navigations from "../Components/seo/Navigations";
 import Soccer from "../Components/seo/sports/cuotas/Soccer";
 import NFL from "../Components/seo/sports/cuotas/NFL";
 
-export default function Routing(props) {
+export default function Routing({ device }) {
   const activeHandler = () => {
     switch (location.pathname) {
       case "/casino":
@@ -67,72 +67,68 @@ export default function Routing(props) {
         <></>
       )}
       <Routes>
-        <Route path="/" element={<Inicio flag={props.flag} />} />
-        <Route path="stg" element={<Inicio flag={props.flag} />} />
-        <Route path="/stg/index.html" element={<Inicio flag={props.flag} />} />
+        <Route path="/" element={<Inicio device={device} />} />
+        <Route path="stg" element={<Inicio device={device} />} />
+        <Route path="/stg/index.html" element={<Inicio device={device} />} />
         <Route exact path="eventos-deportivos">
           <Route
             exact
             path=""
-            element={<EventosDeportivos flag={props.flag} />}
+            element={<EventosDeportivos device={device} />}
           />
           <Route
             exact
             path="apuestas-mundial-baloncesto"
-            element={<Basketball flag={props.flag} />}
+            element={<Basketball device={device} />}
           />
           <Route
             exact
             path="apuestas-grand-slam"
-            element={<Tenis flag={props.flag} />}
+            element={<Tenis device={device} />}
           />
           <Route
             exact
             path="apuestas-grand-prix"
-            element={<Formula flag={props.flag} />}
+            element={<Formula device={device} />}
           />
           <Route
             exact
             path="apuestas-mundial-fifa"
-            element={<Mundeal flag={props.flag} />}
+            element={<Mundeal device={device} />}
           />
         </Route>
         <Route exact path="cuotas-deportivas">
-          <Route
-            exact
-            path=""
-            element={<CuotasDeportivas flag={props.flag} />}
-          />
+          <Route exact path="" element={<CuotasDeportivas device={device} />} />
           <Route
             exact
             path="apuestas-beisbol-grandes-ligas"
-            element={<Baseball flag={props.flag} />}
+            element={<Baseball device={device} />}
           />
           <Route
             exact
             path="apuestas-futbol"
-            element={<Soccer flag={props.flag} />}
+            element={<Soccer device={device} />}
           />
           <Route
             exact
             path="apuestas-nfl-futbol-americano"
-            element={<NFL flag={props.flag} />}
+            element={<NFL device={device} />}
           />
         </Route>
         <Route exact path="casino">
-          <Route exact path="" element={<Casino flag={props.flag} />} />
+          <Route exact path="" element={<Casino device={device} />} />
           <Route
             exact
             path="casino-en-vivo"
-            element={<CasinoLive flag={props.flag} />}
+            element={<CasinoLive device={device} />}
           />
-          <Route exact path="slots" element={<Slots flag={props.flag} />} />
+          <Route exact path="slots" element={<Slots device={device} />} />
           <Route
             exact
             path="blackjack"
-            element={<Blackjack flag={props.flag} />}
+            element={<Blackjack device={device} />}
           />
-          <Route exact path="ruleta" element={<Ruleta flag={props.flag} />} />
+          <Route exact path="ruleta" element={<Ruleta device={device} />} />
         </Route>
       </Routes>
     </>

@@ -2,8 +2,6 @@ import Navigations from "../Navigations";
 import { useState } from "react";
 import Floating from "../Floating";
 import {
-  Image,
-  Placeholder,
   Container,
   Accordion,
   Row,
@@ -16,10 +14,10 @@ import { Helmet } from "react-helmet";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import TableOfContents from "../TableOfContents";
 
-export default function Casino(props) {
+export default function Casino({ device }) {
   const game_prefix = "https://m.codere.pa/deportes/#/CasinoPage?playgame=";
 
-  const title = "Casino Online en Panamá » Bono de $100 | Codere®";
+  const title = "Casino Online en Panamá » 5 Giros Gratis | Codere®";
   const description =
     "Juega en línea en el Crown Casino de Panamá, encuentra la mejor selección de juegos online, aprovecha nuestras promociones y diviértete a lo grande aquí.";
   const json = {
@@ -234,7 +232,7 @@ export default function Casino(props) {
         className="top-bg-seo"
         style={{
           backgroundImage: `url(https://www.codere.pa/seopages/casino/assets/casino/${
-            props.flag ? "M" : "D"
+            device ? "M" : "D"
           }-Header.jpg)`,
           backgroundSize: "cover",
         }}
@@ -245,9 +243,7 @@ export default function Casino(props) {
         <p>{top_par.p}</p>
 
         {/* Table */}
-        {!props.flag ? (
-          <TableOfContents table={table_of_contents_list} />
-        ) : null}
+        {!device && <TableOfContents table={table_of_contents_list} />}
 
         <h2 id={como_juega.id} className="mt-4 mb-3">
           {como_juega.h2}
@@ -257,7 +253,7 @@ export default function Casino(props) {
 
         <Row className="casino-row">
           {live_games
-            .slice(0, !props.flag ? live_games.length : 4)
+            .slice(0, !device ? live_games.length : 4)
             .map((game, k) => (
               <Col lg={2} md={4} xs={6} key={k}>
                 <NavLink
