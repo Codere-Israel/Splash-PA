@@ -184,10 +184,10 @@ function Header(props) {
             </Nav>
           </InputGroup>
 
-          <div style={{ display: "flex", right: "30px", position: "absolute" }}>
+          <div className={'headerRightButtonsBlock'}>
             <Dropdown>
               <Dropdown.Toggle className="header_btn">
-                <ArrowdownBlack className={"ArrowdownBlack"}/>
+                <ArrowdownBlack className={"arrowdownBlack"}/>
               </Dropdown.Toggle>
               <Dropdown.Menu>
                 {seo_menu.map((d, k) => (

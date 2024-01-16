@@ -199,10 +199,19 @@ body {
   color: #fff;
   border: unset;
 }
-.ArrowdownBlack {
+.arrowdownBlack {
   height:1.5vw;
   }
-.ArrowdownBlack:hover path {
+
+.headerRightButtonsBlock{
+  display: flex;
+  right: 30px;
+  position: absolute;
+  align-items:baseline;
+  justify-content:center;
+  }
+
+.arrowdownBlack:hover path {
   fill:white;
   }
 .dropdown-menu[data-bs-popper] {
@@ -1825,7 +1834,7 @@ h2.comoJugar > button.accordion-button{
   }
 
 .about .social-media ul li a > svg {
-  width: 2vw;
+  width: 1.5vw;
   }
 
 /* Mobile */
