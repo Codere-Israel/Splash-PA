@@ -3,7 +3,7 @@
 export { ReactComponent as Deportes } from './menu/deportes.svg';
 export { ReactComponent as Envivo } from './menu/liveRoulette.svg';
 export { ReactComponent as Slots } from './menu/slots.svg';
-export { ReactComponent as CasinoMenuIcon } from './menu/casino.svg';
+export { ReactComponent as CasinoMenuIcon } from './menu/casinoCardsWhite.svg';
 export { ReactComponent as Ruletasenvivo } from './menu/ruletas_en_vivo.svg';
 export { ReactComponent as Aviator } from './menu/Aviator.svg';
 export { ReactComponent as Promociones } from './menu/promocion.svg';
