@@ -199,7 +199,12 @@ body {
   color: #fff;
   border: unset;
 }
-
+.ArrowdownBlack {
+  height:1.5vw;
+  }
+.ArrowdownBlack:hover path {
+  fill:white;
+  }
 .dropdown-menu[data-bs-popper] {
   margin-top: 0.4vw;
   left: -5vw;
@@ -1021,8 +1026,9 @@ img.game_logo:hover {
 }
 
 .accordion-button:after {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
-}
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 32 32' fill='%23ffffff'><path fill-rule='evenodd' d='M16 24.773l14.613-14.613-2.907-2.933-11.707 11.707-11.707-11.707-2.907 2.933z'/></svg>") !important;
+  width: 1.7rem;
+  }
 
 .hamb-accordion {
   color: #fff;

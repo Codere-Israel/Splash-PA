@@ -12,7 +12,7 @@ import { elastic as Menu } from "react-burger-menu";
 
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { Arrowrightw, Arrowdown, Deportes, LocalesMenuIcon, Promociones, Ruletasenvivo, CasinoMenuIcon, Directo } from '../icons';
+import { Arrowrightw, Arrowdown, Deportes, LocalesMenuIcon, Promociones, Ruletasenvivo, CasinoMenuIcon, Directo, ArrowdownBlack } from '../icons';
 
 function Header(props) {
   var regis = "https://m.codere.pa/deportespanama/#/RegistroPAPage";
@@ -187,7 +187,7 @@ function Header(props) {
           <div style={{ display: "flex", right: "30px", position: "absolute" }}>
             <Dropdown>
               <Dropdown.Toggle className="header_btn">
-                <Arrowdown/>
+                <ArrowdownBlack className={"ArrowdownBlack"}/>
               </Dropdown.Toggle>
               <Dropdown.Menu>
                 {seo_menu.map((d, k) => (

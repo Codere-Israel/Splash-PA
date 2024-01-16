@@ -27,3 +27,4 @@ export { ReactComponent as Whatsapp } from './social/whatsapp.svg';
 //other
 export { ReactComponent as Arrowrightw } from './other/icon-arrow-right-white.svg';
 export { ReactComponent as Arrowdown } from './other/arrowdownwhite.svg';
+export { ReactComponent as ArrowdownBlack } from './other/arrowdownblack.svg';
