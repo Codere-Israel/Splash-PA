@@ -39,6 +39,7 @@ export default function Inicio({ device }) {
       "https://www.instagram.com/coderepan/",
       "https://es.wikipedia.org/wiki/Codere",
       "https://www.wikidata.org/wiki/Q2918415",
+      "https://play.google.com/store/apps/details?id=pa.codere.apuestas",
       "https://www.crunchbase.com/organization/codere",
       "https://www.google.com/search?kgmid=/g/121c515_",
     ],
