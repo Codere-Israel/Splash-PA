@@ -199,7 +199,21 @@ body {
   color: #fff;
   border: unset;
 }
+.arrowdownBlack {
+  height:1.5vw;
+  }
 
+.headerRightButtonsBlock{
+  display: flex;
+  right: 30px;
+  position: absolute;
+  align-items:baseline;
+  justify-content:center;
+  }
+
+.arrowdownBlack:hover path {
+  fill:white;
+  }
 .dropdown-menu[data-bs-popper] {
   margin-top: 0.4vw;
   left: -5vw;
@@ -1029,8 +1043,9 @@ img.game_logo:hover {
 }
 
 .accordion-button:after {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
-}
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 32 32' fill='%23ffffff'><path fill-rule='evenodd' d='M16 24.773l14.613-14.613-2.907-2.933-11.707 11.707-11.707-11.707-2.907 2.933z'/></svg>") !important;
+  width: 1.7rem;
+  }
 
 .hamb-accordion {
   color: #fff;
@@ -1042,7 +1057,9 @@ img.game_logo:hover {
 
 .hamb-accordion .accordion-button:not(.collapsed),
 .hamb-accordion .accordion-button {
+  /*
   color: #fff;
+  */
   font-size: 5vw;
   border-bottom: #fff 1px solid;
   border: unset;
@@ -1330,7 +1347,7 @@ footer.nb-footer .footer-info-single p {
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
-    border-bottom: #fff 1px solid;
+    /*border-bottom: #fff 1px solid;*/
     padding: 1vw;
     padding-top: 3vw;
   }
@@ -1339,9 +1356,9 @@ footer.nb-footer .footer-info-single p {
     color: #fff;
   }
 
-  #father a svg:first-child {
-    margin-right: 3vw;
-  }
+  /*#father a svg:first-child {*/
+  /*  margin-right: 3vw;*/
+  /*}*/
 
   /* Hamburger */
 
@@ -1778,3 +1795,102 @@ Note: Beware of modifying this element as it can break the animations - you shou
 @media (min-width: 320px) and (max-width: 480px) {
   /* CSS */
 }
+
+
+/*icons*/
+
+.payments {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 1.25rem auto;
+  width: 43%;
+  }
+
+h2.comoJugar > button.accordion-button{
+  color:#79c000;
+  }
+
+.payments img {
+  height: auto;
+  max-width: 100px;
+  }
+
+.list-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.about .social-media ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 46px;
+  background-color: #fff;
+  height: 46px;
+  line-height: 45px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 25px;
+  color: #79c000;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0 4px 9px -2px rgba(0, 0, 0, 0.71);
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.71);
+  }
+
+.about .social-media ul li a > svg {
+  width: 1.5vw;
+  }
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .about .social-media ul li a > svg {
+    width: 7vw;
+    }
+  .payments {
+    width: 100%;
+    }
+
+  .payments img {
+    adding: 1.2vw;
+    width: 27vw;
+    }
+
+
+  /*.mobiles,*/
+  /*.logos,*/
+  /*.payments {*/
+  /*  margin: 0 15px;*/
+  /*  justify-content: space-around;*/
+  /*}*/
+
+  .bm-item-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+
+    /* border-bottom: #fff 1px solid; */
+    /*padding: 1vw 3.5vw;*/
+    padding-top: 3vw;
+
+    /* margin-left: 3vw; */
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    }
+
+  .bm-item-list a > arrowrightw {
+    width: 100%;
+    margin-left: 10vw;
+    }
+  .mobMenuSVGwrapper svg {
+    margin-right: 0.5rem;
+    height: 1.6em !important;
+    min-width: 36px;
+    }
+  }
