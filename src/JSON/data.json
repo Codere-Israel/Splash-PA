@@ -43,11 +43,6 @@
       "img_alt": "live-casino",
       "tycLink": "",
       "scheduled": false
-    },
-    {
-      "image": "https://www.codere.pa/assets/inicio-banners/metodos_desktop.jpg",
-      "img_alt": "Metodos",
-      "scheduled": false
     }
   ],
   "mobile_slide_list": [
@@ -93,11 +88,6 @@
       "image": "https://www.codere.pa/assets/inicio-banners/live-casino-mobile.jpg",
       "img_alt": "live-casino",
       "tycLink": "",
-      "scheduled": false
-    },
-    {
-      "image": "https://www.codere.pa/assets/inicio-banners/metodos_mobile.jpg",
-      "img_alt": "Metodos",
       "scheduled": false
     }
   ]
