@@ -4,7 +4,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import Floating from "../../Floating";
 import TableOfContents from "../../TableOfContents";
 
-export default function Soccer(props) {
+export default function Soccer({ device }) {
   const title = "Apuestas de fútbol ⚽ en Panamá | Codere®";
   const description =
     "Conoce los diferentes tipos de apuestas que puedes realizar en Codere Online. Apuesta en partidos de Fútbol y aumenta tu pasión ⚽.";
@@ -57,7 +57,7 @@ export default function Soccer(props) {
   };
 
   const prefix = `https://www.codere.pa/seopages/cuotas/Soccer/${
-    props.flag ? "M" : "D"
+    device ? "M" : "D"
   }-Soccer-`;
   const postfix = ".jpg";
 
@@ -159,7 +159,7 @@ export default function Soccer(props) {
         className="top-bg-seo"
         style={{
           backgroundImage: `url(https://www.codere.pa/seopages/cuotas/Soccer/${
-            props.flag ? "M" : "D"
+            device ? "M" : "D"
           }-Header.jpg)`,
           backgroundSize: "cover",
         }}
@@ -170,7 +170,7 @@ export default function Soccer(props) {
           <Container style={{ marginTop: "2rem" }}>
             <h1 className="header subtitle">{top_par.h1}</h1>
             <p>{top_par.p}</p>
-            {!props.flag ? <TableOfContents table={table_list} /> : <></>}
+            {!device ? <TableOfContents table={table_list} /> : <></>}
             <div id={principales.id} className="mt-4">
               <h2 className="subtitle">{principales.h2}</h2>
               <p>{principales.p}</p>

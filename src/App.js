@@ -19,15 +19,16 @@ import CookieConsent from "react-cookie-consent";
 export const isMobileContext = React.createContext();
 
 function App() {
-  const [flag, setFlag] = useState(isMobile);
+  const [device, setDevice] = useState(isMobile);
+
   const [windowSize, setWindowSize] = useState({
     width: undefined,
     height: undefined,
   });
 
   useEffect(() => {
-    if (windowSize.width <= 768 || isMobile) setFlag(true);
-    else setFlag(false);
+    if (windowSize.width <= 768 || isMobile) setDevice(true);
+    else setDevice(false);
   }, [windowSize]);
 
   useEffect(() => {
@@ -45,7 +46,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header flag={flag} />
+        <Header device={device} />
         <CookieConsent
           cookieName="codere_cookie"
           expires={365}
@@ -69,10 +70,10 @@ function App() {
           </a>
           .
         </CookieConsent>
-        <Routing flag={flag} />
+        <Routing device={device} />
 
         <Footer />
-        {flag ? <StickyFooter /> : null}
+        {device && <StickyFooter />}
       </div>
     </Router>
   );

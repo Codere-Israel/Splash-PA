@@ -8,7 +8,7 @@ import deskGames from "../JSON/desktop-games.json";
 // import { isMobile } from "react-device-detect";
 // Top Games \\
 
-function Games(props) {
+function Games({ device }) {
   const desktopTitleStyles = {
     color: "#fff",
     fontSize: "1.75rem",
@@ -23,7 +23,7 @@ function Games(props) {
   };
   return (
     <>
-      {props.flag ? (
+      {device ? (
         <div id="mobile-games-section">
           <div style={mobileTitleStyles}>
             <span> Juegos Destacados </span>

@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import Floating from "../../Floating";
 import TableOfContents from "../../TableOfContents";
 
-export default function Formula(props) {
+export default function Formula({ device }) {
   const title = "Apuesta para el Grand prix 🏎️ | Codere®";
   const description =
     "En esta Guía de apuestas de la F1 🥇 encontrarás las respuestas a las preguntas más comunes sobre el deporte de mayor emoción automovilística.";
@@ -34,7 +34,7 @@ export default function Formula(props) {
   };
 
   const prefix = `https://www.codere.pa/seopages/eventos-deportivos/f1/imgs/${
-    props.flag ? "M" : "D"
+    device ? "M" : "D"
   }-Formula1-`;
   const postfix = ".jpg";
 
@@ -157,7 +157,7 @@ export default function Formula(props) {
         className="top-bg-seo"
         style={{
           backgroundImage: `url(https://www.codere.pa/seopages/eventos-deportivos/f1/imgs/${
-            props.flag ? "M" : "D"
+            device ? "M" : "D"
           }-Header-F1.jpg)`,
           backgroundSize: "cover",
         }}
@@ -171,7 +171,7 @@ export default function Formula(props) {
             </h1>
             <p>{top_par}</p>
 
-            {!props.flag ? (
+            {!device ? (
               <TableOfContents isFormula={true} table={table_list} />
             ) : (
               <></>

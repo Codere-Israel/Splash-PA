@@ -14,17 +14,17 @@ import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Arrowrightw, Arrowdown, Deportes, LocalesMenuIcon, Promociones, Ruletasenvivo, CasinoMenuIcon, Directo, ArrowdownBlack } from '../icons';
 
-function Header(props) {
+function Header({ device }) {
   var regis = "https://m.codere.pa/deportespanama/#/RegistroPAPage";
   const acceder =
     "https://m.codere.pa/deportespanama/#/HomePage?openlogin=true";
 
   const URL = "https://dm.apuestas.codere.pa/LoginServicesESApi/login/web";
   const LOGO =
-    new Date() <= new Date("2023-12-30T22:00:00Z") && new Date() >= new Date("2023-12-01T07:00:00Z")
-      ? "https://www.codere.pa/_catalogs/masterpage/codere/img/christmassLogo.gif"
-      : "https://www.codere.pa/_catalogs/masterpage/codere/img/SponsorsLogoCodere.png";
-      
+    new Date() >= new Date("2022-12-30T22:00:00Z")
+      ? "https://www.codere.pa/_catalogs/masterpage/codere/img/SponsorsLogoCodere.png"
+      : "https://www.codere.pa/_catalogs/masterpage/codere/img/christmassLogo.gif";
+
   // Hooks
   const [hamburger, setHamburger] = useState(false);
   const [onShow, setOnShow] = useState("");
@@ -85,7 +85,7 @@ function Header(props) {
 
   return (
     <Navbar className="header_nav stroke" variant="dark">
-      {props.flag ? (
+      {device ? (
         <div id="father">
           <div id="outer-container">
             <Menu

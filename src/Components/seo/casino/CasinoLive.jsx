@@ -14,7 +14,7 @@ import { Helmet } from "react-helmet";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import TableOfContents from "../TableOfContents";
 
-export default function CasinoLive(props) {
+export default function CasinoLive({ device }) {
   const game_prefix = "https://m.codere.pa/deportes/#/CasinoPage?playgame=";
 
   const title = "Juega Casino en Vivo desde Panamá | Codere®";
@@ -198,7 +198,7 @@ export default function CasinoLive(props) {
         className="top-bg-seo"
         style={{
           backgroundImage: `url(https://www.codere.pa/seopages/casino/assets/casino-live/${
-            props.flag ? "M" : "D"
+            device ? "M" : "D"
           }-Header.webp)`,
           backgroundSize: "cover",
         }}
@@ -211,9 +211,7 @@ export default function CasinoLive(props) {
         <p>{top_par.p}</p>
 
         {/* Table */}
-        {!props.flag ? (
-          <TableOfContents table={table_of_contents_list} />
-        ) : null}
+        {!device && <TableOfContents table={table_of_contents_list} />}
 
         <h2 id={viva.id} className="mt-4 mb-3">
           {viva.h2}
@@ -234,7 +232,7 @@ export default function CasinoLive(props) {
         </h2>
         <Row className="casino-row">
           {live_games
-            .slice(0, !props.flag ? live_games.length : 4)
+            .slice(0, !device ? live_games.length : 4)
             .map((game, k) => (
               <Col lg={2} md={4} xs={6} key={k}>
                 <NavLink

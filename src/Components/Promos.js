@@ -6,7 +6,7 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 // Top Games \\
 
-function Promos(props) {
+function Promos() {
   // console.log(gameCarousel);
   return (
     <div id="desktop_games">

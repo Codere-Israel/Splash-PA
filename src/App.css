@@ -352,10 +352,17 @@ body {
   text-align: center;
 }
 
-.mob-tyc span,
+/* .mob-tyc span,
 .mob-tyc a {
   position: relative;
   top: -6.8vw;
+} */
+.mob-tyc span,
+.mob-tyc a {
+  color: #fff;
+  position: relative;
+  top: -8.8vw;
+  z-index: 2;
 }
 
 .tyc {
@@ -376,6 +383,7 @@ body {
   top: -11vw;
   left: 16.2vw;
   text-align: center;
+  z-index: 2;
 }
 
 .central-regis {
@@ -1513,12 +1521,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   #carousel-section {
     top: 14vw;
-    margin-bottom: 7vw;
+    margin-bottom: 0vw;
   }
 
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 0 !important;
+    bottom: 0px !important;
+    z-index: 2;
   }
 
   /* Games */

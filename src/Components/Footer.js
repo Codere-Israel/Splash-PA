@@ -10,7 +10,7 @@ function Footer() {
     sobre: [
       {
         name: "Juego Responsable",
-        url: "https://www.codere.pa/ayuda/juego-responsable",
+        url: "https://condiciones.apuestas.codere.es/Panama/juego_responsable.html",
         rel: "nofollow",
       },
       {
