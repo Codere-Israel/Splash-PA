@@ -6,13 +6,13 @@ import { Accordion, Container, Image, Placeholder } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-export default function Balenco(props) {
+export default function Balenco({ device }) {
   const title = "Apuesta para Mundial de Baloncesto 🏀 | Codere®";
   const description =
     "En la siguiente guía, encontrarás algunos consejos para que tu experiencia en Codere durante el mundial de Baloncesto, sea mucho más provechosa.";
 
   const prefix = `https://www.codere.pa/seopages/eventos-deportivos/baloncesto/imgs/${
-    props.flag ? "M" : "D"
+    device ? "M" : "D"
   }-Basketball-`;
   const jpg = ".jpg";
 
@@ -154,7 +154,7 @@ export default function Balenco(props) {
         className="top-bg-seo"
         style={{
           backgroundImage: `url(https://www.codere.pa/seopages/eventos-deportivos/baloncesto/imgs/${
-            props.flag ? "M" : "D"
+            device ? "M" : "D"
           }-Header.jpg)`,
           backgroundSize: "cover",
         }}
@@ -167,7 +167,7 @@ export default function Balenco(props) {
               Guía de apuestas para el Mundial de Baloncesto
             </h1>
             <p>{top_par}</p>
-            {!props.flag ? <TableOfContents table={table_list} /> : <></>}
+            {!device ? <TableOfContents table={table_list} /> : <></>}
 
             <div className="para">
               <h2 id="historia" className="subtitle">

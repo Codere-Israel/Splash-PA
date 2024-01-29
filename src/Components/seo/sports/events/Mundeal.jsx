@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-export default function Balenco(props) {
+export default function Balenco({ device }) {
   function getCookie(cookieName) {
     const name = cookieName + "=";
     const decodedCookie = decodeURIComponent(document.cookie);
@@ -38,7 +38,7 @@ export default function Balenco(props) {
   const description =
     "Acá te dejamos una explicación sobre en qué consisten algunas populares opciones de apuesta y algunas que no son tan populares. Apuesta en Codere.";
   const prefix = `https://www.codere.pa/seopages/eventos-deportivos/fifa/imgs/${
-    props.flag ? "M" : "D"
+    device ? "M" : "D"
   }-Soccer`;
   const jpg = ".jpg";
 
@@ -215,7 +215,7 @@ export default function Balenco(props) {
         className="top-bg-seo"
         style={{
           backgroundImage: `url(https://www.codere.pa/seopages/eventos-deportivos/fifa/imgs/${
-            props.flag ? "M" : "D"
+            device ? "M" : "D"
           }-Header.jpg)`,
           backgroundSize: "cover",
         }}
@@ -231,7 +231,7 @@ export default function Balenco(props) {
             </Fade>
             <p>{top_par}</p>
 
-            {!props.flag ? <TableOfContents table={table_list} /> : <></>}
+            {!device ? <TableOfContents table={table_list} /> : <></>}
 
             <div className="para">
               <h2 id="historia" className="subtitle">
