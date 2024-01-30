@@ -74,10 +74,6 @@ export default function Slots({ device }) {
       id: "mejores",
     },
     {
-      title: "Tipos de juegos online",
-      id: "tipos",
-    },
-    {
       title: "Preguntas frecuentes",
       id: "preguntas",
     },
