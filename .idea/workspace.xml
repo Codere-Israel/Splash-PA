@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="529d1598-8693-4916-a997-71fdc7668a38" name="Changes" comment="bugs from  qa">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_12_04__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_12_04__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/seo/TableOfContents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/seo/TableOfContents.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/seo/casino/Ruleta.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/seo/casino/Ruleta.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/seo/casino/Slots.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/seo/casino/Slots.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON/data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="update-image-15829" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,8 +52,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "update-image-15829",
-    "last_opened_file_path": "C:/projects/Splash-PA/src/icons/other",
+    "git-widget-placeholder": "image-Update-15829",
+    "last_opened_file_path": "C:/projects/Splash-PA/src/icons/menu",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -67,6 +65,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\Splash-PA\src\icons\menu" />
       <recent name="C:\projects\Splash-PA\src\icons\other" />
       <recent name="C:\projects\Splash-PA\src\icons\menu" />
       <recent name="C:\projects\Splash-PA\src" />
@@ -99,6 +98,7 @@
       <workItem from="1705914056557" duration="146000" />
       <workItem from="1705914217707" duration="2211000" />
       <workItem from="1706176221994" duration="5268000" />
+      <workItem from="1706714087726" duration="1579000" />
     </task>
     <task id="LOCAL-00001" summary="fix table of contents">
       <option name="closed" value="true" />
