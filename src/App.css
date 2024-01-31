@@ -1888,6 +1888,10 @@ h2.comoJugar > button.accordion-button{
     width: 100%;
     margin-left: 10vw;
     }
+  .mobMenuSVGwrapper {
+    display:flex;
+    align-items:center;
+    }
   .mobMenuSVGwrapper svg {
     margin-right: 0.5rem;
     height: 1.6em !important;

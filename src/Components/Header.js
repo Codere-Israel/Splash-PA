@@ -12,7 +12,7 @@ import { elastic as Menu } from "react-burger-menu";
 
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { Arrowrightw, Arrowdown, Deportes, LocalesMenuIcon, Promociones, Ruletasenvivo, CasinoMenuIcon, Directo, ArrowdownBlack } from '../icons';
+import { Arrowrightw, Arrowdown, Deportes, LocalesMenuIcon, Promociones, Ruletasenvivo, CasinoMenuIcon, Directo, ArrowdownBlack, Omnichannel } from '../icons';
 
 function Header({ device }) {
   var regis = "https://m.codere.pa/deportespanama/#/RegistroPAPage";
@@ -58,7 +58,7 @@ function Header({ device }) {
     {
       name: "Crown Casinos",
       url: "https://m.codere.pa/deportespanama/#/NearestLocalPage",
-      icon: LocalesMenuIcon,
+      icon: Omnichannel,
     },
   ];
 

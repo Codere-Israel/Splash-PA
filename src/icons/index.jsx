@@ -12,6 +12,7 @@ export { ReactComponent as LocalesMenuIcon } from './menu/locales.svg';
 export { ReactComponent as Directo } from './menu/directo.svg';
 export { ReactComponent as Crown } from './menu/Crown-White.svg';
 export { ReactComponent as Withdrawal } from './menu/withdrawal-st.svg';
+export { ReactComponent as Omnichannel } from './menu/omnichannel.svg';
 
 
 //social
