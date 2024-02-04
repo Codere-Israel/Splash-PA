@@ -3,6 +3,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Col, Container, NavLink, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { CodereChat, Facebook, Instagram, Twitter, Youtube, Phone, Whatsapp } from '../icons';
+import DownloadAppButtons from "./DownloadAppButtons";
 import React from "react";
 // Codere Footer \\
 function Footer() {
@@ -132,11 +133,13 @@ function Footer() {
     <div>
       <footer className="nb-footer">
         <div className="about">
+          <Row className="mobileBtnsFooter">
           <LazyLoadImage
-            className="mb-4"
+            className="mb-4 realMadridCodereLogo"
             width={155}
             src="https://www.codere.pa/assets/footer/RealMadrid.png"
           />
+          </Row>
           <div className="social-media">
             <ul className="list-inline">
               <li>
@@ -172,6 +175,7 @@ function Footer() {
               </li>
             </ul>
           </div>
+          <DownloadAppButtons />
         </div>
 
         <Container>
