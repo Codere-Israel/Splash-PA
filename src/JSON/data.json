@@ -39,10 +39,12 @@
       "scheduled": true
     },
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/live-casino-desktop.jpg",
-      "img_alt": "live-casino",
+      "image": "https://www.codere.pa/assets/inicio-banners/aviator-banner-desktop.jpg",
+      "img_alt": "aviator-banner",
       "tycLink": "",
-      "scheduled": false
+      "startDate": "2024-02-07T14:00:00Z",
+      "endDate": "2024-03-08T14:00:00Z",
+      "scheduled": true
     },
     {
       "image": "https://www.codere.pa/assets/inicio-banners/payments-methods-desktop.jpg",
@@ -91,10 +93,12 @@
       "scheduled": true
     },
     {
-      "image": "https://www.codere.pa/assets/inicio-banners/live-casino-mobile.jpg",
-      "img_alt": "live-casino",
+      "image": "https://www.codere.pa/assets/inicio-banners/aviator-banner-mobile.jpg",
+      "img_alt": "aviator-banner",
       "tycLink": "",
-      "scheduled": false
+      "startDate": "2024-02-07T14:00:00Z",
+      "endDate": "2024-03-08T14:00:00Z",
+      "scheduled": true
     },
     {
       "image": "https://www.codere.pa/assets/inicio-banners/payments-methods-mobile.jpg",
