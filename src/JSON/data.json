@@ -43,6 +43,12 @@
       "img_alt": "live-casino",
       "tycLink": "",
       "scheduled": false
+    },
+    {
+      "image": "https://www.codere.pa/assets/inicio-banners/payments-methods-desktop.jpg",
+      "img_alt": "payments-methods",
+      "tycLink": "",
+      "scheduled": false
     }
   ],
   "mobile_slide_list": [
@@ -87,6 +93,12 @@
     {
       "image": "https://www.codere.pa/assets/inicio-banners/live-casino-mobile.jpg",
       "img_alt": "live-casino",
+      "tycLink": "",
+      "scheduled": false
+    },
+    {
+      "image": "https://www.codere.pa/assets/inicio-banners/payments-methods-mobile.jpg",
+      "img_alt": "payments-methods",
       "tycLink": "",
       "scheduled": false
     }
