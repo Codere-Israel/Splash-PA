@@ -15,7 +15,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Arrowrightw, Arrowdown, Deportes, LocalesMenuIcon, Promociones, Ruletasenvivo, CasinoMenuIcon, Directo, ArrowdownBlack } from '../icons';
 
 function Header({ device }) {
-  var regis = "https://m.codere.pa/deportespanama/#/RegistroPAPage";
+  var regis = "https://m.codere.pa/deportespanama/#/mso/RegistroPAPage";
   const acceder =
     "https://m.codere.pa/deportespanama/#/HomePage?openlogin=true";
 
@@ -42,22 +42,22 @@ function Header({ device }) {
     },
     {
       name: "Casino",
-      url: "https://m.codere.pa/deportespanama/#/CasinoPage",
+      url: "https://m.codere.pa/deportespanama/#/casino/CasinoPage?lobby=Panama ",
       icon: CasinoMenuIcon,
     },
     {
       name: "Casino En Vivo",
-      url: "https://m.codere.pa/deportespanama/#/CasinoPage?filter=En%20Vivo",
+      url: "https://m.codere.pa/deportespanama/#/casino/CasinoEnVivoPage?lobby=EnVivoPA",
       icon: Ruletasenvivo,
     },
     {
       name: "Promociones",
-      url: "https://m.codere.pa/deportespanama/#/PromotionsPage",
+      url: "https://m.codere.pa/deportespanama/#/mso/PromotionsPage",
       icon: Promociones,
     },
     {
       name: "Crown Casinos",
-      url: "https://m.codere.pa/deportespanama/#/NearestLocalPage",
+      url: "https://m.codere.pa/deportespanama/#/mso/NearestLocalPage",
       icon: LocalesMenuIcon,
     },
   ];
