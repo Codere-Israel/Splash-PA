@@ -10,7 +10,7 @@ function StickyFooter() {
         DEPORTES
       </a>
       <a
-        href="https://m.codere.pa/deportespanama/#/CasinoPage"
+        href="https://m.codere.pa/deportespanama/#/casino/CasinoPage?lobby=Panama"
         className="sticky-item"
         rel="nofollow"
       >
