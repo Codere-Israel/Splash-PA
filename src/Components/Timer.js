@@ -39,7 +39,7 @@ const Timer = (props) => {
 
   return (
     <a
-      href="https://m.codere.pa/deportespanama/#/RegistroPAPage"
+      href="https://m.codere.pa/deportespanama/#/mso/RegistroPAPage"
       rel="nofollow"
       className={counterCSS.banner_info}
     >
