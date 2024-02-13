@@ -21,7 +21,7 @@ function GameSwiper(props) {
             <SwiperSlide key={index}>
               <a
                 href={
-                  "https://m.codere.pa/deportespanama/#/CasinoPage?playgame=PRP " +
+                  "https://m.codere.pa/deportespanama/#/casino/CasinoPage?lobby=Panama&playgame=PRP " +
                   item.name
                 }
                 rel={"nofollow"}

@@ -7,7 +7,7 @@ import React, { Component } from "react";
 const slider = React.createRef();
 const container = React.createRef();
 const isTouchDevice = "ontouchstart" in document.documentElement;
-// const regis = "https://m.codere.pa/deportespanama/#/RegistroPAPage";
+// const regis = "https://m.codere.pa/deportespanama/#/mso/RegistroPAPage";
 export default class SlideButton extends Component {
   state = {};
 

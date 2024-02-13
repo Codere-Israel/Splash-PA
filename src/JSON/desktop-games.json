@@ -7,7 +7,7 @@
       "sponsor": "Evolution",
       "image": "https://www.codere.pa/assets/splash-games/desktop/FirstPersonBlackjack.jpg",
       "logo": "https://www.codere.pa/assets/splash-games/desktop/logos/FirstPersonBlackjack.png",
-      "gamelink": "https://m.codere.pa/deportespanama/#/CasinoPage?playgame=EVG First Person Blackjack"
+      "gamelink": "https://m.codere.pa/deportespanama/#/casino/CasinoPage?lobby=Panama&playgame=EVG First Person Blackjack"
     },
     {
       "name": "Ruleta en Espanol",
@@ -16,7 +16,7 @@
       "sponsor": "Evolution",
       "image": "https://www.codere.pa/assets/splash-games/desktop/RuletaenEspanol.jpg",
       "logo": "https://www.codere.pa/assets/splash-games/desktop/logos/RuletaenEspanol.png",
-      "gamelink": "https://m.codere.pa/deportespanama/#/CasinoPage?playgame=EVG Ruleta en Espanol"
+      "gamelink": "https://m.codere.pa/deportespanama/#/casino/CasinoPage?lobby=Panama&playgame=EVG Ruleta en Espanol"
     }
   ],
   "bottom_games": [
@@ -26,7 +26,7 @@
       "logo": "https://www.codere.pa/assets/splash-games/desktop/logos/HappyApe.png",
       "alt": "Juega Happy Ape en casino online",
       "logo_alt": "Logo Happy Ape",
-      "gamelink": "https://m.codere.pa/deportespanama/#/CasinoPage?playgame=HAB Happy Ape"
+      "gamelink": "https://m.codere.pa/deportespanama/#/casino/CasinoPage?lobby=Panama&playgame=HAB Happy Ape"
     },
     {
       "name": "Hot Hot Fruit",
@@ -34,7 +34,7 @@
       "logo": "https://www.codere.pa/assets/splash-games/desktop/logos/HotHotFruit.png",
       "alt": "Juega Hot Hot Fruit en casino online",
       "logo_alt": "Logo Hot Hot Fruit",
-      "gamelink": "https://m.codere.pa/deportespanama/#/CasinoPage?playgame=HAB Hot Hot Fruit"
+      "gamelink": "https://m.codere.pa/deportespanama/#/casino/CasinoPage?lobby=Panama&playgame=HAB Hot Hot Fruit"
     },
     {
       "name": "Blackjack 3 Hand",
@@ -42,7 +42,7 @@
       "logo_alt": "Logo Blackjack 3 Hand",
       "image": "https://www.codere.pa/assets/splash-games/desktop/Blackjack3Hand.jpg",
       "logo": "https://www.codere.pa/assets/splash-games/desktop/logos/Blackjack3Hand.png",
-      "gamelink": "https://m.codere.pa/deportespanama/#/CasinoPage?playgame=HAB Blackjack 3 Hand"
+      "gamelink": "https://m.codere.pa/deportespanama/#/casino/CasinoPage?lobby=Panama&playgame=HAB Blackjack 3 Hand"
     }
   ]
 }

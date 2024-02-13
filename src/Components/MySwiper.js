@@ -22,7 +22,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 var imgs = [];
 
-// const regis = "https://m.codere.pa/deportespanama/#/RegistroPAPage";
+// const regis = "https://m.codere.pa/deportespanama/#/mso/RegistroPAPage";
 
 function MySwiper({ device }) {
   const [swiper, setSwiper] = useState(null);
@@ -31,7 +31,7 @@ function MySwiper({ device }) {
   const [showTycModal, setShowTycModal] = useState(false);
   const [ctaText, setCtaText] = useState("Regístrate");
   const [ctaLink, setCtaLink] = useState(
-    "https://m.codere.pa/deportespanama/#/RegistroPAPage"
+    "https://m.codere.pa/deportespanama/#/mso/RegistroPAPage"
   );
   // const DATE_TO_COUNT = "2022-12-18T15:00:00Z";
   // const [showTimer, setShowTimer] = useState(false);
@@ -44,7 +44,7 @@ function MySwiper({ device }) {
       setCtaLink(imgs[swiper.realIndex].ctaLink);
     } else {
       setCtaText("Regístrate");
-      setCtaLink("https://m.codere.pa/deportespanama/#/RegistroPAPage");
+      setCtaLink("https://m.codere.pa/deportespanama/#/mso/RegistroPAPage");
     }
 
     if (imgs[swiper.realIndex].tycType) {
