@@ -8,8 +8,8 @@ export default function Floating(props) {
       <Button
         href={
           props.juega
-            ? "https://m.codere.pa/deportespanama/#/CasinoPage"
-            : "https://m.codere.pa/deportespanama/#/RegistroPAPage"
+            ? "https://m.codere.pa/deportespanama/#/casino/CasinoPage?lobby=Panama "
+            : "https://m.codere.pa/deportespanama/#/mso/RegistroPAPage"
         }
         rel="nofollow"
         className="floating-btn"
