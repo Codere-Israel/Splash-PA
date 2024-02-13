@@ -30,7 +30,7 @@ function MySwiper({ device }) {
   const [showTycModal, setShowTycModal] = useState(false);
   const [ctaText, setCtaText] = useState("Regístrate");
   const [ctaLink, setCtaLink] = useState(
-    "https://m.codere.pa/deportespanama/#/RegistroPAPage"
+    "https://m.codere.pa/deportespanama/#/mso/RegistroPAPage"
   );
 
   const indexHandler = (swiper) => {
